@@ -1,0 +1,22 @@
+# Plesk: document root = /httpdocs, statyczny Next leży w /httpdocs/site/
+# Ten plik musi leżeć w katalogu głównym repozytorium (po deploy: httpdocs/.htaccess).
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Nie serwuj kodu źródłowego z katalogu deploy
+  RewriteRule ^(src|scripts|text|site\.git)(/|$) - [F,L]
+
+  # Strona główna
+  RewriteRule ^$ site/index.html [L]
+
+  # Plik istnieje w site/ (/_next/, /images/, robots.txt, itd.)
+  RewriteCond %{DOCUMENT_ROOT}/site%{REQUEST_URI} -f
+  RewriteRule . site%{REQUEST_URI} [L]
+
+  # /ścieżka/ → site/ścieżka/index.html
+  RewriteCond %{DOCUMENT_ROOT}/site%{REQUEST_URI}index.html -f
+  RewriteRule . site%{REQUEST_URI}index.html [L]
+</IfModule>
+
+Options -Indexes

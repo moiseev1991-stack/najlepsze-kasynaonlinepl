@@ -23,13 +23,17 @@ Powstaje `out/` (tymczasowo) oraz **`site/`** — **to** katalog należy serwowa
 
 ## Plesk / Apache (`httpdocs`)
 
-1. Git w Plesku nadal może ściągać całe repozytorium do `httpdocs/`.
-2. W **Ustawieniach hostingu** ustaw **Document root** na podkatalog ze statyczną stroną, np.  
-   **`/httpdocs/site`**  
-   (pełna ścieżka zależy od panelu — chodzi o folder `site` z repozytorium).
-3. Po każdej zmianie treści: lokalnie `npm run build:static`, commit + push, w Plesku **Pull** / **Deploy**.
+Repozytorium zawiera **`.htaccess` w katalogu głównym** — po deployu ląduje jako `httpdocs/.htaccess` i **wewnętrznie** kieruje ruch do `site/` (bez `/site/` w adresie). Document root może zostać **`/httpdocs`**.
 
-Reguły przekierowań SEO są w `public/.htaccess` (trafiają do `site/` przy buildzie).
+**Ważne po pierwszym deployu (i po starej instalacji Pleska):**
+
+1. W **Menadżerze plików** otwórz `httpdocs` i **usuń** domyślny plik **`index.html`** (~1–2 KB) z Pleska, jeśli nadal tam jest — inaczej Apache może serwować go zamiast reguł z `.htaccess`.
+2. Upewnij się, że w `httpdocs` jest folder **`site/`** (statyczny build) i plik **`.htaccess`** z repozytorium.
+3. Po zmianach treści: `npm run build:static` → commit → push → w Plesku **Pull** / **Deploy**.
+
+Opcjonalnie możesz zamiast tego ustawić document root na **`httpdocs/site`** — wtedy katalog główny `.htaccess` nie jest potrzebny.
+
+Reguły przekierowań SEO są w `public/.htaccess` (kopiowane do `site/.htaccess` przy buildzie).
 
 ## Vercel / Node (opcjonalnie)
 
