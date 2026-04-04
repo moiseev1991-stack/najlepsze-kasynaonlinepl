@@ -1,0 +1,102 @@
+[
+  {
+    "methodName": "AstroPay",
+    "slug": "kasyna-z-astropay",
+    "intro": "AstroPay — vouchery i karty przedpłacone często dostępne u operatorów międzynarodowych. Pozwala kontrolować budżet bez udostępniania konta bankowego.",
+    "pros": ["Kontrola wydatków", "Szybkie zasilenie konta w kasynie"],
+    "cons": ["Dostępność zależy od operatora", "Wypłaty często inną metodą"],
+    "depositTime": "Po zakupie vouchera — zwykle od razu",
+    "withdrawalTime": "Zgodnie z polityką kasyna",
+    "fees": "Opłaty przy kanale zakupu vouchera",
+    "supportedCasinos": ["vox-casino", "verde-casino", "vulkan-vegas"]
+  },
+  {
+    "methodName": "BLIK",
+    "slug": "kasyno-online-blik",
+    "intro": "BLIK to mobilna płatność z aplikacji banku — popularna przy depozytach w kasynach online wśród użytkowników z Polski.",
+    "pros": ["Szybka autoryzacja", "Bez numeru karty w kasynie"],
+    "cons": ["Nie zawsze dostępna na wypłaty", "Limity bankowe"],
+    "depositTime": "Zazwyczaj natychmiast",
+    "withdrawalTime": "Często przelew lub portfel",
+    "fees": "Zwykle 0% u operatora",
+    "supportedCasinos": ["vox-casino", "spin-city", "vulkan-vegas", "spinline-casino"],
+    "howToDeposit": "Wejdź do kasyna w sekcji wpłat, wybierz BLIK, wpisz kwotę i zatwierdź transakcję w aplikacji banku kodem lub potwierdzeniem biometrycznym. Nie udostępniaj kodu BLIK osobom trzecim.",
+    "limitsText": "Limity dzienne i miesięczne wynikają z ustawień banku i profilu klienta — kasyno może dodatkowo ustalać min./maks. depozytu na transakcję.",
+    "withdrawalExplained": "Wypłata bezpośrednio na BLIK bywa niedostępna; operator często prosi o przelew na rachunek powiązany z tożsamością lub o portfel elektroniczny. Zawsze sprawdź listę metod wypłaty po weryfikacji KYC.",
+    "comparisonNote": "W porównaniu z kartą płatniczą BLIK skraca ścieżkę depozytu na telefonie, ale przy wypłatach często wygrywa e-portfel lub przelew ze względu na dostępność zwrotu środków.",
+    "alternativeMethod": "Skrill / Przelewy24",
+    "seoSections": [
+      {
+        "heading": "Czym jest BLIK w kontekście kasyn online",
+        "body": "To mechanizm płatności mobilnej autoryzowanej w aplikacji banku. Kasyno otrzymuje potwierdzenie transakcji przez operatora płatności — Ty nie wklejasz numeru karty na stronie hazardowej, co bywa postrzegane jako wygodniejsze na smartfonie."
+      },
+      {
+        "heading": "Wpłata krok po kroku",
+        "body": "1) Zaloguj się w kasynie. 2) Otwórz kasę i wybierz BLIK. 3) Podaj kwotę zgodną z limitami. 4) Potwierdź w aplikacji banku. 5) Poczekaj na zaksięgowanie — zwykle kilka minut."
+      },
+      {
+        "heading": "Limity wpłat",
+        "body": "Bank ustala limity BLIK; kasyno może mieć własne progi minimalnej i maksymalnej wpłaty. Przy większych kwotach może być wymagana dodatkowa weryfikacja źródła środków."
+      },
+      {
+        "heading": "Czy BLIKiem wypłacę wygraną",
+        "body": "Rzadko jako bezpośredni kanał zwrotu. Typowa ścieżka to przelew bankowy na zweryfikowany rachunek lub wypłata na portfel, który wcześniej był użyty do depozytu."
+      }
+    ]
+  },
+  {
+    "methodName": "MuchBetter",
+    "slug": "muchbetter",
+    "intro": "Portfel aplikacyjny często wybierany przez graczy — powiadomienia push i prosty interfejs.",
+    "pros": ["Mobilny UX", "Program poleceń"],
+    "cons": ["Mniejsza penetracja niż BLIK"],
+    "depositTime": "Natychmiast",
+    "withdrawalTime": "24–48 h",
+    "fees": "Tabela MuchBetter",
+    "supportedCasinos": ["spin-city", "energy-casino"]
+  },
+  {
+    "methodName": "Przelewy24",
+    "slug": "kasyno-przelewy24",
+    "intro": "Agregator płatności znany z e-commerce — w kasynach łączy bankowość z szybkim potwierdzeniem.",
+    "pros": ["Wiele banków", "Znany flow dla PL"],
+    "cons": ["Zależność od integracji operatora"],
+    "depositTime": "Kilka minut",
+    "withdrawalTime": "24–72 h",
+    "fees": "Zwykle 0% po stronie kasyna",
+    "supportedCasinos": ["vox-casino", "vulkan-vegas", "machance"]
+  },
+  {
+    "methodName": "PayPal",
+    "slug": "paypal",
+    "intro": "PayPal bywa dostępny u wybranych marek — sprawdź zgodność konta z regulaminem.",
+    "pros": ["Historia transakcji", "Ochrona zakupów (region)"],
+    "cons": ["Ograniczona dostępność", "Przewalutowanie"],
+    "depositTime": "Kilka minut",
+    "withdrawalTime": "24–72 h",
+    "fees": "Regulamin PayPal",
+    "supportedCasinos": ["vulkan-vegas", "energy-casino"]
+  },
+  {
+    "methodName": "Paysafecard",
+    "slug": "paysafecard",
+    "intro": "Kody przedpłacone do depozytów — dla osób unikających bezpośredniego łączenia konta bankowego z profilem.",
+    "pros": ["Budżet z góry", "Prosty zakup kodu"],
+    "cons": ["Wypłaty zwykle inną ścieżką"],
+    "depositTime": "Natychmiast",
+    "withdrawalTime": "Przelew bankowy",
+    "fees": "Prowizja przy zakupie kodu",
+    "supportedCasinos": ["roman-casino", "bruce-bet"]
+  },
+  {
+    "methodName": "Skrill",
+    "slug": "kasyno-online-skrill",
+    "intro": "E-portfel standardowy w iGamingu — szybkie wpłaty i wypłaty po weryfikacji konta.",
+    "pros": ["Szybkie przelewy", "Program VIP"],
+    "cons": ["Prowizje przy części operacji"],
+    "depositTime": "Natychmiast",
+    "withdrawalTime": "24–48 h",
+    "fees": "Tabela Skrill",
+    "supportedCasinos": ["vox-casino", "vulkan-vegas", "spin-city", "verde-casino"]
+  }
+]

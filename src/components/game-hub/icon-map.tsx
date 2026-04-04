@@ -1,0 +1,67 @@
+import type { LucideIcon } from "lucide-react";
+import {
+  AlertCircle,
+  Apple,
+  Banknote,
+  BookOpen,
+  Cherry,
+  ChevronRight,
+  Clock,
+  Coins,
+  Crown,
+  Flame,
+  Gamepad2,
+  Gauge,
+  Gift,
+  GitCompare,
+  HelpCircle,
+  Layers,
+  Link2,
+  ListChecks,
+  Percent,
+  ScrollText,
+  ShieldAlert,
+  ShieldCheck,
+  Sparkles,
+  Target,
+  Trophy,
+  Users,
+  Wallet,
+  Zap,
+} from "lucide-react";
+
+const MAP: Record<string, LucideIcon> = {
+  gamepad2: Gamepad2,
+  cherry: Cherry,
+  trophy: Trophy,
+  flame: Flame,
+  crown: Crown,
+  wallet: Wallet,
+  coins: Coins,
+  bookOpen: BookOpen,
+  shieldCheck: ShieldCheck,
+  sparkles: Sparkles,
+  gitCompare: GitCompare,
+  apple: Apple,
+  layers: Layers,
+  percent: Percent,
+  alertCircle: AlertCircle,
+  users: Users,
+  link2: Link2,
+  clock: Clock,
+  zap: Zap,
+  target: Target,
+  gift: Gift,
+  banknote: Banknote,
+  gauge: Gauge,
+  listChecks: ListChecks,
+  scrollText: ScrollText,
+  shieldAlert: ShieldAlert,
+  helpCircle: HelpCircle,
+};
+
+export function gameHubIcon(name: string): LucideIcon {
+  return MAP[name] ?? HelpCircle;
+}
+
+export { ChevronRight };

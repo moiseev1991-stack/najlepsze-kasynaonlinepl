@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Najlepsze Kasyna Online">
+  <defs>
+    <linearGradient id="ogbg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f1f33"/>
+      <stop offset="0.55" stop-color="#17324d"/>
+      <stop offset="1" stop-color="#1a0a0e"/>
+    </linearGradient>
+    <linearGradient id="ogaccent" x1="120" y1="120" x2="420" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f43f5e"/>
+      <stop offset="0.5" stop-color="#dc143c"/>
+      <stop offset="1" stop-color="#9f1239"/>
+    </linearGradient>
+    <linearGradient id="ogline" x1="120" y1="400" x2="1080" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#dc143c" stop-opacity="0"/>
+      <stop offset="0.35" stop-color="#dc143c" stop-opacity="0.85"/>
+      <stop offset="0.65" stop-color="#f43f5e" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#dc143c" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogbg)"/>
+  <circle cx="980" cy="140" r="220" fill="#dc143c" fill-opacity="0.07"/>
+  <circle cx="180" cy="520" r="180" fill="#1677ff" fill-opacity="0.06"/>
+  <g transform="translate(100 175)">
+    <rect x="0" y="0" width="112" height="112" rx="28" fill="url(#ogaccent)"/>
+    <rect x="10" y="10" width="92" height="92" rx="22" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="3"/>
+    <path d="M56 28 88 56 56 84 24 56Z" fill="#fff" fill-opacity="0.95"/>
+    <path d="M56 40 74 56 56 72 38 56Z" fill="#9f1239" fill-opacity="0.25"/>
+  </g>
+  <text x="250" y="260" font-size="56" fill="#f8fafc" font-family="system-ui,Segoe UI,Roboto,sans-serif" font-weight="700">Najlepsze Kasyna</text>
+  <text x="250" y="330" font-size="56" fill="url(#ogaccent)" font-family="system-ui,Segoe UI,Roboto,sans-serif" font-weight="800">Online</text>
+  <text x="250" y="395" font-size="26" fill="#94a3b8" font-family="system-ui,Segoe UI,Roboto,sans-serif">Rankingi, bonusy, płatności — świadomy wybór</text>
+  <rect x="120" y="440" width="960" height="3" rx="1.5" fill="url(#ogline)"/>
+  <text x="250" y="500" font-size="20" fill="#64748b" font-family="system-ui,Segoe UI,Roboto,sans-serif">18+ · treści redakcyjne · hazard może uzależniać</text>
+</svg>

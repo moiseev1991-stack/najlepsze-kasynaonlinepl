@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --nk-bg: #f7f8fc;
+  --nk-bg-alt: #f2f5fb;
+  --nk-surface: #ffffff;
+  --nk-border: #e4eaf3;
+  --nk-text: #122033;
+  --nk-muted: #516075;
+  --nk-red: #dc143c;
+  --nk-blue: #1677ff;
+  --nk-navy: #17324d;
+  --radius: 1rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--nk-text);
+  background-color: var(--nk-bg);
+}
+
+@layer components {
+  /** Warstwowy „mesh” + delikatna siatka — premium, bez szumu */
+  .nk-site-bg {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+      radial-gradient(ellipse 85% 55% at 0% -15%, rgba(220, 20, 60, 0.055), transparent 52%),
+      radial-gradient(ellipse 75% 50% at 100% 5%, rgba(22, 119, 255, 0.065), transparent 48%),
+      linear-gradient(180deg, #f7f8fc 0%, #f2f5fb 38%, #f7f8fc 100%);
+  }
+
+  .nk-site-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.45;
+    background-image:
+      linear-gradient(rgba(23, 50, 77, 0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(23, 50, 77, 0.035) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: linear-gradient(to bottom, black 0%, black 35%, transparent 92%);
+  }
+
+  /** Bardzo słaby abstrakcyjny zarys — nie herb, tylko geometryczny akcent */
+  .nk-site-bg::after {
+    content: "";
+    position: absolute;
+    right: -8%;
+    top: 18%;
+    width: min(42vw, 520px);
+    height: min(42vw, 520px);
+    border-radius: 40% 60% 55% 45%;
+    border: 1px solid rgba(220, 20, 60, 0.06);
+    opacity: 0.5;
+    transform: rotate(-12deg);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "kasyno-5-zl",
+    "title": "Kasyno online od 5 zł",
+    "h1": "Kasyna z depozytem od 5 zł",
+    "intro": "Niski próg wejścia pozwala poznać platformę przy minimalnym nakładzie. Upewnij się, czy bonus powitalny obejmuje tak niską wpłatę.",
+    "metaDescription": "Kasyna z minimalnym depozytem 5 zł — na co zwrócić uwagę przy bonusach i wypłatach.",
+    "amountLabel": "5 zł",
+    "faq": [
+      {
+        "question": "Czy zawsze akceptowana jest kwota 5 zł?",
+        "answer": "Zależy od operatora i metody płatności — sprawdź kasę przed transakcją."
+      }
+    ],
+    "seoSections": [
+      {
+        "heading": "Koszty przy mikrowpłatach",
+        "body": "Prowizje pośredników mogą stanowić większy odsetek przy bardzo niskich kwotach."
+      }
+    ]
+  },
+  {
+    "slug": "kasyna-z-depozytem-za-10-zl",
+    "title": "Kasyno z depozytem 10 zł",
+    "h1": "Kasyna z wpłatą od 10 zł",
+    "intro": "10 zł to częsty próg startowy zbieżny z wieloma promocjami na darmowe spiny.",
+    "metaDescription": "Porównanie kasyn z depozytem od 10 zł i typowych warunków bonusów.",
+    "amountLabel": "10 zł",
+    "faq": [
+      {
+        "question": "Czy bonus powitalny działa od 10 zł?",
+        "answer": "Sprawdź regulamin — część ofert wymaga wyższej pierwszej wpłaty."
+      }
+    ],
+    "seoSections": [
+      {
+        "heading": "Weryfikacja",
+        "body": "Operator może poprosić o dokumenty przed pierwszą wypłatą niezależnie od wysokości depozytów."
+      }
+    ]
+  },
+  {
+    "slug": "kasyno-20-zl",
+    "title": "Kasyno online od 20 zł",
+    "h1": "Kasyna z depozytem od 20 zł",
+    "intro": "20 zł bywa standardem pełnego pakietu powitalnego i krótszych ścieżek wypłat po KYC.",
+    "metaDescription": "Dlaczego 20 zł to popularny próg w kasynach online.",
+    "amountLabel": "20 zł",
+    "faq": [
+      {
+        "question": "Czy wyższy depozyt to lepszy bonus?",
+        "answer": "Niekoniecznie — liczy się przejrzystość obrotu i limitów, nie sama kwota."
+      }
+    ],
+    "seoSections": [
+      {
+        "heading": "Budżet rozrywki",
+        "body": "Ustal miesięczny limit i trzymaj się go niezależnie od minimalnej wpłaty."
+      }
+    ]
+  }
+]

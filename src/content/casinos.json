@@ -1,0 +1,1027 @@
+[
+  {
+    "id": "c-vox-casino",
+    "slug": "vox-casino",
+    "name": "Vox Casino",
+    "logo": "/images/casinos/vox-casino.webp",
+    "affiliateUrl": "https://example.com/go/vox-casino",
+    "reviewUrl": "/vox-casino/",
+    "ratingOverall": 4.1,
+    "ratingUsers": 4,
+    "votesCount": 200,
+    "trustIndex": 78,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "VOXSTART",
+    "timeLimit": "Aktywacja bonusu: 7 dni od rejestracji",
+    "problemsReportOptions": [
+      {
+        "label": "Zgłoś błąd w recenzji",
+        "href": "/kontakt/"
+      },
+      {
+        "label": "Strona operatora",
+        "href": "https://example.com/go/vox-casino"
+      }
+    ],
+    "detailsMoreInfo": "Program VIP, turnieje tygodniowe i cashback — pełny opis w regulaminie u operatora. Poniższe dane mają charakter demonstracyjny dla układu strony.",
+    "bonusTypes": [
+      "Powitalny",
+      "Reload"
+    ],
+    "wager": "x35–x40",
+    "minDeposit": "10 zł",
+    "withdrawalTime": "24–48 h",
+    "license": "Licencja — weryfikuj u operatora",
+    "foundedYear": 2016,
+    "gameCount": 1800,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Turnieje"
+    ],
+    "addedDate": "2025-01-15",
+    "pros": [
+      "Przejrzysty regulamin bonusów",
+      "Szeroki wybór slotów"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie",
+      "Warunki promocji wymagają uwagi"
+    ],
+    "isNew": true,
+    "isPopular": true,
+    "isTopRated": true
+  },
+  {
+    "id": "c-vulkanspiele-casino",
+    "slug": "vulkanspiele-casino",
+    "name": "Vulkanspiele Casino",
+    "logo": "/images/casinos/vulkanspiele-casino.webp",
+    "affiliateUrl": "https://example.com/go/vulkanspiele-casino",
+    "reviewUrl": "/vulkanspiele-casino/",
+    "ratingOverall": 4.2,
+    "ratingUsers": 4.1,
+    "votesCount": 337,
+    "trustIndex": 79,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "bonusTypes": [
+      "Powitalny",
+      "Reload"
+    ],
+    "wager": "x35–x40",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "48–72 h",
+    "license": "Licencja — weryfikuj u operatora",
+    "foundedYear": 2017,
+    "gameCount": 1920,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Turnieje"
+    ],
+    "addedDate": "2025-01-15",
+    "pros": [
+      "Przejrzysty regulamin bonusów",
+      "Szeroki wybór slotów"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie",
+      "Warunki promocji wymagają uwagi"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-spinline-casino",
+    "slug": "spinline-casino",
+    "name": "Spinline Casino",
+    "logo": "/images/casinos/spinline-casino.webp",
+    "affiliateUrl": "https://example.com/go/spinline-casino",
+    "reviewUrl": "/spinline-casino/",
+    "ratingOverall": 4.3,
+    "ratingUsers": 4.2,
+    "votesCount": 474,
+    "trustIndex": 80,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "bonusTypes": [
+      "Powitalny",
+      "Reload"
+    ],
+    "wager": "x35–x40",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–48 h",
+    "license": "Licencja — weryfikuj u operatora",
+    "foundedYear": 2018,
+    "gameCount": 2040,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Turnieje"
+    ],
+    "addedDate": "2025-01-15",
+    "pros": [
+      "Przejrzysty regulamin bonusów",
+      "Szeroki wybór slotów"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie",
+      "Warunki promocji wymagają uwagi"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-bison-casino",
+    "slug": "bison-casino",
+    "name": "Bison Casino",
+    "logo": "/images/casinos/bison-casino.png",
+    "affiliateUrl": "https://example.com/go/bison-casino",
+    "reviewUrl": "/bison-casino/",
+    "ratingOverall": 4.4,
+    "ratingUsers": 4.3,
+    "votesCount": 611,
+    "trustIndex": 81,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "bonusTypes": [
+      "Powitalny",
+      "Reload"
+    ],
+    "wager": "x35–x40",
+    "minDeposit": "10 zł",
+    "withdrawalTime": "48–72 h",
+    "license": "Licencja — weryfikuj u operatora",
+    "foundedYear": 2019,
+    "gameCount": 2160,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Turnieje"
+    ],
+    "addedDate": "2025-01-15",
+    "pros": [
+      "Przejrzysty regulamin bonusów",
+      "Szeroki wybór slotów"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie",
+      "Warunki promocji wymagają uwagi"
+    ],
+    "isNew": false,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-vulkan-vegas",
+    "slug": "vulkan-vegas",
+    "name": "Vulkan Vegas",
+    "logo": "/images/casinos/vulkan.svg",
+    "affiliateUrl": "https://example.com/go/vulkan-vegas",
+    "reviewUrl": "/vulkan-vegas/",
+    "ratingOverall": 4.5,
+    "ratingUsers": 4.4,
+    "votesCount": 748,
+    "trustIndex": 82,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "bonusTypes": [
+      "Powitalny",
+      "Reload"
+    ],
+    "wager": "x35–x40",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–48 h",
+    "license": "Licencja — weryfikuj u operatora",
+    "foundedYear": 2020,
+    "gameCount": 2280,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Turnieje"
+    ],
+    "addedDate": "2025-01-15",
+    "pros": [
+      "Przejrzysty regulamin bonusów",
+      "Szeroki wybór slotów"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie",
+      "Warunki promocji wymagają uwagi"
+    ],
+    "isNew": false,
+    "isPopular": true,
+    "isTopRated": false
+  },
+  {
+    "id": "c-bruce-bet",
+    "slug": "bruce-bet",
+    "name": "Bruce Bet",
+    "logo": "/images/casinos/bruce-bet.jpg",
+    "affiliateUrl": "https://example.com/go/bruce-bet",
+    "reviewUrl": "/bruce-bet/",
+    "ratingOverall": 4.6,
+    "ratingUsers": 4.5,
+    "votesCount": 885,
+    "trustIndex": 83,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "bonusTypes": [
+      "Powitalny",
+      "Reload"
+    ],
+    "wager": "x35–x40",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "48–72 h",
+    "license": "Licencja — weryfikuj u operatora",
+    "foundedYear": 2021,
+    "gameCount": 2400,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Turnieje"
+    ],
+    "addedDate": "2025-01-15",
+    "pros": [
+      "Przejrzysty regulamin bonusów",
+      "Szeroki wybór slotów"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie",
+      "Warunki promocji wymagają uwagi"
+    ],
+    "isNew": false,
+    "isPopular": false,
+    "isTopRated": true
+  },
+  {
+    "id": "c-spin-city",
+    "slug": "spin-city",
+    "name": "Spin City",
+    "logo": "/images/casinos/spin-city.webp",
+    "affiliateUrl": "https://example.com/go/spin-city",
+    "reviewUrl": "/spin-city/",
+    "ratingOverall": 4.7,
+    "ratingUsers": 4.6,
+    "votesCount": 1022,
+    "trustIndex": 84,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "bonusTypes": [
+      "Powitalny",
+      "Reload"
+    ],
+    "wager": "x35–x40",
+    "minDeposit": "10 zł",
+    "withdrawalTime": "24–48 h",
+    "license": "Licencja — weryfikuj u operatora",
+    "foundedYear": 2022,
+    "gameCount": 2520,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Turnieje"
+    ],
+    "addedDate": "2025-01-15",
+    "pros": [
+      "Przejrzysty regulamin bonusów",
+      "Szeroki wybór slotów"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie",
+      "Warunki promocji wymagają uwagi"
+    ],
+    "isNew": false,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-trino-casino",
+    "slug": "trino-casino",
+    "name": "Trino Casino",
+    "logo": "/images/casinos/trino-casino.webp",
+    "affiliateUrl": "https://example.com/go/trino-casino",
+    "reviewUrl": "/trino-casino/",
+    "ratingOverall": 4.1,
+    "ratingUsers": 4,
+    "votesCount": 1159,
+    "trustIndex": 85,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "bonusTypes": [
+      "Powitalny",
+      "Reload"
+    ],
+    "wager": "x35–x40",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "48–72 h",
+    "license": "Licencja — weryfikuj u operatora",
+    "foundedYear": 2023,
+    "gameCount": 2640,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Turnieje"
+    ],
+    "addedDate": "2025-01-15",
+    "pros": [
+      "Przejrzysty regulamin bonusów",
+      "Szeroki wybór slotów"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie",
+      "Warunki promocji wymagają uwagi"
+    ],
+    "isNew": false,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-energy-casino",
+    "slug": "energy-casino",
+    "name": "Energy Casino",
+    "logo": "/images/casinos/energy-casino.webp",
+    "affiliateUrl": "https://example.com/go/energy-casino",
+    "reviewUrl": "/energy-casino/",
+    "ratingOverall": 4.2,
+    "ratingUsers": 4.1,
+    "votesCount": 1296,
+    "trustIndex": 86,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "bonusTypes": [
+      "Powitalny",
+      "Reload"
+    ],
+    "wager": "x35–x40",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–48 h",
+    "license": "Licencja — weryfikuj u operatora",
+    "foundedYear": 2016,
+    "gameCount": 2760,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Turnieje"
+    ],
+    "addedDate": "2025-01-15",
+    "pros": [
+      "Przejrzysty regulamin bonusów",
+      "Szeroki wybór slotów"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie",
+      "Warunki promocji wymagają uwagi"
+    ],
+    "isNew": false,
+    "isPopular": true,
+    "isTopRated": false
+  },
+  {
+    "id": "c-verde-casino",
+    "slug": "verde-casino",
+    "name": "Verde Casino",
+    "logo": "/images/casinos/verde-casino.jpg",
+    "affiliateUrl": "https://example.com/go/verde-casino",
+    "reviewUrl": "/verde-casino/",
+    "ratingOverall": 4.3,
+    "ratingUsers": 4.2,
+    "votesCount": 1433,
+    "trustIndex": 87,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "bonusTypes": [
+      "Powitalny",
+      "Reload"
+    ],
+    "wager": "x35–x40",
+    "minDeposit": "10 zł",
+    "withdrawalTime": "48–72 h",
+    "license": "Licencja — weryfikuj u operatora",
+    "foundedYear": 2017,
+    "gameCount": 2880,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Turnieje"
+    ],
+    "addedDate": "2025-01-15",
+    "pros": [
+      "Przejrzysty regulamin bonusów",
+      "Szeroki wybór slotów"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie",
+      "Warunki promocji wymagają uwagi"
+    ],
+    "isNew": false,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-roman-casino",
+    "slug": "roman-casino",
+    "name": "Roman Casino",
+    "logo": "/images/casinos/roman-casino.jpg",
+    "affiliateUrl": "https://example.com/go/roman-casino",
+    "reviewUrl": "/roman-casino/",
+    "ratingOverall": 4.4,
+    "ratingUsers": 4.3,
+    "votesCount": 1570,
+    "trustIndex": 88,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "bonusTypes": [
+      "Powitalny",
+      "Reload"
+    ],
+    "wager": "x35–x40",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–48 h",
+    "license": "Licencja — weryfikuj u operatora",
+    "foundedYear": 2018,
+    "gameCount": 3000,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Turnieje"
+    ],
+    "addedDate": "2025-01-15",
+    "pros": [
+      "Przejrzysty regulamin bonusów",
+      "Szeroki wybór slotów"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie",
+      "Warunki promocji wymagają uwagi"
+    ],
+    "isNew": false,
+    "isPopular": false,
+    "isTopRated": true
+  },
+  {
+    "id": "c-janusz-casino",
+    "slug": "janusz-casino",
+    "name": "Janusz Casino",
+    "logo": "/images/casinos/janusz-casino.png",
+    "affiliateUrl": "https://example.com/go/janusz-casino",
+    "reviewUrl": "/janusz-casino/",
+    "ratingOverall": 4.5,
+    "ratingUsers": 4.4,
+    "votesCount": 1707,
+    "trustIndex": 89,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "bonusTypes": [
+      "Powitalny",
+      "Reload"
+    ],
+    "wager": "x35–x40",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "48–72 h",
+    "license": "Licencja — weryfikuj u operatora",
+    "foundedYear": 2019,
+    "gameCount": 3120,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Turnieje"
+    ],
+    "addedDate": "2025-01-15",
+    "pros": [
+      "Przejrzysty regulamin bonusów",
+      "Szeroki wybór slotów"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie",
+      "Warunki promocji wymagają uwagi"
+    ],
+    "isNew": false,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-lemon",
+    "slug": "lemon",
+    "name": "Lemon",
+    "logo": "/images/casinos/lemon.png",
+    "affiliateUrl": "https://example.com/go/lemon",
+    "reviewUrl": "/lemon/",
+    "ratingOverall": 4.6,
+    "ratingUsers": 4.5,
+    "votesCount": 1844,
+    "trustIndex": 78,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "bonusTypes": [
+      "Powitalny",
+      "Reload"
+    ],
+    "wager": "x35–x40",
+    "minDeposit": "10 zł",
+    "withdrawalTime": "24–48 h",
+    "license": "Licencja — weryfikuj u operatora",
+    "foundedYear": 2020,
+    "gameCount": 3240,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Turnieje"
+    ],
+    "addedDate": "2025-01-15",
+    "pros": [
+      "Przejrzysty regulamin bonusów",
+      "Szeroki wybór slotów"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie",
+      "Warunki promocji wymagają uwagi"
+    ],
+    "isNew": false,
+    "isPopular": true,
+    "isTopRated": false
+  },
+  {
+    "id": "c-yep-casino",
+    "slug": "yep-casino",
+    "name": "Yep Casino",
+    "logo": "/images/casinos/yep-casino.png",
+    "affiliateUrl": "https://example.com/go/yep-casino",
+    "reviewUrl": "/yep-casino/",
+    "ratingOverall": 4.7,
+    "ratingUsers": 4.6,
+    "votesCount": 1981,
+    "trustIndex": 79,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "bonusTypes": [
+      "Powitalny",
+      "Reload"
+    ],
+    "wager": "x35–x40",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "48–72 h",
+    "license": "Licencja — weryfikuj u operatora",
+    "foundedYear": 2021,
+    "gameCount": 3360,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Turnieje"
+    ],
+    "addedDate": "2025-01-15",
+    "pros": [
+      "Przejrzysty regulamin bonusów",
+      "Szeroki wybór slotów"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie",
+      "Warunki promocji wymagają uwagi"
+    ],
+    "isNew": false,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-nv-casino",
+    "slug": "nv-casino",
+    "name": "NV Casino",
+    "logo": "/images/casinos/nv-casino.png",
+    "affiliateUrl": "https://example.com/go/nv-casino",
+    "reviewUrl": "/nv-casino/",
+    "ratingOverall": 4.1,
+    "ratingUsers": 4,
+    "votesCount": 2118,
+    "trustIndex": 80,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "bonusTypes": [
+      "Powitalny",
+      "Reload"
+    ],
+    "wager": "x35–x40",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–48 h",
+    "license": "Licencja — weryfikuj u operatora",
+    "foundedYear": 2022,
+    "gameCount": 3480,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Turnieje"
+    ],
+    "addedDate": "2025-01-15",
+    "pros": [
+      "Przejrzysty regulamin bonusów",
+      "Szeroki wybór slotów"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie",
+      "Warunki promocji wymagają uwagi"
+    ],
+    "isNew": false,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-slotoro",
+    "slug": "slotoro",
+    "name": "Slotoro",
+    "logo": "/images/casinos/slotoro.jpg",
+    "affiliateUrl": "https://example.com/go/slotoro",
+    "reviewUrl": "/slotoro/",
+    "ratingOverall": 4.2,
+    "ratingUsers": 4.1,
+    "votesCount": 2255,
+    "trustIndex": 81,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "bonusTypes": [
+      "Powitalny",
+      "Reload"
+    ],
+    "wager": "x35–x40",
+    "minDeposit": "10 zł",
+    "withdrawalTime": "48–72 h",
+    "license": "Licencja — weryfikuj u operatora",
+    "foundedYear": 2023,
+    "gameCount": 3600,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Turnieje"
+    ],
+    "addedDate": "2025-01-15",
+    "pros": [
+      "Przejrzysty regulamin bonusów",
+      "Szeroki wybór slotów"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie",
+      "Warunki promocji wymagają uwagi"
+    ],
+    "isNew": false,
+    "isPopular": false,
+    "isTopRated": true
+  },
+  {
+    "id": "c-larabet",
+    "slug": "larabet",
+    "name": "Larabet",
+    "logo": "/images/casinos/larabet.webp",
+    "affiliateUrl": "https://example.com/go/larabet",
+    "reviewUrl": "/larabet/",
+    "ratingOverall": 4.3,
+    "ratingUsers": 4.2,
+    "votesCount": 2392,
+    "trustIndex": 82,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "bonusTypes": [
+      "Powitalny",
+      "Reload"
+    ],
+    "wager": "x35–x40",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–48 h",
+    "license": "Licencja — weryfikuj u operatora",
+    "foundedYear": 2016,
+    "gameCount": 3720,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Turnieje"
+    ],
+    "addedDate": "2025-01-15",
+    "pros": [
+      "Przejrzysty regulamin bonusów",
+      "Szeroki wybór slotów"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie",
+      "Warunki promocji wymagają uwagi"
+    ],
+    "isNew": false,
+    "isPopular": true,
+    "isTopRated": false
+  },
+  {
+    "id": "c-theslotz",
+    "slug": "theslotz",
+    "name": "TheSlotz",
+    "logo": "/images/casinos/theslotz.jpg",
+    "affiliateUrl": "https://example.com/go/theslotz",
+    "reviewUrl": "/theslotz/",
+    "ratingOverall": 4.4,
+    "ratingUsers": 4.3,
+    "votesCount": 2529,
+    "trustIndex": 83,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "bonusTypes": [
+      "Powitalny",
+      "Reload"
+    ],
+    "wager": "x35–x40",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "48–72 h",
+    "license": "Licencja — weryfikuj u operatora",
+    "foundedYear": 2017,
+    "gameCount": 3840,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Turnieje"
+    ],
+    "addedDate": "2025-01-15",
+    "pros": [
+      "Przejrzysty regulamin bonusów",
+      "Szeroki wybór slotów"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie",
+      "Warunki promocji wymagają uwagi"
+    ],
+    "isNew": false,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-slotsgem",
+    "slug": "slotsgem",
+    "name": "SlotsGem",
+    "logo": "/images/casinos/slotsgem.jpg",
+    "affiliateUrl": "https://example.com/go/slotsgem",
+    "reviewUrl": "/slotsgem/",
+    "ratingOverall": 4.5,
+    "ratingUsers": 4.4,
+    "votesCount": 2666,
+    "trustIndex": 84,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "bonusTypes": [
+      "Powitalny",
+      "Reload"
+    ],
+    "wager": "x35–x40",
+    "minDeposit": "10 zł",
+    "withdrawalTime": "24–48 h",
+    "license": "Licencja — weryfikuj u operatora",
+    "foundedYear": 2018,
+    "gameCount": 3960,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Turnieje"
+    ],
+    "addedDate": "2025-01-15",
+    "pros": [
+      "Przejrzysty regulamin bonusów",
+      "Szeroki wybór slotów"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie",
+      "Warunki promocji wymagają uwagi"
+    ],
+    "isNew": false,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-spellwin",
+    "slug": "spellwin",
+    "name": "Spellwin",
+    "logo": "/images/casinos/spellwin.jpg",
+    "affiliateUrl": "https://example.com/go/spellwin",
+    "reviewUrl": "/spellwin/",
+    "ratingOverall": 4.6,
+    "ratingUsers": 4.5,
+    "votesCount": 2803,
+    "trustIndex": 85,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "bonusTypes": [
+      "Powitalny",
+      "Reload"
+    ],
+    "wager": "x35–x40",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "48–72 h",
+    "license": "Licencja — weryfikuj u operatora",
+    "foundedYear": 2019,
+    "gameCount": 4080,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Turnieje"
+    ],
+    "addedDate": "2025-01-15",
+    "pros": [
+      "Przejrzysty regulamin bonusów",
+      "Szeroki wybór slotów"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie",
+      "Warunki promocji wymagają uwagi"
+    ],
+    "isNew": false,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-stonevegas",
+    "slug": "stonevegas",
+    "name": "Stonevegas",
+    "logo": "/images/casinos/stonevegas.webp",
+    "affiliateUrl": "https://example.com/go/stonevegas",
+    "reviewUrl": "/stonevegas/",
+    "ratingOverall": 4.7,
+    "ratingUsers": 4.6,
+    "votesCount": 2940,
+    "trustIndex": 86,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "bonusTypes": [
+      "Powitalny",
+      "Reload"
+    ],
+    "wager": "x35–x40",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–48 h",
+    "license": "Licencja — weryfikuj u operatora",
+    "foundedYear": 2020,
+    "gameCount": 4200,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Turnieje"
+    ],
+    "addedDate": "2025-01-15",
+    "pros": [
+      "Przejrzysty regulamin bonusów",
+      "Szeroki wybór slotów"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie",
+      "Warunki promocji wymagają uwagi"
+    ],
+    "isNew": false,
+    "isPopular": true,
+    "isTopRated": true
+  },
+  {
+    "id": "c-candy-casino",
+    "slug": "candy-casino",
+    "name": "Candy Casino",
+    "logo": "/images/casinos/candy-casino.jpg",
+    "affiliateUrl": "https://example.com/go/candy-casino",
+    "reviewUrl": "/candy-casino/",
+    "ratingOverall": 4.1,
+    "ratingUsers": 4,
+    "votesCount": 3077,
+    "trustIndex": 87,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "bonusTypes": [
+      "Powitalny",
+      "Reload"
+    ],
+    "wager": "x35–x40",
+    "minDeposit": "10 zł",
+    "withdrawalTime": "48–72 h",
+    "license": "Licencja — weryfikuj u operatora",
+    "foundedYear": 2021,
+    "gameCount": 4320,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Turnieje"
+    ],
+    "addedDate": "2025-01-15",
+    "pros": [
+      "Przejrzysty regulamin bonusów",
+      "Szeroki wybór slotów"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie",
+      "Warunki promocji wymagają uwagi"
+    ],
+    "isNew": false,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-machance",
+    "slug": "machance",
+    "name": "MaChance",
+    "logo": "/images/casinos/machance.png",
+    "affiliateUrl": "https://example.com/go/machance",
+    "reviewUrl": "/machance/",
+    "ratingOverall": 4.2,
+    "ratingUsers": 4.1,
+    "votesCount": 3214,
+    "trustIndex": 88,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "bonusTypes": [
+      "Powitalny",
+      "Reload"
+    ],
+    "wager": "x35–x40",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–48 h",
+    "license": "Licencja — weryfikuj u operatora",
+    "foundedYear": 2022,
+    "gameCount": 4440,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Turnieje"
+    ],
+    "addedDate": "2025-01-15",
+    "pros": [
+      "Przejrzysty regulamin bonusów",
+      "Szeroki wybór slotów"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie",
+      "Warunki promocji wymagają uwagi"
+    ],
+    "isNew": false,
+    "isPopular": false,
+    "isTopRated": false
+  }
+]

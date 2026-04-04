@@ -1,0 +1,150 @@
+[
+  {
+    "slug": "o-nas",
+    "title": "O nas",
+    "h1": "Kim jesteśmy",
+    "intro": "Jesteśmy zespołem analityków i redaktorów tworzących porównania kasyn online w oparciu o publicznie dostępne informacje i testy produktowe.",
+    "metaDescription": "Misja serwisu Najlepsze Kasyna Online, zespół redakcyjny i zasady niezależności treści.",
+    "sections": [
+      {
+        "heading": "Nasza misja",
+        "body": "Ułatwiamy świadomy wybór operatora — bez obietnic gwarantowanych wygranych i bez ukrywania ryzyka związanego z hazardem."
+      },
+      {
+        "heading": "Jak zarabiamy",
+        "body": "Część linków to linki partnerskie: możemy otrzymać prowizję, jeśli zdecydujesz się na rejestrację. Nie wpływa to na sposób liczenia ocen w naszych tabelach."
+      }
+    ]
+  },
+  {
+    "slug": "kontakt",
+    "title": "Kontakt",
+    "h1": "Skontaktuj się z redakcją",
+    "intro": "Pytania dotyczące treści, współpracy redakcyjnej oraz zgłoszenia błędów prosimy kierować na adres e-mail podany poniżej.",
+    "metaDescription": "Dane kontaktowe redakcji serwisu Najlepsze Kasyna Online.",
+    "sections": [
+      {
+        "heading": "E-mail",
+        "body": "redakcja@najlepsze-kasynaonline.com.pl — odpowiadamy w dni robocze, w miarę możliwości w ciągu 48 godzin."
+      },
+      {
+        "heading": "Uwaga",
+        "body": "Nie świadczymy pomocy prawnej ani nie rozstrzygamy sporów z operatorami — w takich sprawach skontaktuj się bezpośrednio z kasynem lub organem nadzorczym."
+      }
+    ]
+  },
+  {
+    "slug": "kryteria-oceny",
+    "title": "Kryteria oceny kasyn",
+    "h1": "Jak oceniamy kasyna online",
+    "intro": "Stosujemy jednolitą skalę i opisujemy ją transparentnie, aby czytelnik wiedział, co oznaczają poszczególne noty.",
+    "metaDescription": "Szczegółowe kryteria oceny kasyn online stosowane przez redakcję serwisu.",
+    "sections": [
+      {
+        "heading": "Bezpieczeństwo i regulacje",
+        "body": "Sprawdzamy dostępność informacji o licencji, polityce KYC/AML oraz narzędziach odpowiedzialnej gry."
+      },
+      {
+        "heading": "Bonusy i regulamin",
+        "body": "Oceniamy czytelność warunków obrotu, limity stawek oraz spójność komunikacji marketingowej z regulaminem."
+      },
+      {
+        "heading": "Płatności",
+        "body": "Bierzemy pod uwagę wybór metod, deklarowane czasy wypłat oraz nasze testy ścieżki depozytu (gdy jest to możliwe)."
+      },
+      {
+        "heading": "Gry i UX",
+        "body": "Liczebność dostawców, jakość aplikacji mobilnej oraz dostępność wsparcia wpływają na końcową notę."
+      }
+    ]
+  },
+  {
+    "slug": "odpowiedzialna-gra",
+    "title": "Odpowiedzialna gra",
+    "h1": "Odpowiedzialna gra",
+    "intro": "Hazard powinien pozostać formą rozrywki. Jeśli tracisz kontrolę nad czasem lub budżetem, skorzystaj z pomocy specjalistów.",
+    "metaDescription": "Zasady odpowiedzialnej gry, sygnały ostrzegawcze i linki do organizacji pomocowych.",
+    "sections": [
+      {
+        "heading": "Sygnały do refleksji",
+        "body": "Grasz dłużej niż planowałeś? Pożyczasz pieniądze na grę? Ukrywasz nawyki przed bliskimi? To może być moment, by zrobić przerwę i poszukać wsparcia."
+      },
+      {
+        "heading": "Narzędzia",
+        "body": "Korzystaj z limitów depozytów, samowykluczenia i reality check dostępnych u licencjonowanych operatorów."
+      }
+    ]
+  },
+  {
+    "slug": "polityka-redakcyjna",
+    "title": "Polityka redakcyjna",
+    "h1": "Polityka redakcyjna",
+    "intro": "Dbamy o rzetelność i aktualność treści. Gdy informacje się zmieniają, staramy się je niezwłocznie poprawiać.",
+    "metaDescription": "Zasady tworzenia i aktualizacji treści w serwisie Najlepsze Kasyna Online.",
+    "sections": [
+      {
+        "heading": "Niezależność",
+        "body": "Współpraca partnerska nie uprawnia operatora do redakcyjnej kontroli nad recenzją."
+      },
+      {
+        "heading": "Korekty",
+        "body": "Zgłoszone błędy faktograficzne weryfikujemy i poprawiamy z datą aktualizacji w stopce artykułu, gdy jest to możliwe."
+      }
+    ]
+  },
+  {
+    "slug": "polityka-prywatnosci",
+    "title": "Polityka prywatności",
+    "h1": "Polityka prywatności",
+    "intro": "Informujemy, w jaki sposób przetwarzamy dane osobowe przekazane za pośrednictwem formularzy kontaktowych i newslettera.",
+    "metaDescription": "Zasady przetwarzania danych osobowych w serwisie Najlepsze Kasyna Online.",
+    "sections": [
+      {
+        "heading": "Administrator",
+        "body": "Administratorem danych jest właściciel serwisu — szczegóły podane w stopce strony Kontakt."
+      },
+      {
+        "heading": "Podstawy prawne",
+        "body": "Przetwarzamy dane w zakresie niezbędnym do udzielenia odpowiedzi na wiadomość lub realizacji usługi newslettera, zgodnie z obowiązującymi przepisami."
+      },
+      {
+        "heading": "Prawa użytkownika",
+        "body": "Przysługuje Ci m.in. prawo dostępu, sprostowania i usunięcia danych — szczegóły w pełnej polityce RODO przekazywanej na żądanie."
+      }
+    ]
+  },
+  {
+    "slug": "polityka-plikow-cookies",
+    "title": "Polityka plików cookies",
+    "h1": "Polityka cookies",
+    "intro": "Serwis może wykorzystywać pliki cookies w celach technicznych, analitycznych oraz — za zgodą — marketingowych.",
+    "metaDescription": "Informacja o plikach cookies w serwisie Najlepsze Kasyna Online.",
+    "sections": [
+      {
+        "heading": "Rodzaje cookies",
+        "body": "Stosujemy cookies niezbędne do działania strony oraz opcjonalne do pomiaru statystyk i personalizacji treści."
+      },
+      {
+        "heading": "Zarządzanie zgodą",
+        "body": "Możesz zmienić ustawienia przeglądarki lub panelu zgody, aby ograniczyć zapisywanie plików."
+      }
+    ]
+  },
+  {
+    "slug": "licencje-hazardowe",
+    "title": "Licencje hazardowe",
+    "h1": "Licencje hazardowe — słownik",
+    "intro": "Operatorzy legalnie oferujący gry hazardowe posiadają zezwolenia wydane przez właściwe organy. Poniżej skrót najczęściej spotykanych akronimów.",
+    "metaDescription": "Podstawowe informacje o licencjach hazardowych i dlaczego warto je weryfikować u źródła.",
+    "sections": [
+      {
+        "heading": "Weryfikacja",
+        "body": "Numer licencji sprawdzaj na stronie właściwego regulatora — nie polegaj wyłącznie na banerze marketingowym."
+      },
+      {
+        "heading": "Jurysdykcja",
+        "body": "To, czy możesz legalnie korzystać z usług danego operatora, zależy od prawa kraju, w którym przebywasz."
+      }
+    ]
+  }
+]

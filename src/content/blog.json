@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Jak czytać warunki obrotu bonusu bez depozytu",
+    "slug": "jak-czytac-warunki-obrotu-bonusu-bez-depozytu",
+    "excerpt": "Praktyczny przewodnik po pojęciach: obrót, maksymalna stawka, gry wyłączone z promocji i typowe pułapki w regulaminach.",
+    "content": "## Wstęp\n\nWarunki obrotu to kluczowy element każdej promocji. Zanim aktywujesz bonus, sprawdź, ile razy musisz obrócić środki oraz jakie gry się do tego liczą.\n\n## Na co zwrócić uwagę\n\n- **Wysokość obrotu**: niższy wymóg zwykle oznacza łatwiejsze spełnienie warunków.\n\n- **Limit zakładu**: wiele kasyn ogranicza maksymalną stawkę podczas gry z bonusem.\n\n- **Lista wykluczonych gier**: automaty o wysokim RTP często są niedostępne w promocji.\n\n## Podsumowanie\n\nCzytaj regulamin przed aktywacją — to najprostszy sposób, by uniknąć nieporozumień przy wypłacie.",
+    "cover": "/images/blog/cover-1.svg",
+    "author": "marta-kowalczyk",
+    "publishedAt": "2026-03-12",
+    "category": "Poradniki",
+    "tags": ["bonus", "regulamin"],
+    "faq": [
+      {
+        "question": "Czy zawsze muszę obracać bonus?",
+        "answer": "Zależy od regulaminu operatora. Część promocji ma wymóg obrotu, inne są prostsze — zawsze sprawdź zasady przed grą."
+      }
+    ]
+  },
+  {
+    "title": "BLIK w kasynach online: szybkie wpłaty i bezpieczeństwo",
+    "slug": "blik-w-kasynach-online",
+    "excerpt": "Dlaczego BLIK cieszy się popularnością wśród polskich graczy i na co uważać przy pierwszej wpłacie.",
+    "content": "## BLIK — wygoda\n\nPłatność mobilna pozwala zaksięgować depozyt w kilka chwil, bez kopiowania długich numerów konta.\n\n## Dobre praktyki\n\nUżywaj wyłącznie oficjalnej aplikacji banku i potwierdzaj transakcje tylko wtedy, gdy sam inicjujesz wpłatę w kasynie.\n\n## Podsumowanie\n\nBLIK to wygodna metoda, pod warunkiem że grasz u licencjonowanych operatorów i pilnujesz limitów odpowiedzialnej gry.",
+    "cover": "/images/blog/cover-2.svg",
+    "author": "piotr-nowak",
+    "publishedAt": "2026-02-28",
+    "category": "Płatności",
+    "tags": ["BLIK", "depozyt"]
+  },
+  {
+    "title": "Nowe kasyna 2026: co sprawdzamy w pierwszej kolejności",
+    "slug": "nowe-kasyna-2026-co-sprawdzamy",
+    "excerpt": "Nasz zespół weryfikuje licencję, politykę KYC, czasy wypłat i jakość UX zanim poleci nową markę.",
+    "content": "## Kryteria\n\nKażda nowa marka przechodzi przez listę kontrolną: licencja, transparentność bonusów, dostępność wsparcia i testy płatności.\n\n## Dlaczego to ważne\n\nRynek dynamicznie się zmienia — regularna weryfikacja pozwala utrzymać aktualność rankingu.\n\n## Podsumowanie\n\nNowe kasyna mogą wprowadzać świeże promocje, ale bezpieczeństwo gracza pozostaje priorytetem.",
+    "cover": "/images/blog/cover-3.svg",
+    "author": "marta-kowalczyk",
+    "publishedAt": "2026-01-08",
+    "category": "Aktualności",
+    "tags": ["ranking", "nowe kasyna"]
+  }
+]

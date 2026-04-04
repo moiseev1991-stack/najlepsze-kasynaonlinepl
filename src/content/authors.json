@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Marta Kowalczyk",
+    "slug": "marta-kowalczyk",
+    "avatar": "/images/authors/marta.svg",
+    "role": "Redaktorka naczelna",
+    "bio": "Od ponad 8 lat analizuje branżę iGaming w Europie Środkowej. Specjalizuje się w ocenie warunków bonusów i transparentności regulaminów.",
+    "email": "redakcja@najlepsze-kasynaonline.com.pl"
+  },
+  {
+    "name": "Piotr Nowak",
+    "slug": "piotr-nowak",
+    "avatar": "/images/authors/piotr.svg",
+    "role": "Analityk produktu",
+    "bio": "Testuje płatności, czasy wypłat i jakość obsługi w wybranych operatorach. Absolwent finansów.",
+    "email": "piotr.nowak@najlepsze-kasynaonline.com.pl"
+  }
+]

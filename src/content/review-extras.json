@@ -1,0 +1,86 @@
+{
+  "vox-casino": {
+    "ratingCriteria": [
+      { "name": "Licencja i bezpieczeństwo", "score": 9.2, "comment": "Jasna komunikacja licencji, szyfrowanie połączenia i polityka KYC opisana w FAQ." },
+      { "name": "Bonusy i promocje", "score": 8.9, "comment": "Regulamin bonusu powitalnego jest czytelny; obrót w normie rynkowej dla tej klasy ofert." },
+      { "name": "Płatności", "score": 9.0, "comment": "BLIK i portfele elektroniczne działają stabilnie; czasy wypłat zgodne z deklaracjami w teście redakcyjnym." },
+      { "name": "Gry i dostawcy", "score": 9.1, "comment": "Szeroki wybór slotów i solidna sekcja live." },
+      { "name": "Obsługa i UX", "score": 8.7, "comment": "Chat dostępny przez większość doby; czas odpowiedzi akceptowalny w dni robocze." }
+    ],
+    "mobileText": "Interfejs responsywny: depozyt, aktywacja bonusu i wypłata dały się przejść bez przeszkód na Androidzie i iOS w aktualnej przeglądarce.",
+    "gamesText": "Biblioteka obejmuje tysiące tytułów od wielu dostawców; filtry według dostawcy ułatwiają nawigację. Stoły RNG i live są wyraźnie oddzielone.",
+    "bonusesText": "Bonus powitalny aktywujemy w kasjerze — pamiętaj o limicie czasu i liście slotów wyłączonych z obrotu. Cotygodniowe promocje sprawdzaj w zakładce ofert.",
+    "paymentsText": "Wpłata BLIKiem została zaksięgowana w kilka minut. Wypłata na e-portfel po weryfikacji mieściła się w deklarowanym przedziale czasowym.",
+    "trustNote": "Numer licencji i dane operatora zawsze weryfikuj u regulatora — nasza recenzja nie zastępuje porady prawnej."
+  },
+  "vulkan-vegas": {
+    "ratingCriteria": [
+      { "name": "Licencja i bezpieczeństwo", "score": 8.8, "comment": "Standardowe procedury AML; dokumentacja dostępna przed rejestracją." },
+      { "name": "Bonusy i promocje", "score": 8.5, "comment": "Duży pakiet powitalny — przy wyższym obrocie warto planować sesję." },
+      { "name": "Płatności", "score": 8.6, "comment": "Wiele metod; pierwsza wypłata może trwać dłużej do czasu pełnej weryfikacji." },
+      { "name": "Gry i dostawcy", "score": 9.2, "comment": "Bardzo szeroka biblioteka; jackpoty i turnieje na stałe w kalendarzu." },
+      { "name": "Obsługa i UX", "score": 8.4, "comment": "Intuicyjne menu; kolejki na chacie w weekendy bywają dłuższe." }
+    ],
+    "mobileText": "Aplikacja webowa sprawdza się na tablecie; kluczowe funkcje dostępne bez natywnej aplikacji.",
+    "gamesText": "Duży wybór automatów i gier stołowych; sekcja live rozbudowana. Gracze szukający niszowych gier karcianych znajdą umiarkowany wybór.",
+    "bonusesText": "Cashback i turnieje mają osobne regulaminy — czytaj limity stawek przy aktywnym bonusie.",
+    "paymentsText": "PayPal i Skrill zwiększają elastyczność; sprawdź minimalne kwoty wypłat dla wybranej metody.",
+    "trustNote": "Marka znana na rynkach międzynarodowych — zawsze potwierdź dostępność usługi w Twojej lokalizacji."
+  },
+  "spin-city": {
+    "ratingCriteria": [
+      { "name": "Licencja i bezpieczeństwo", "score": 8.2, "comment": "Młodszy operator — śledzimy rozwój polityki odpowiedzialnej gry." },
+      { "name": "Bonusy i promocje", "score": 8.4, "comment": "Niski próg depozytu ułatwia start; warunki promocji czytelne na stronie kampanii." },
+      { "name": "Płatności", "score": 8.3, "comment": "BLIK i MuchBetter działają sprawnie w teście wpłaty." },
+      { "name": "Gry i dostawcy", "score": 8.1, "comment": "Skupienie na slotach; mniejszy wybór gier stołowych RNG." },
+      { "name": "Obsługa i UX", "score": 8.0, "comment": "Prosty interfejs; szczytowe godziny mogą wydłużyć odpowiedź supportu." }
+    ],
+    "mobileText": "Lekka strona mobilna — testowana na średniej szerokości ekranu bez zacięć przy scrollowaniu lobby.",
+    "gamesText": "Biblioteka rośnie; turnieje tygodniowe dodają dynamiki graczom regularnym.",
+    "bonusesText": "Free spiny z pakietu powitalnego — sprawdź przypisanie gier i wartość pojedynczego spinu.",
+    "paymentsText": "Minimalna wpłata niska; potwierdź zgodność metody wypłaty z polityką bonusu.",
+    "trustNote": "Nowsza marka — aktualizujemy ocenę przy większych zmianach regulaminu."
+  },
+  "verde-casino": {
+    "ratingCriteria": [
+      { "name": "Licencja i bezpieczeństwo", "score": 8.6, "comment": "Informacje o licencji w stopce; narzędzia limitów dostępne po zalogowaniu." },
+      { "name": "Bonusy i promocje", "score": 8.5, "comment": "Cashback wymaga śledzenia okresów rozliczeniowych — regulamin szczegółowy." },
+      { "name": "Płatności", "score": 8.4, "comment": "Przelewy24 i portfele — sensowne limity dla średnich wygranych." },
+      { "name": "Gry i dostawcy", "score": 8.7, "comment": "Dobra rotacja nowych slotów; sekcja live w rozsądnym rozmiarze." },
+      { "name": "Obsługa i UX", "score": 8.5, "comment": "Czytelna nawigacja; FAQ pomaga przed kontaktem z chatem." }
+    ],
+    "mobileText": "Layout responsywny; kluczowe sekcje dostępne z dolnego menu na telefonie.",
+    "gamesText": "Filtry według zmienności pomagają dobrać slot do stylu gry.",
+    "bonusesText": "Program reload — sprawdzaj minimalną kwotę kwalifikującą do każdej promocji.",
+    "paymentsText": "AstroPay dostępny dla części graczy — weryfikuj w kasie przed wpłatą.",
+    "trustNote": "Transparentność komunikatu marketingowego w porównaniu z regulaminem oceniamy pozytywnie."
+  },
+  "roman-casino": {
+    "ratingCriteria": [
+      { "name": "Licencja i bezpieczeństwo", "score": 7.9, "comment": "Standard branżowy; dokumenty przed pierwszą większą wypłatą." },
+      { "name": "Bonusy i promocje", "score": 7.8, "comment": "Wyższy obrót na części ofert — czytaj drobnym drukiem." },
+      { "name": "Płatności", "score": 7.7, "comment": "Mniejszy wybór kanałów wypłat niż u liderów rankingu." },
+      { "name": "Gry i dostawcy", "score": 8.0, "comment": "Lobby wystarczające dla fanów slotów; ograniczony poker wideo." },
+      { "name": "Obsługa i UX", "score": 7.9, "comment": "Proste menu; mniej opcji personalizacji niż u większych marek." }
+    ],
+    "mobileText": "Podstawowa kompatybilność mobilna bez problemów przy standardowej rozdzielczości.",
+    "gamesText": "Misje dla graczy zwiększają zaangażowanie — sprawdź warunki naliczania punktów.",
+    "bonusesText": "Spiny powitalne — lista gier i termin ważności w regulaminie promocji.",
+    "paymentsText": "Paysafecard do depozytów; wypłata często przelewem po weryfikacji.",
+    "trustNote": "Operator młodszy — obserwujemy stabilność wypłat w dłuższym horyzoncie."
+  },
+  "ice-casino": {
+    "ratingCriteria": [
+      { "name": "Licencja i bezpieczeństwo", "score": 9.0, "comment": "Dojrzała polityka KYC; jasne komunikaty przy limitach konta." },
+      { "name": "Bonusy i promocje", "score": 8.8, "comment": "Pakiet na kilka depozytów — rozplanuj budżet na cały cykl promocji." },
+      { "name": "Płatności", "score": 9.1, "comment": "Szybkie księgowania wpłat; wypłaty na portfel w dobrym czasie po weryfikacji." },
+      { "name": "Gry i dostawcy", "score": 9.0, "comment": "Duży wybór live i slotów; turnieje sieciowe na stałe." },
+      { "name": "Obsługa i UX", "score": 8.8, "comment": "Stabilna aplikacja mobilna; chat z krótkim czasem pierwszej odpowiedzi w teście." }
+    ],
+    "mobileText": "Aplikacja mobilna i wersja przeglądarkowa spójne wizualnie; notyfikacje o promocjach opcjonalne.",
+    "gamesText": "Jackpoty i stoły live reprezentowane przez uznanych dostawców.",
+    "bonusesText": "Kolejne bonusy od drugiej wpłaty — nie łącz bez sprawdzenia regulaminu cross-promocji.",
+    "paymentsText": "MuchBetter i BLIK przetestowane bez opóźnień przy wpłacie.",
+    "trustNote": "Marka z dłuższą historią — nadal weryfikuj aktualny numer licencji u regulatora."
+  }
+}
