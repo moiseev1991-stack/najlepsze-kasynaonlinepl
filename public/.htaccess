@@ -1,0 +1,19 @@
+# Apache (Plesk) — przekierowania zastępujące next.config redirects przy statycznym eksporcie
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  RewriteRule ^online-kasyna/?$ / [R=301,L]
+  RewriteRule ^recenzje-kasyn/?$ / [R=301,L]
+  RewriteRule ^recenzje/?$ / [R=301,L]
+  RewriteRule ^polityka-cookies/?$ /polityka-plikow-cookies/ [R=301,L]
+  RewriteRule ^kryteria-oceny-kasyn/?$ /kryteria-oceny/ [R=301,L]
+  RewriteRule ^legalne-kasyna-online/?$ /legalne-kasyna/ [R=301,L]
+  RewriteRule ^wyplacalne-kasyna-online/?$ /wyplacalne-kasyna-internetowe/ [R=301,L]
+  RewriteRule ^platnosci/blik/?$ /platnosci/kasyno-online-blik/ [R=301,L]
+  RewriteRule ^platnosci/skrill/?$ /platnosci/kasyno-online-skrill/ [R=301,L]
+  RewriteRule ^platnosci/przelewy24/?$ /platnosci/kasyno-przelewy24/ [R=301,L]
+  RewriteRule ^kasyna-z-minimalnym-depozytem/5-zl/?$ /kasyna-z-minimalnym-depozytem/kasyno-5-zl/ [R=301,L]
+  RewriteRule ^kasyna-z-minimalnym-depozytem/10-zl/?$ /kasyna-z-minimalnym-depozytem/kasyna-z-depozytem-za-10-zl/ [R=301,L]
+  RewriteRule ^kasyna-z-minimalnym-depozytem/20-zl/?$ /kasyna-z-minimalnym-depozytem/kasyno-20-zl/ [R=301,L]
+</IfModule>

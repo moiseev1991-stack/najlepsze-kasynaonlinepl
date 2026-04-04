@@ -15,6 +15,7 @@
     "reviews:build": "node scripts/build-review-editorial.mjs",
     "prebuild": "node scripts/build-review-editorial.mjs",
     "build": "next build",
+    "build:static": "next build && node scripts/sync-out-to-site.mjs",
     "check": "npm run clean && npm run build",
     "start": "next start",
     "start:3055": "next start -p 3055",

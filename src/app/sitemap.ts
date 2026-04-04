@@ -3,6 +3,8 @@ import { segmentsToUrl } from "@/lib/paths";
 import { siteConfig } from "@/lib/site-config";
 import { getAllSegmentPaths, resolvePage } from "@/lib/routes";
 
+export const dynamic = "force-static";
+
 const baseUrl = siteConfig.url.replace(/\/$/, "");
 
 function priorityForSegments(segments: string[]): number {

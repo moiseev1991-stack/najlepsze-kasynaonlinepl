@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://najlepsze-kasynaonline.com.pl/sitemap.xml
