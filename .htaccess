@@ -1,5 +1,7 @@
 # Plesk: document root = /httpdocs, statyczny Next leży w /httpdocs/site/
 # Ten plik musi leżeć w katalogu głównym repozytorium (po deploy: httpdocs/.htaccess).
+DirectoryIndex disabled
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
