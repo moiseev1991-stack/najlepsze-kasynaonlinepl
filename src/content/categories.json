@@ -111,7 +111,7 @@
     ]
   },
   {
-    "slug": "kasyna-z-minimalnym-depozytem",
+    "slug": "minimalny-depozyt",
     "title": "Kasyna z minimalnym depozytem",
     "h1": "Kasyna z niskim depozytem",
     "intro": "Niski próg depozytu pomaga zapoznać się z platformą przy małym zaangażowaniu finansowym. Poniżej linki do podstron z konkretnymi kwotami.",
@@ -123,9 +123,9 @@
       }
     ],
     "relatedLinks": [
-      { "href": "/kasyna-z-minimalnym-depozytem/kasyno-5-zl/", "label": "Depozyt od 5 zł" },
-      { "href": "/kasyna-z-minimalnym-depozytem/kasyna-z-depozytem-za-10-zl/", "label": "Depozyt od 10 zł" },
-      { "href": "/kasyna-z-minimalnym-depozytem/kasyno-20-zl/", "label": "Depozyt od 20 zł" }
+      { "href": "/minimalny-depozyt/5zl/", "label": "Depozyt od 5 zł" },
+      { "href": "/minimalny-depozyt/10zl/", "label": "Depozyt od 10 zł" },
+      { "href": "/minimalny-depozyt/20zl/", "label": "Depozyt od 20 zł" }
     ]
   },
   {

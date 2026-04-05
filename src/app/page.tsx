@@ -38,7 +38,7 @@ const categoryLinks = [
   { name: "Najlepsze kasyna", href: "/najlepsze-kasyna-online/" },
   { name: "Legalne kasyna", href: "/legalne-kasyna/" },
   { name: "Kasyna na żywo", href: "/kasyna-na-zywo/" },
-  { name: "Niski depozyt", href: "/kasyna-z-minimalnym-depozytem/" },
+  { name: "Niski depozyt", href: "/minimalny-depozyt/" },
   { name: "Wypłacalne kasyna", href: "/wyplacalne-kasyna-internetowe/" },
 ];
 

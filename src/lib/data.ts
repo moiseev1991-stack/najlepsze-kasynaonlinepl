@@ -9,6 +9,7 @@ import type {
   PaymentMethodPage,
   TrustPageContent,
 } from "@/lib/types";
+import { affiliateGoUrl, resolveAffiliateLikeHref } from "@/config/affiliate-urls";
 import casinosData from "@/content/casinos.json";
 import authorsData from "@/content/authors.json";
 import blogData from "@/content/blog.json";
@@ -20,7 +21,16 @@ import categoriesData from "@/content/categories.json";
 import trustData from "@/content/trust.json";
 import reviewExtras from "@/content/review-extras.json";
 
-export const casinos = casinosData as Casino[];
+function withResolvedAffiliateUrls(c: Casino): Casino {
+  const affiliateUrl = affiliateGoUrl(c.slug, c.affiliateUrl);
+  const problemsReportOptions = c.problemsReportOptions?.map((o) => ({
+    ...o,
+    href: resolveAffiliateLikeHref(c.slug, o.href),
+  }));
+  return { ...c, affiliateUrl, problemsReportOptions };
+}
+
+export const casinos = (casinosData as Casino[]).map(withResolvedAffiliateUrls);
 export const authors = authorsData as Author[];
 export const blogPosts = blogData as BlogPost[];
 export const payments = paymentsData as PaymentMethodPage[];
@@ -111,6 +121,7 @@ export function getCasinosForCategory(slug: string): Casino[] {
     case "darmowa-kasa-bez-depozytu":
       return byRating();
     case "najlepsze-kasyna-online":
+    case "minimalny-depozyt":
     default:
       return byRating();
   }

@@ -5,6 +5,18 @@ import { CasinoRatingCard } from "@/components/casino/CasinoRatingCard";
 import { FiltersBar } from "@/components/ui/FiltersBar";
 import type { Casino } from "@/lib/types";
 
+const VULKANSPIELE_SLUG = "vulkanspiele-casino";
+
+/** Editorial: keep Vulkanspiele visible in the top 3 on rating-sorted views. */
+function pinVulkanspieleThird(list: Casino[]): Casino[] {
+  const vi = list.findIndex((c) => c.slug === VULKANSPIELE_SLUG);
+  if (vi < 0) return list;
+  const v = list[vi]!;
+  const rest = list.filter((c) => c.slug !== VULKANSPIELE_SLUG);
+  if (rest.length < 2) return list;
+  return [...rest.slice(0, 2), v, ...rest.slice(2)];
+}
+
 type Props = {
   casinos: Casino[];
   filterTags: string[];
@@ -14,17 +26,26 @@ export function HomeRankingSection({ casinos, filterTags }: Props) {
   const [active, setActive] = useState(filterTags[0] ?? "Wszystkie kasyna");
 
   const filtered = useMemo(() => {
-    if (active === "Nowe kasyna" || active === "Nowe") return casinos.filter((c) => c.isNew);
-    if (active === "Popularny" || active === "Popularne") {
+    const byRating = () => [...casinos].sort((a, b) => b.ratingOverall - a.ratingOverall);
+    const skipVulkanPin =
+      active === "Nowe kasyna" ||
+      active === "Nowe" ||
+      active === "Popularny" ||
+      active === "Popularne" ||
+      active === "Szybkie wypłaty";
+
+    let list: Casino[];
+    if (active === "Nowe kasyna" || active === "Nowe") list = casinos.filter((c) => c.isNew);
+    else if (active === "Popularny" || active === "Popularne") {
       const p = casinos.filter((c) => c.isPopular);
-      return p.length ? p : casinos;
-    }
-    if (active === "Najwyższa ocena" || active === "Wysokie oceny")
-      return [...casinos].sort((a, b) => b.ratingOverall - a.ratingOverall);
-    if (active === "Szybkie wypłaty") return casinos.filter((c) => c.withdrawalTime.includes("24"));
-    if (active === "Wszystkie kasyna" || active === "Wszystkie")
-      return [...casinos].sort((a, b) => b.ratingOverall - a.ratingOverall);
-    return [...casinos].sort((a, b) => b.ratingOverall - a.ratingOverall);
+      list = p.length ? p : casinos;
+    } else if (active === "Najwyższa ocena" || active === "Wysokie oceny") list = byRating();
+    else if (active === "Szybkie wypłaty") list = casinos.filter((c) => c.withdrawalTime.includes("24"));
+    else if (active === "Wszystkie kasyna" || active === "Wszystkie") list = byRating();
+    else list = byRating();
+
+    if (skipVulkanPin) return list;
+    return pinVulkanspieleThird(list);
   }, [active, casinos]);
 
   return (

@@ -11,7 +11,7 @@ export function MinDepositParentTemplate() {
     { label: "Kasyna z minimalnym depozytem" },
   ];
 
-  const list = getCasinosForCategory("kasyna-z-minimalnym-depozytem");
+  const list = getCasinosForCategory("minimalny-depozyt");
 
   return (
     <div className="mx-auto max-w-6xl space-y-10 px-4 py-10">
@@ -30,7 +30,7 @@ export function MinDepositParentTemplate() {
           {minDeposits.map((m) => (
             <Link
               key={m.slug}
-              href={`/kasyna-z-minimalnym-depozytem/${m.slug}/`}
+              href={`/minimalny-depozyt/${m.slug}/`}
               className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-brand-800 ring-1 ring-slate-200 hover:ring-brand-300"
             >
               {m.amountLabel}
@@ -83,7 +83,7 @@ export function MinDepositChildTemplate({ page, breadcrumbs }: ChildProps) {
       {page.faq.length ? <FAQAccordion items={page.faq} /> : null}
 
       <p className="text-sm text-slate-600">
-        <Link href="/kasyna-z-minimalnym-depozytem/" className="font-semibold text-brand-700 hover:underline">
+        <Link href="/minimalny-depozyt/" className="font-semibold text-brand-700 hover:underline">
           Wróć do przeglądu progów depozytu
         </Link>
       </p>

@@ -13,7 +13,12 @@
   RewriteRule ^platnosci/blik/?$ /platnosci/kasyno-online-blik/ [R=301,L]
   RewriteRule ^platnosci/skrill/?$ /platnosci/kasyno-online-skrill/ [R=301,L]
   RewriteRule ^platnosci/przelewy24/?$ /platnosci/kasyno-przelewy24/ [R=301,L]
-  RewriteRule ^kasyna-z-minimalnym-depozytem/5-zl/?$ /kasyna-z-minimalnym-depozytem/kasyno-5-zl/ [R=301,L]
-  RewriteRule ^kasyna-z-minimalnym-depozytem/10-zl/?$ /kasyna-z-minimalnym-depozytem/kasyna-z-depozytem-za-10-zl/ [R=301,L]
-  RewriteRule ^kasyna-z-minimalnym-depozytem/20-zl/?$ /kasyna-z-minimalnym-depozytem/kasyno-20-zl/ [R=301,L]
+  # Stare URL-e minimalnego depozytu → /minimalny-depozyt/…
+  RewriteRule ^kasyna-z-minimalnym-depozytem/kasyno-5-zl/?$ /minimalny-depozyt/5zl/ [R=301,L]
+  RewriteRule ^kasyna-z-minimalnym-depozytem/kasyna-z-depozytem-za-10-zl/?$ /minimalny-depozyt/10zl/ [R=301,L]
+  RewriteRule ^kasyna-z-minimalnym-depozytem/kasyno-20-zl/?$ /minimalny-depozyt/20zl/ [R=301,L]
+  RewriteRule ^kasyna-z-minimalnym-depozytem/5-zl/?$ /minimalny-depozyt/5zl/ [R=301,L]
+  RewriteRule ^kasyna-z-minimalnym-depozytem/10-zl/?$ /minimalny-depozyt/10zl/ [R=301,L]
+  RewriteRule ^kasyna-z-minimalnym-depozytem/20-zl/?$ /minimalny-depozyt/20zl/ [R=301,L]
+  RewriteRule ^kasyna-z-minimalnym-depozytem/?$ /minimalny-depozyt/ [R=301,L]
 </IfModule>

@@ -42,7 +42,7 @@ export function resolvePage(segments: string[]): PageKind | null {
 
   if (segments.length === 1 && a) {
     if (a === "platnosci") return { type: "payment-index" };
-    if (a === "kasyna-z-minimalnym-depozytem") return { type: "min-deposit-parent" };
+    if (a === "minimalny-depozyt") return { type: "min-deposit-parent" };
     if (a === "blog") return { type: "blog-list" };
     if (categorySlugSet.has(a)) return { type: "category", slug: a };
     if (bonusSlugSet.has(a)) return { type: "bonus", slug: a };
@@ -54,8 +54,7 @@ export function resolvePage(segments: string[]): PageKind | null {
 
   if (segments.length === 2 && a && b) {
     if (a === "platnosci" && paymentSlugSet.has(b)) return { type: "payment", slug: b };
-    if (a === "kasyna-z-minimalnym-depozytem" && minDepSlugSet.has(b))
-      return { type: "min-deposit", slug: b };
+    if (a === "minimalny-depozyt" && minDepSlugSet.has(b)) return { type: "min-deposit", slug: b };
     if (a === "blog" && blogSlugSet.has(b)) return { type: "blog-post", slug: b };
   }
 
@@ -80,8 +79,8 @@ export function getAllSegmentPaths(): string[][] {
   out.push(["platnosci"]);
   payments.forEach((p) => out.push(["platnosci", p.slug]));
 
-  out.push(["kasyna-z-minimalnym-depozytem"]);
-  minDeposits.forEach((m) => out.push(["kasyna-z-minimalnym-depozytem", m.slug]));
+  out.push(["minimalny-depozyt"]);
+  minDeposits.forEach((m) => out.push(["minimalny-depozyt", m.slug]));
 
   out.push(["blog"]);
   blogPosts.forEach((p) => out.push(["blog", p.slug]));

@@ -29,6 +29,46 @@ export function CasinoReviewTemplate({ casino, extras, editorial, author, breadc
 
       <ReviewHero casino={casino} author={author} />
 
+      <div className="space-y-10">
+        <section>
+          <h2 className="text-xl font-bold text-slate-900">Szczegóły operatora</h2>
+          <div className="mt-4">
+            <DetailsTable casino={casino} />
+          </div>
+        </section>
+
+        <ProsCons pros={casino.pros} cons={casino.cons} />
+
+        {extras?.ratingCriteria?.length ? (
+          <RatingBreakdown criteria={extras.ratingCriteria} />
+        ) : null}
+
+        <section className="rounded-2xl border border-slate-200 bg-white p-6">
+          <h2 className="text-xl font-bold text-slate-900">Ocena szczegółowa — obszary</h2>
+          <div className="mt-4 space-y-4 text-sm text-slate-700">
+            <p>
+              <strong className="text-slate-900">Płatności:</strong>{" "}
+              {extras?.paymentsText ??
+                `Metody: ${casino.paymentMethods.join(", ")}. Czasy wypłat deklarowane: ${casino.withdrawalTime}.`}
+            </p>
+            <p>
+              <strong className="text-slate-900">Gry:</strong>{" "}
+              {extras?.gamesText ?? `Szacowana biblioteka: ok. ${casino.gameCount} tytułów (zależnie od rynku).`}
+            </p>
+            <p>
+              <strong className="text-slate-900">Bonusy:</strong>{" "}
+              {extras?.bonusesText ??
+                "Regulamin promocji określa obrót, limity stawek i wykluczone gry — czytaj go przed aktywacją."}
+            </p>
+            <p>
+              <strong className="text-slate-900">Mobilność:</strong>{" "}
+              {extras?.mobileText ??
+                "Sprawdź responsywność lobby i dostępność płatności na swoim telefonie przed większą wpłatą."}
+            </p>
+          </div>
+        </section>
+      </div>
+
       {editorial?.body ? (
         <section
           className="rounded-2xl border border-slate-200 bg-white p-6 md:p-8"
@@ -82,44 +122,6 @@ export function CasinoReviewTemplate({ casino, extras, editorial, author, breadc
           >
             Porównaj z rankingiem
           </Link>
-        </div>
-      </section>
-
-      <section>
-        <h2 className="text-xl font-bold text-slate-900">Szczegóły operatora</h2>
-        <div className="mt-4">
-          <DetailsTable casino={casino} />
-        </div>
-      </section>
-
-      <ProsCons pros={casino.pros} cons={casino.cons} />
-
-      {extras?.ratingCriteria?.length ? (
-        <RatingBreakdown criteria={extras.ratingCriteria} />
-      ) : null}
-
-      <section className="rounded-2xl border border-slate-200 bg-white p-6">
-        <h2 className="text-xl font-bold text-slate-900">Ocena szczegółowa — obszary</h2>
-        <div className="mt-4 space-y-4 text-sm text-slate-700">
-          <p>
-            <strong className="text-slate-900">Płatności:</strong>{" "}
-            {extras?.paymentsText ??
-              `Metody: ${casino.paymentMethods.join(", ")}. Czasy wypłat deklarowane: ${casino.withdrawalTime}.`}
-          </p>
-          <p>
-            <strong className="text-slate-900">Gry:</strong>{" "}
-            {extras?.gamesText ?? `Szacowana biblioteka: ok. ${casino.gameCount} tytułów (zależnie od rynku).`}
-          </p>
-          <p>
-            <strong className="text-slate-900">Bonusy:</strong>{" "}
-            {extras?.bonusesText ??
-              "Regulamin promocji określa obrót, limity stawek i wykluczone gry — czytaj go przed aktywacją."}
-          </p>
-          <p>
-            <strong className="text-slate-900">Mobilność:</strong>{" "}
-            {extras?.mobileText ??
-              "Sprawdź responsywność lobby i dostępność płatności na swoim telefonie przed większą wpłatą."}
-          </p>
         </div>
       </section>
 

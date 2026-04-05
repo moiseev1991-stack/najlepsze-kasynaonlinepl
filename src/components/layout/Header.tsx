@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { MegaMenu, MegaMenuMobile } from "@/components/layout/MegaMenu";
-import { SearchTrigger } from "@/components/layout/SearchTrigger";
 import { BrandLogo } from "@/components/brand/BrandLogo";
 
 export function Header() {
@@ -14,10 +13,6 @@ export function Header() {
         <BrandLogo className="shrink-0" />
 
         <MegaMenu />
-
-        <div className="flex items-center gap-2">
-          <SearchTrigger />
-        </div>
 
         <button
           type="button"

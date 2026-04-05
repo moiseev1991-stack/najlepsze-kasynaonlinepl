@@ -189,7 +189,7 @@ export function PathPage({ segments }: Props) {
             page={m}
             breadcrumbs={crumbsLocal([
               { label: "Strona główna", href: "/" },
-              { label: "Minimalny depozyt", href: "/kasyna-z-minimalnym-depozytem/" },
+              { label: "Minimalny depozyt", href: "/minimalny-depozyt/" },
               { label: m.amountLabel },
             ])}
           />

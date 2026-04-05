@@ -1,10 +1,12 @@
 import Link from "next/link";
+import { pageOfferRegisterUrl } from "@/config/affiliate-urls";
 import { pageOfferConfig } from "@/config/page-offer";
 
 export function PageOfferBar() {
   if (!pageOfferConfig.enabled) return null;
 
   const showDownload = Boolean(pageOfferConfig.download.href?.trim());
+  const registerHref = pageOfferRegisterUrl(pageOfferConfig.register.href);
 
   return (
     <div className="relative border-b border-nk-border/80 bg-gradient-to-r from-nk-rose/30 via-nk-surface/95 to-nk-blue-soft/40">
@@ -34,7 +36,7 @@ export function PageOfferBar() {
         </div>
         <div className="flex shrink-0 flex-wrap gap-2 sm:justify-end">
           <a
-            href={pageOfferConfig.register.href}
+            href={registerHref}
             className="inline-flex min-h-[44px] min-w-[10rem] items-center justify-center rounded-2xl bg-brand-600 px-5 py-2.5 text-center text-sm font-bold text-white shadow-md transition hover:bg-brand-700 hover:shadow-cardHover"
             rel="nofollow sponsored noopener noreferrer"
             target="_blank"
