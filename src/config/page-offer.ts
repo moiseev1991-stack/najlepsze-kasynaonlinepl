@@ -9,7 +9,7 @@ export const pageOfferConfig = {
   tagline: "Bonus powitalny dla czytelników — szczegóły u operatora",
   register: {
     label: "Zarejestruj się",
-    href: "https://example.com/rejestracja-partnerska",
+    href: "#",
   },
   download: {
     label: "Pobierz aplikację",

@@ -8,9 +8,9 @@ export const siteConfig = {
   twitterHandle: "@najlepszekasyna",
   contactEmail: "redakcja@najlepsze-kasynaonline.com.pl",
   socialLinks: [
-    { label: "Facebook", href: "https://www.facebook.com/", rel: "noopener noreferrer" },
-    { label: "X (Twitter)", href: "https://twitter.com/", rel: "noopener noreferrer" },
-    { label: "YouTube", href: "https://www.youtube.com/", rel: "noopener noreferrer" },
+    { label: "Facebook", href: "#", rel: "noopener noreferrer" },
+    { label: "X (Twitter)", href: "#", rel: "noopener noreferrer" },
+    { label: "YouTube", href: "#", rel: "noopener noreferrer" },
   ],
   organization: {
     name: "Najlepsze Kasyna Online",
