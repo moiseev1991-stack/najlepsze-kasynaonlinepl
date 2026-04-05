@@ -13,11 +13,16 @@ import { buildMetadata, faqPageSchema } from "@/lib/seo";
 import { homeContent } from "@/lib/home-content";
 import { casinos } from "@/lib/data";
 
-export const metadata: Metadata = buildMetadata({
-  title: "Ranking kasyn online 2026",
-  description: homeContent.hero.subtitle,
-  path: "/",
-});
+export const metadata: Metadata = {
+  ...buildMetadata({
+    title: "Ranking kasyn online 2026",
+    description: homeContent.hero.subtitle,
+    path: "/",
+  }),
+  verification: {
+    google: "03ZOgableLpOmpLlgTQW29yTZs-kWFP91Fv_-0OWCaQ",
+  },
+};
 
 const paymentLinks = [
   { name: "BLIK", href: "/platnosci/kasyno-online-blik/" },
