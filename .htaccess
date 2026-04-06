@@ -22,6 +22,12 @@ ErrorDocument 404 /site/404.html
   RewriteCond %{DOCUMENT_ROOT}/site%{REQUEST_URI} -f
   RewriteRule . site%{REQUEST_URI} [L]
 
+  # Next export: kanoniczny URL z końcowym /. Bez tego /foo → 404 (foo/index.html nie trafia w regułę poniżej).
+  RewriteCond %{DOCUMENT_ROOT}/site%{REQUEST_URI} !-f
+  RewriteCond %{REQUEST_URI} !/$
+  RewriteCond %{DOCUMENT_ROOT}/site%{REQUEST_URI}/index.html -f
+  RewriteRule ^(.*)$ /$1/ [R=301,L]
+
   # /ścieżka/ → site/ścieżka/index.html
   RewriteCond %{DOCUMENT_ROOT}/site%{REQUEST_URI}index.html -f
   RewriteRule . site%{REQUEST_URI}index.html [L]

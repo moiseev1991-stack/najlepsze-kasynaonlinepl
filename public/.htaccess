@@ -6,6 +6,12 @@ ErrorDocument 404 /404.html
   RewriteEngine On
   RewriteBase /
 
+  # Kanoniczny URL z końcowym / (Next trailingSlash) — document root = site/
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_URI} !/$
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}/index.html -f
+  RewriteRule ^(.*)$ /$1/ [R=301,L]
+
   RewriteRule ^online-kasyna/?$ / [R=301,L]
   RewriteRule ^recenzje-kasyn/?$ / [R=301,L]
   RewriteRule ^recenzje/?$ / [R=301,L]
