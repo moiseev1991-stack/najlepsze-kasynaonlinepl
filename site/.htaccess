@@ -1,4 +1,7 @@
 # Apache (Plesk) — przekierowania zastępujące next.config redirects przy statycznym eksporcie
+# Gdy document root = katalog site/ (statyczny eksport).
+ErrorDocument 404 /404.html
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /

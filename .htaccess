@@ -1,6 +1,9 @@
 # Plesk: document root = /httpdocs, statyczny Next leży w /httpdocs/site/
 # Ten plik musi leżeć w katalogu głównym repozytorium (po deploy: httpdocs/.htaccess).
-DirectoryIndex disabled
+# Usuń domyślny index.html z Pleska w httpdocs (README) — nie używaj DirectoryIndex disabled,
+# bo psuje index.html w podkatalogach przy document root = httpdocs/site/.
+
+ErrorDocument 404 /site/404.html
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
@@ -8,6 +11,9 @@ DirectoryIndex disabled
 
   # Nie serwuj kodu źródłowego z katalogu deploy
   RewriteRule ^(src|scripts|text|site\.git)(/|$) - [F,L]
+
+  # Domyślny plik Pleska w httpdocs — serwuj statyczną stronę z site/
+  RewriteRule ^index\.html$ site/index.html [L]
 
   # Strona główna
   RewriteRule ^$ site/index.html [L]
