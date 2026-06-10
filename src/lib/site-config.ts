@@ -5,7 +5,8 @@ export const siteConfig = {
   locale: "pl_PL",
   description:
     "Porównujemy legalne kasyna online w Polsce: bonusy, płatności, gry i bezpieczeństwo. Redakcyjne recenzje i aktualne rankingi.",
-  twitterHandle: "@najlepszekasyna",
+  /** Pozostawiamy puste — bez realnego profilu na X/Twitter, nie emitujemy twitter:creator (anti-footprint). */
+  twitterHandle: "",
   contactEmail: "redakcja@najlepsze-kasynaonline.com.pl",
   socialLinks: [
     { label: "Facebook", href: "#", rel: "noopener noreferrer" },

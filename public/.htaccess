@@ -6,6 +6,10 @@ ErrorDocument 404 /404.html
   RewriteEngine On
   RewriteBase /
 
+  # Kanonizacja hosta: www → non-www 301 (jedna kanoniczna wersja serwisu)
+  RewriteCond %{HTTP_HOST} ^www\.najlepsze-kasynaonline\.com\.pl$ [NC]
+  RewriteRule ^(.*)$ https://najlepsze-kasynaonline.com.pl/$1 [R=301,L]
+
   # Kanoniczny URL z końcowym / (Next trailingSlash) — document root = site/
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_URI} !/$

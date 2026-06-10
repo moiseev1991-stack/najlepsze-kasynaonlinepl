@@ -6,7 +6,7 @@ export const homeContent = {
     "Powyższy ranking jest aktualizowany redakcyjnie: testujemy ścieżki rejestracji, czytamy regulaminy promocji i porównujemy deklarowane czasy wypłat. To nadal subiektywny przegląd — zawsze miej na uwadze własne limity czasu i budżetu oraz lokalne przepisy.",
   hero: {
     eyebrow: "Porównania kasyn online",
-    title: "Wybieraj kasyna online świadomie — rankingi, bonusy, płatności",
+    title: "Kasyno online — ranking najlepszych legalnych kasyn 2026",
     subtitle:
       "Redakcyjne recenzje, przejrzyste tabele i aktualne informacje o metodach wpłat. Bez gwarantowanych wygranych — za to z naciskiem na odpowiedzialną grę.",
     trustLine:

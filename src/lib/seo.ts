@@ -14,7 +14,7 @@ export function buildMetadata({
   title,
   description,
   path = "",
-  ogImage = "/og-default.svg",
+  ogImage = "/og-default.png",
   noIndex = false,
 }: BuildMetaInput): Metadata {
   const origin = getPublicSiteOrigin();
@@ -42,7 +42,7 @@ export function buildMetadata({
       title: fullTitle,
       description,
       images: [ogImage],
-      creator: siteConfig.twitterHandle,
+      ...(siteConfig.twitterHandle ? { creator: siteConfig.twitterHandle } : {}),
     },
   };
 }
@@ -88,11 +88,27 @@ export function reviewSchema(input: {
   ratingValue: number;
   bestRating?: number;
   worstRating?: number;
+  /** Number of opinions visible on the page (must match UI to avoid „misleading SD”) */
+  ratingCount?: number;
 }) {
+  const itemReviewed: Record<string, unknown> = {
+    "@type": "Organization",
+    name: input.name,
+    url: input.url,
+  };
+  if (typeof input.ratingCount === "number" && input.ratingCount > 0) {
+    itemReviewed.aggregateRating = {
+      "@type": "AggregateRating",
+      ratingValue: input.ratingValue,
+      bestRating: input.bestRating ?? 5,
+      worstRating: input.worstRating ?? 1,
+      ratingCount: input.ratingCount,
+    };
+  }
   return {
     "@context": "https://schema.org",
     "@type": "Review",
-    itemReviewed: { "@type": "Organization", name: input.name, url: input.url },
+    itemReviewed,
     reviewRating: {
       "@type": "Rating",
       ratingValue: input.ratingValue,
@@ -100,5 +116,33 @@ export function reviewSchema(input: {
       worstRating: input.worstRating ?? 1,
     },
     author: { "@type": "Organization", name: siteConfig.name },
+  };
+}
+
+export function websiteSchema() {
+  const origin = getPublicSiteOrigin();
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: siteConfig.name,
+    url: `${origin}/`,
+    inLanguage: "pl-PL",
+  };
+}
+
+export function itemListSchema(
+  items: { name: string; url: string }[],
+  listName?: string,
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    ...(listName ? { name: listName } : {}),
+    itemListElement: items.map((it, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: it.name,
+      url: it.url,
+    })),
   };
 }

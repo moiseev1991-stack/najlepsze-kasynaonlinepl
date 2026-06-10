@@ -213,6 +213,7 @@ export function PathPage({ segments }: Props) {
         ratingValue: casino.ratingOverall,
         bestRating: 5,
         worstRating: 1,
+        ratingCount: casino.votesCount,
       });
       return (
         <>

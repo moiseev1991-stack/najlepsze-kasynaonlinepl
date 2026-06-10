@@ -9,13 +9,14 @@ import { PaymentMethodsList } from "@/components/ui/PaymentMethodsList";
 import { SectionBackground } from "@/components/ui/SectionBackground";
 import { SurfaceCard } from "@/components/ui/SurfaceCard";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { buildMetadata, faqPageSchema } from "@/lib/seo";
+import { buildMetadata, faqPageSchema, itemListSchema, websiteSchema } from "@/lib/seo";
+import { toAbsoluteUrl } from "@/lib/breadcrumbs";
 import { homeContent } from "@/lib/home-content";
 import { casinos } from "@/lib/data";
 
 export const metadata: Metadata = {
   ...buildMetadata({
-    title: "Ranking kasyn online 2026",
+    title: "Kasyno Online 2026 — Ranking Legalnych Kasyn w Polsce",
     description: homeContent.hero.subtitle,
     path: "/",
   }),
@@ -50,8 +51,15 @@ const categoryLinks = [
 export default function HomePage() {
   const filterTags = ["Wszystkie kasyna", "Nowe kasyna", "Popularny", "Najwyższa ocena"];
 
+  const topRankingForLd = [...casinos]
+    .sort((a, b) => b.ratingOverall - a.ratingOverall)
+    .slice(0, 10)
+    .map((c) => ({ name: c.name, url: toAbsoluteUrl(`/${c.slug}/`) }));
+
   return (
     <div className="space-y-16 md:space-y-20">
+      <JsonLd data={websiteSchema()} />
+      <JsonLd data={itemListSchema(topRankingForLd, "Ranking najlepszych kasyn online 2026")} />
       <JsonLd data={faqPageSchema(homeContent.faq)} />
 
       <HeroSection
