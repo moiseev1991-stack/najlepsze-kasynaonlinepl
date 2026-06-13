@@ -62,21 +62,7 @@ export function PathPage({ segments }: Props) {
       const casinos =
         content.layoutMode === "hub" ? [] : getCasinosForCategory(page.slug);
       const bc = buildBreadcrumbSchema(segments, [content.title]);
-      const defaultRankingFaq =
-        page.slug === "najlepsze-kasyna-online"
-          ? [
-              {
-                question: "Jak często aktualizujecie ranking?",
-                answer: "Gdy pojawiają się istotne zmiany w ofercie lub regulaminie operatorów z naszej listy.",
-              },
-              {
-                question: "Czy ranking jest obiektywny?",
-                answer:
-                  "Stosujemy jednolite kryteria, ale ocena pozostaje subiektywna — zawsze czytaj też regulamin kasyna.",
-              },
-            ]
-          : undefined;
-      const faq = content.categoryFaq?.length ? content.categoryFaq : defaultRankingFaq;
+      const faq = content.categoryFaq?.length ? content.categoryFaq : undefined;
 
       return (
         <>

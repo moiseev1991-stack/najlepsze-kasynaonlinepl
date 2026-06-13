@@ -41,7 +41,7 @@ const bonusLinks = [
 ];
 
 const categoryLinks = [
-  { name: "Najlepsze kasyna", href: "/najlepsze-kasyna-online/" },
+  { name: "Najlepsze kasyna", href: "/" },
   { name: "Legalne kasyna", href: "/legalne-kasyna/" },
   { name: "Kasyna na żywo", href: "/kasyna-na-zywo/" },
   { name: "Niski depozyt", href: "/minimalny-depozyt/" },

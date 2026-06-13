@@ -21,7 +21,7 @@ export const reviewListContent = {
     },
   ],
   relatedLinks: [
-    { href: "/najlepsze-kasyna-online/", label: "Główny ranking kasyn" },
+    { href: "/", label: "Główny ranking kasyn" },
     { href: "/bonus-bez-depozytu/", label: "Bonus bez depozytu" },
     { href: "/platnosci/", label: "Metody płatności" },
     { href: "/kryteria-oceny/", label: "Kryteria oceny" },

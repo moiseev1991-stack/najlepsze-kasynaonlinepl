@@ -4,15 +4,36 @@
     "slug": "darmowe-kody-do-polskich-kasyn",
     "intro": "Darmowe kody promocyjne to hasła wpisywane przy rejestracji lub w kasie kasyna, które aktywują dodatkowe środki albo darmowe spiny — bez konieczności wpłacania własnych pieniędzy.",
     "relatedLinks": [
-      { "href": "/bonus-bez-depozytu/", "label": "Bonus bez depozytu" },
-      { "href": "/darmowe-spiny/", "label": "Darmowe spiny" },
-      { "href": "/najlepsze-kasyna-online/", "label": "Ranking kasyn" }
+      {
+        "href": "/bonus-bez-depozytu/",
+        "label": "Bonus bez depozytu"
+      },
+      {
+        "href": "/darmowe-spiny/",
+        "label": "Darmowe spiny"
+      },
+      {
+        "href": "/",
+        "label": "Ranking kasyn"
+      }
     ],
     "quickNav": [
-      { "id": "co-to", "label": "Czym są kody" },
-      { "id": "kroki", "label": "Jak odebrać" },
-      { "id": "warunki", "label": "Warunki" },
-      { "id": "faq", "label": "FAQ" }
+      {
+        "id": "co-to",
+        "label": "Czym są kody"
+      },
+      {
+        "id": "kroki",
+        "label": "Jak odebrać"
+      },
+      {
+        "id": "warunki",
+        "label": "Warunki"
+      },
+      {
+        "id": "faq",
+        "label": "FAQ"
+      }
     ],
     "whatIsIt": "Kod bonusowy to unikalny ciąg znaków wydawany przez kasyno lub portal partnerski. Wpisanie go w odpowiednim polu odblokowuje dodatkową wartość — gotówkę bonusową, darmowe spiny lub podwyższony pakiet powitalny — bez angażowania własnego budżetu.",
     "steps": [
@@ -26,7 +47,7 @@
       },
       {
         "title": "Wpisz kod w odpowiednim polu",
-        "body": "Zazwyczaj pole „Kod promocyjny\u201d znajdziesz w formularzu rejestracji lub w sekcji Kasa → Depozyty."
+        "body": "Zazwyczaj pole „Kod promocyjny” znajdziesz w formularzu rejestracji lub w sekcji Kasa → Depozyty."
       },
       {
         "title": "Spełnij warunki obrotu",
@@ -66,15 +87,36 @@
     "slug": "bonus-bez-depozytu-vulkan-bet",
     "intro": "Vulkan Bet oferuje bonus powitalny bez depozytu dla nowych graczy — środki bonusowe lub darmowe spiny przyznawane zaraz po rejestracji, bez potrzeby wpłacania własnych pieniędzy.",
     "relatedLinks": [
-      { "href": "/bonus-bez-depozytu/", "label": "Bonus bez depozytu" },
-      { "href": "/najlepsze-kasyna-online/", "label": "Ranking kasyn" },
-      { "href": "/darmowe-spiny/", "label": "Darmowe spiny" }
+      {
+        "href": "/bonus-bez-depozytu/",
+        "label": "Bonus bez depozytu"
+      },
+      {
+        "href": "/",
+        "label": "Ranking kasyn"
+      },
+      {
+        "href": "/darmowe-spiny/",
+        "label": "Darmowe spiny"
+      }
     ],
     "quickNav": [
-      { "id": "co-to", "label": "Czym jest oferta" },
-      { "id": "kroki", "label": "Jak odebrać" },
-      { "id": "warunki", "label": "Warunki" },
-      { "id": "faq", "label": "FAQ" }
+      {
+        "id": "co-to",
+        "label": "Czym jest oferta"
+      },
+      {
+        "id": "kroki",
+        "label": "Jak odebrać"
+      },
+      {
+        "id": "warunki",
+        "label": "Warunki"
+      },
+      {
+        "id": "faq",
+        "label": "FAQ"
+      }
     ],
     "whatIsIt": "Bonus bez depozytu w Vulkan Bet to promocja rejestracyjna przyznawana nowym graczom — bez konieczności pierwszej wpłaty. Środki lub spiny pojawiają się na koncie po weryfikacji e-mail i pozwalają przetestować platformę bez ryzyka finansowego.",
     "steps": [
@@ -128,15 +170,36 @@
     "slug": "bonus-bez-depozytu-spin-city-50-zl",
     "intro": "Spin City przyznaje nowym graczom 50 zł w gotówce bonusowej bez konieczności depozytu — to jedna z wyższych ofert tego typu na polskim rynku kasyn online.",
     "relatedLinks": [
-      { "href": "/bonus-bez-depozytu/", "label": "Bonus bez depozytu" },
-      { "href": "/najlepsze-kasyna-online/", "label": "Ranking kasyn" },
-      { "href": "/darmowe-kody-do-polskich-kasyn/", "label": "Kody do kasyn" }
+      {
+        "href": "/bonus-bez-depozytu/",
+        "label": "Bonus bez depozytu"
+      },
+      {
+        "href": "/",
+        "label": "Ranking kasyn"
+      },
+      {
+        "href": "/darmowe-kody-do-polskich-kasyn/",
+        "label": "Kody do kasyn"
+      }
     ],
     "quickNav": [
-      { "id": "co-to", "label": "Czym jest oferta" },
-      { "id": "kroki", "label": "Jak odebrać" },
-      { "id": "warunki", "label": "Warunki" },
-      { "id": "faq", "label": "FAQ" }
+      {
+        "id": "co-to",
+        "label": "Czym jest oferta"
+      },
+      {
+        "id": "kroki",
+        "label": "Jak odebrać"
+      },
+      {
+        "id": "warunki",
+        "label": "Warunki"
+      },
+      {
+        "id": "faq",
+        "label": "FAQ"
+      }
     ],
     "whatIsIt": "Promocja Spin City 50 zł bez depozytu to jednorazowy bonus gotówkowy przyznawany nowym graczom zaraz po rejestracji konta. Pełne 50 zł trafia na konto bonusowe — możesz grać natychmiast, bez żadnej wpłaty własnej.",
     "steps": [
@@ -191,15 +254,36 @@
     "slug": "mr-bet-bonus-bez-depozytu",
     "intro": "Mr Bet to licencjonowane kasyno online oferujące bonus bez depozytu dla nowych graczy. Promocja przyznawana jest po rejestracji, jeszcze przed pierwszą wpłatą na konto.",
     "relatedLinks": [
-      { "href": "/bonus-bez-depozytu/", "label": "Bonus bez depozytu" },
-      { "href": "/najlepsze-kasyna-online/", "label": "Ranking kasyn" },
-      { "href": "/darmowe-spiny/", "label": "Darmowe spiny" }
+      {
+        "href": "/bonus-bez-depozytu/",
+        "label": "Bonus bez depozytu"
+      },
+      {
+        "href": "/",
+        "label": "Ranking kasyn"
+      },
+      {
+        "href": "/darmowe-spiny/",
+        "label": "Darmowe spiny"
+      }
     ],
     "quickNav": [
-      { "id": "co-to", "label": "Czym jest oferta" },
-      { "id": "kroki", "label": "Jak odebrać" },
-      { "id": "warunki", "label": "Warunki" },
-      { "id": "faq", "label": "FAQ" }
+      {
+        "id": "co-to",
+        "label": "Czym jest oferta"
+      },
+      {
+        "id": "kroki",
+        "label": "Jak odebrać"
+      },
+      {
+        "id": "warunki",
+        "label": "Warunki"
+      },
+      {
+        "id": "faq",
+        "label": "FAQ"
+      }
     ],
     "whatIsIt": "Mr Bet przyznaje nowym graczom bonus bez depozytu po założeniu konta — środki bonusowe lub darmowe spiny trafiają bez żadnej wpłaty. To sposób na zapoznanie się z ofertą kasyna przed zainwestowaniem własnych pieniędzy.",
     "steps": [
@@ -253,15 +337,36 @@
     "slug": "vulkan-vegas-25-euro-bez-depozytu",
     "intro": "Vulkan Vegas przyznaje nowym graczom 25 € w gotówce bonusowej bez wymaganego depozytu — to jedna z bardziej hojnych ofert tego typu dostępnych w europejskich kasynach online.",
     "relatedLinks": [
-      { "href": "/bonus-bez-depozytu/", "label": "Bonus bez depozytu" },
-      { "href": "/najlepsze-kasyna-online/", "label": "Ranking kasyn" },
-      { "href": "/bonus-bez-depozytu-vulkan-bet/", "label": "Vulkan Bet bez depozytu" }
+      {
+        "href": "/bonus-bez-depozytu/",
+        "label": "Bonus bez depozytu"
+      },
+      {
+        "href": "/",
+        "label": "Ranking kasyn"
+      },
+      {
+        "href": "/bonus-bez-depozytu-vulkan-bet/",
+        "label": "Vulkan Bet bez depozytu"
+      }
     ],
     "quickNav": [
-      { "id": "co-to", "label": "Czym jest oferta" },
-      { "id": "kroki", "label": "Jak odebrać" },
-      { "id": "warunki", "label": "Warunki" },
-      { "id": "faq", "label": "FAQ" }
+      {
+        "id": "co-to",
+        "label": "Czym jest oferta"
+      },
+      {
+        "id": "kroki",
+        "label": "Jak odebrać"
+      },
+      {
+        "id": "warunki",
+        "label": "Warunki"
+      },
+      {
+        "id": "faq",
+        "label": "FAQ"
+      }
     ],
     "whatIsIt": "Vulkan Vegas oferuje nowym graczom 25 € w bonusie bez depozytu — środki trafiają na konto po rejestracji, bez żadnej wpłaty. Kwota odpowiada ok. 107 zł i pozwala realnie przetestować automaty kasyna przed zainwestowaniem własnych pieniędzy.",
     "steps": [
@@ -316,15 +421,36 @@
     "slug": "bonus-bez-depozytu-icecasino",
     "intro": "IceCasino oferuje bonus bez depozytu dla nowych graczy — środki bonusowe lub darmowe spiny dostępne od razu po rejestracji, bez konieczności dokonywania pierwszej wpłaty.",
     "relatedLinks": [
-      { "href": "/bonus-bez-depozytu/", "label": "Bonus bez depozytu" },
-      { "href": "/najlepsze-kasyna-online/", "label": "Ranking kasyn" },
-      { "href": "/darmowe-spiny/", "label": "Darmowe spiny" }
+      {
+        "href": "/bonus-bez-depozytu/",
+        "label": "Bonus bez depozytu"
+      },
+      {
+        "href": "/",
+        "label": "Ranking kasyn"
+      },
+      {
+        "href": "/darmowe-spiny/",
+        "label": "Darmowe spiny"
+      }
     ],
     "quickNav": [
-      { "id": "co-to", "label": "Czym jest oferta" },
-      { "id": "kroki", "label": "Jak odebrać" },
-      { "id": "warunki", "label": "Warunki" },
-      { "id": "faq", "label": "FAQ" }
+      {
+        "id": "co-to",
+        "label": "Czym jest oferta"
+      },
+      {
+        "id": "kroki",
+        "label": "Jak odebrać"
+      },
+      {
+        "id": "warunki",
+        "label": "Warunki"
+      },
+      {
+        "id": "faq",
+        "label": "FAQ"
+      }
     ],
     "whatIsIt": "IceCasino przyznaje nowym graczom bonus bez depozytu zaraz po założeniu konta — środki lub spiny trafiają bez żadnej wpłaty. To idealny sposób na przetestowanie intuicyjnej platformy IceCasino i jej biblioteki gier bez ryzyka finansowego.",
     "steps": [

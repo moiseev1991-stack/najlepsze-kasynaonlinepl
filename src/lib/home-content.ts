@@ -83,7 +83,7 @@ export const homeContent = {
   cta: {
     title: "Zacznij od rankingu najlepszych kasyn",
     description: "Zobacz aktualne zestawienie i przejdź do recenzji wybranego operatora.",
-    primaryHref: "/najlepsze-kasyna-online/",
+    primaryHref: "/",
     primaryLabel: "Przejdź do rankingu",
     secondaryHref: "/kryteria-oceny/",
     secondaryLabel: "Zasady oceniania",

@@ -19,6 +19,8 @@ ErrorDocument 404 /404.html
   RewriteRule ^online-kasyna/?$ / [R=301,L]
   RewriteRule ^recenzje-kasyn/?$ / [R=301,L]
   RewriteRule ^recenzje/?$ / [R=301,L]
+  # /najlepsze-kasyna-online/ dubluje stronę główną (domena = najlepsze-kasynaonline)
+  RewriteRule ^najlepsze-kasyna-online/?$ / [R=301,L]
   RewriteRule ^polityka-cookies/?$ /polityka-plikow-cookies/ [R=301,L]
   RewriteRule ^kryteria-oceny-kasyn/?$ /kryteria-oceny/ [R=301,L]
   RewriteRule ^legalne-kasyna-online/?$ /legalne-kasyna/ [R=301,L]

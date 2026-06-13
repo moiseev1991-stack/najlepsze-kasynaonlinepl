@@ -127,7 +127,6 @@ export function getCasinosForCategory(slug: string): Casino[] {
     case "darmowe-spiny":
     case "darmowa-kasa-bez-depozytu":
       return byRating();
-    case "najlepsze-kasyna-online":
     case "minimalny-depozyt":
     default:
       return byRating();

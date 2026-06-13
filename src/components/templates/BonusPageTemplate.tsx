@@ -152,7 +152,7 @@ export function BonusPageTemplate({ page, breadcrumbs }: Props) {
           <p className="mt-3 text-slate-600">{page.recommendedIntro}</p>
           <p className="mt-2 text-sm text-slate-500">
             Pełne zestawienie znajdziesz w{" "}
-            <Link href="/najlepsze-kasyna-online/" className="font-medium text-brand-700 hover:underline">
+            <Link href="/" className="font-medium text-brand-700 hover:underline">
               rankingu kasyn
             </Link>{" "}
             oraz w recenzjach poszczególnych marek.
@@ -210,7 +210,7 @@ export function BonusPageTemplate({ page, breadcrumbs }: Props) {
       <CTASection
         title="Zobacz aktualny ranking kasyn"
         description="Porównaj oferty i przejdź do recenzji operatorów, zanim aktywujesz promocję."
-        primaryHref="/najlepsze-kasyna-online/"
+        primaryHref="/"
         primaryLabel="Ranking kasyn"
         secondaryHref="/kryteria-oceny/"
         secondaryLabel="Jak oceniamy"

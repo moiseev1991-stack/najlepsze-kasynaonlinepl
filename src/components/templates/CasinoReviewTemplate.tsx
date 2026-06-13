@@ -117,7 +117,7 @@ export function CasinoReviewTemplate({ casino, extras, editorial, author, breadc
             Zarejestruj się u operatora
           </a>
           <Link
-            href="/najlepsze-kasyna-online/"
+            href="/"
             className="inline-flex rounded-xl border border-slate-200 bg-white px-6 py-3 text-sm font-semibold text-slate-800 hover:border-brand-300"
           >
             Porównaj z rankingiem

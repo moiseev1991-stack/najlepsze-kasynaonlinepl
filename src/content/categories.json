@@ -1,51 +1,5 @@
 [
   {
-    "slug": "najlepsze-kasyna-online",
-    "title": "Najlepsze kasyna online — ranking 2026",
-    "h1": "Ranking najlepszych kasyn online",
-    "intro": "Prezentujemy zestawienie operatorów ocenianych pod kątem bezpieczeństwa, przejrzystości bonusów, biblioteki gier i czasu wypłat. Ranking aktualizujemy, gdy pojawiają się istotne zmiany w ofercie lub regulaminie.",
-    "metaDescription": "Subiektywny ranking najlepszych kasyn online: kryteria oceny, aktualne promocje i linki do recenzji.",
-    "filterTags": [
-      "Wszystkie kasyna",
-      "Nowe kasyna",
-      "Popularny",
-      "Najwyższa ocena"
-    ],
-    "comparisonIntro": "Poniżej zestawienie skrócone — pełne dane znajdziesz na kartach operatorów i w dedykowanych recenzjach.",
-    "seoSections": [
-      {
-        "heading": "Co Definiuje Najlepsze Kasyno Online dla Polskich Graczy",
-        "body": "Rynek kasyn online w Polsce rozwija się dynamicznie, a wybór odpowiedniej platformy wymaga zrozumienia kluczowych kryteriów bezpieczeństwa i zgodności z regulacjami. Najlepsze kasyno online dla polskich graczy musi spełniać podstawowe standardy: szyfrowanie SSL, weryfikację KYC, certyfikowaną technologię RNG oraz kompleksowe narzędzia odpowiedzialnej gry. Dostępność PLN i lokalnych metod płatności stanowi dodatkowy element wpływający na komfort użytkowania.\nBezpieczeństwo stanowi fundament każdej platformy hazardowej. Szyfrowanie SSL chroni dane osobowe i transakcje finansowe, podczas gdy procedury KYC weryfikują tożsamość graczy, minimalizując ryzyko oszustw."
-      },
-      {
-        "heading": "Jak Oceniać i Porównywać Kasyna Online",
-        "body": "Systematyczna ocena kasyn online wymaga zastosowania mierzalnych kryteriów zamiast subiektywnych opinii. Weryfikacja standardów bezpieczeństwa, przejrzystość przetwarzania płatności i dostępność narzędzi odpowiedzialnej gry tworzą obiektywną podstawę porównania. Gracze powinni koncentrować się na faktach możliwych do zweryfikowania — numerach licencji, certyfikatach bezpieczeństwa i udokumentowanych warunkach wypłat."
-      },
-      {
-        "heading": "Licencjonowanie i Ramy Prawne w Polsce",
-        "body": "Polska ustawa hazardowa z 2017 roku ustanowiła monopol państwowy na kasyna online, jednocześnie międzynarodowe platformy działają na podstawie licencji wydanych przez uznane jurysdykcje europejskie i morskie. Gracze z Polski korzystają głównie z operatorów licencjonowanych na Malcie, Curacao lub Gibraltarze, którzy oferują dostęp do platform mimo braku polskiego zezwolenia. System prawny nie penalizuje graczy za korzystanie z zagranicznych kasyn."
-      },
-      {
-        "heading": "Infrastruktura Bezpieczeństwa: SSL, KYC i Uczciwe Gry",
-        "body": "Najlepsze kasyno online stosuje szyfrowanie SSL 256-bit dla transmisji danych płatniczych, weryfikację tożsamości KYC zgodnie ze standardami AML oraz certyfikowane generatory liczb losowych RNG audytowane przez niezależne laboratoria. Każda warstwa zabezpieczeń chroni specyficzny obszar: SSL zabezpiecza dane w tranzycie, KYC zapobiega oszustwom finansowym, RNG gwarantuje losowość wyników. Gracze powinni wymagać dokumentacji certyfikatów przed wpłatą środków."
-      }
-    ],
-    "relatedLinks": [
-      {
-        "href": "/nowe-kasyna-online/",
-        "label": "Nowe kasyna"
-      },
-      {
-        "href": "/legalne-kasyna/",
-        "label": "Legalne kasyna"
-      },
-      {
-        "href": "/bonusy-powitalne/",
-        "label": "Bonusy powitalne"
-      }
-    ]
-  },
-  {
     "slug": "nowe-kasyna-online",
     "title": "Nowe kasyna online",
     "h1": "Nowe kasyna online — co sprawdzamy",
@@ -64,7 +18,7 @@
     ],
     "relatedLinks": [
       {
-        "href": "/najlepsze-kasyna-online/",
+        "href": "/",
         "label": "Główny ranking"
       },
       {
@@ -131,7 +85,7 @@
         "label": "Metody płatności"
       },
       {
-        "href": "/najlepsze-kasyna-online/",
+        "href": "/",
         "label": "Główny ranking"
       }
     ]
@@ -154,7 +108,7 @@
         "label": "Gry na prawdziwe pieniądze"
       },
       {
-        "href": "/najlepsze-kasyna-online/",
+        "href": "/",
         "label": "Ranking"
       }
     ]
@@ -345,7 +299,7 @@
         "label": "Metody płatności"
       },
       {
-        "href": "/najlepsze-kasyna-online/",
+        "href": "/",
         "label": "Główny ranking"
       }
     ],
@@ -621,7 +575,7 @@
         "label": "Metody płatności"
       },
       {
-        "href": "/najlepsze-kasyna-online/",
+        "href": "/",
         "label": "Główny ranking"
       }
     ]
@@ -1015,7 +969,7 @@
         "label": "Automaty online"
       },
       {
-        "href": "/najlepsze-kasyna-online/",
+        "href": "/",
         "label": "Główny ranking"
       }
     ]

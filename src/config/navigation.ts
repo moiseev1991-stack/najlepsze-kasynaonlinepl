@@ -47,7 +47,7 @@ export const megaMenuSections: MegaMenuSection[] = [
   {
     label: "Ranking",
     overviewLabel: "Najlepsze kasyna",
-    href: "/najlepsze-kasyna-online/",
+    href: "/",
     children: [
       { href: "/wyplacalne-kasyna/", label: "Wypłacalne kasyna" },
       { href: "/nowe-kasyna/", label: "Nowe kasyna" },
