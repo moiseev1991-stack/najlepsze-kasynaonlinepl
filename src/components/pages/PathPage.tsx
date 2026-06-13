@@ -5,6 +5,7 @@ import {
 } from "@/lib/routes";
 import { buildBreadcrumbSchema, toAbsoluteUrl } from "@/lib/breadcrumbs";
 import {
+  getArticleBySlug,
   getAuthorBySlug,
   getBlogBySlug,
   getBonusBySlug,
@@ -34,6 +35,7 @@ import {
 import { TrustPageTemplate } from "@/components/templates/TrustPageTemplate";
 import { AboutPageTemplate } from "@/components/templates/AboutPageTemplate";
 import { ContactPageTemplate } from "@/components/templates/ContactPageTemplate";
+import { ArticleTemplate } from "@/components/templates/ArticleTemplate";
 import {
   BlogCategoryTemplate,
   BlogListTemplate,
@@ -272,6 +274,23 @@ export function PathPage({ segments }: Props) {
               { label: "Strona główna", href: "/" },
               { label: "Blog", href: "/blog/" },
               { label: name ?? page.categorySlug },
+            ])}
+          />
+        </>
+      );
+    }
+    case "article": {
+      const a = getArticleBySlug(page.slug);
+      if (!a) notFound();
+      const bc = buildBreadcrumbSchema(segments, [a.h1 || a.title]);
+      return (
+        <>
+          <JsonLd data={breadcrumbListSchema(bc)} />
+          <ArticleTemplate
+            article={a}
+            breadcrumbs={crumbsLocal([
+              { label: "Strona główna", href: "/" },
+              { label: a.h1 || a.title },
             ])}
           />
         </>

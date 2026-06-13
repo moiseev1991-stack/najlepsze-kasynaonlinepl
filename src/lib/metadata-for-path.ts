@@ -3,6 +3,7 @@ import { resolvePage, blogCategoryNameFromSlug } from "@/lib/routes";
 import { segmentsToUrl } from "@/lib/paths";
 import { buildMetadata } from "@/lib/seo";
 import {
+  getArticleBySlug,
   getBlogBySlug,
   getBonusBySlug,
   getCasinoBySlug,
@@ -97,6 +98,11 @@ export function metadataForSegments(segments: string[]): Metadata | null {
       const t = getTrustBySlug(page.slug);
       if (!t) return null;
       return buildMetadata({ title: t.title, description: t.metaDescription, path });
+    }
+    case "article": {
+      const a = getArticleBySlug(page.slug);
+      if (!a) return null;
+      return buildMetadata({ title: a.title, description: a.metaDescription, path });
     }
     default:
       return null;

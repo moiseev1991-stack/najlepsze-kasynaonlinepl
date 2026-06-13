@@ -32,6 +32,7 @@ const CONTENT_FILES = {
   trust: path.join(CONTENT_DIR, "trust.json"),
   reviewEditorial: path.join(CONTENT_DIR, "review-editorial.json"),
   reviewExtras: path.join(CONTENT_DIR, "review-extras.json"),
+  articles: path.join(CONTENT_DIR, "articles.json"),
 } as const;
 
 const fileMtimeCache: Partial<Record<keyof typeof CONTENT_FILES, Date | null>> = {};
@@ -82,6 +83,8 @@ function lastmodForSegments(segments: string[]): Date {
       return mtimeOf("blog") ?? FALLBACK_LASTMOD;
     case "trust":
       return mtimeOf("trust") ?? FALLBACK_LASTMOD;
+    case "article":
+      return mtimeOf("articles") ?? FALLBACK_LASTMOD;
     default:
       return FALLBACK_LASTMOD;
   }

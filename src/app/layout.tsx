@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pl" className={inter.variable}>
+    <html lang="pl" className={inter.variable} data-scroll-behavior="smooth">
       <body className={`min-h-screen antialiased text-nk-text ${inter.className}`}>
         <div className="nk-site-bg" aria-hidden />
         <JsonLd data={organizationSchema()} />

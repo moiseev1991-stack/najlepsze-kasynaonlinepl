@@ -354,6 +354,22 @@ export type MinDepositPage = {
 
 
 
+export type Article = {
+
+  slug: string;
+
+  title: string;
+
+  h1: string;
+
+  metaDescription: string;
+
+  body: string;
+
+};
+
+
+
 export type PageKind =
 
   | { type: "category"; slug: string }
@@ -378,6 +394,8 @@ export type PageKind =
 
   | { type: "blog-category"; categorySlug: string }
 
-  | { type: "trust"; slug: string };
+  | { type: "trust"; slug: string }
+
+  | { type: "article"; slug: string };
 
 

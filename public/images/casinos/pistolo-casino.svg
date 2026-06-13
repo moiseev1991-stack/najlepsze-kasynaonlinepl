@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" role="img" aria-label="Pistolo Casino logo">
+  <defs>
+    <linearGradient id="g-pistolo-casino" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#134E4A"/>
+      <stop offset="100%" stop-color="#5EEAD4" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="120" rx="16" fill="url(#g-pistolo-casino)"/>
+  <circle cx="170" cy="28" r="10" fill="#5EEAD4" opacity="0.45"/>
+  <rect x="14" y="100" width="40" height="4" rx="2" fill="#5EEAD4" opacity="0.9"/>
+  <text x="100" y="68" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="18" fill="#FFFFFF">Pistolo Casino</text>
+</svg>

@@ -24,7 +24,7 @@ export function buildMetadata({
 
   return {
     metadataBase: getAppMetadataBase(),
-    title: fullTitle,
+    title: { absolute: fullTitle },
     description,
     alternates: { canonical: url },
     robots: noIndex ? { index: false, follow: false } : { index: true, follow: true },

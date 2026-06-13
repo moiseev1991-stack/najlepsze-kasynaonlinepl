@@ -1023,5 +1023,1640 @@
     "isNew": false,
     "isPopular": false,
     "isTopRated": false
+  },
+  {
+    "id": "c-22bet-casino",
+    "slug": "22bet-casino",
+    "name": "22Bet Casino",
+    "logo": "/images/casinos/22bet-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/22bet-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao eGaming",
+    "foundedYear": 2017,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Neteller",
+      "PayPal",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-888starz",
+    "slug": "888starz",
+    "name": "888starz",
+    "logo": "/images/casinos/888starz.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/888starz/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao (weryfikuj u operatora)",
+    "foundedYear": 2020,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "Kryptowaluty"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-amunra-casino",
+    "slug": "amunra-casino",
+    "name": "AmunRa Casino",
+    "logo": "/images/casinos/amunra-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/amunra-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao",
+    "foundedYear": 2020,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Visa",
+      "Mastercard",
+      "Kryptowaluty"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-beep-beep-casino",
+    "slug": "beep-beep-casino",
+    "name": "Beep Beep Casino",
+    "logo": "/images/casinos/beep-beep-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/beep-beep-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao",
+    "foundedYear": 2025,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Visa",
+      "Mastercard",
+      "Kryptowaluty"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-betonred-casino",
+    "slug": "betonred-casino",
+    "name": "BetOnRed Casino",
+    "logo": "/images/casinos/betonred-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/betonred-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny do 150 €",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao Gaming Control Board",
+    "foundedYear": 2022,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Visa",
+      "Mastercard",
+      "Kryptowaluty"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-bizzo-casino",
+    "slug": "bizzo-casino",
+    "name": "Bizzo Casino",
+    "logo": "/images/casinos/bizzo-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/bizzo-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao",
+    "foundedYear": 2021,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Visa",
+      "Mastercard"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-f1-casino",
+    "slug": "f1-casino",
+    "name": "F1 Casino",
+    "logo": "/images/casinos/f1-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/f1-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao Gaming Control Board",
+    "foundedYear": 2020,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Neteller",
+      "Visa",
+      "Mastercard"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-fireball-casino",
+    "slug": "fireball-casino",
+    "name": "Fireball Casino",
+    "logo": "/images/casinos/fireball-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/fireball-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao",
+    "foundedYear": 2023,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Neteller",
+      "Visa",
+      "Mastercard"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-flagman-casino",
+    "slug": "flagman-casino",
+    "name": "Flagman Casino",
+    "logo": "/images/casinos/flagman-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/flagman-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao Gaming Authority",
+    "foundedYear": 2025,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Przelewy24",
+      "Visa",
+      "Mastercard",
+      "Kryptowaluty"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-fontan-casino",
+    "slug": "fontan-casino",
+    "name": "Fontan Casino",
+    "logo": "/images/casinos/fontan-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/fontan-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao eGaming",
+    "foundedYear": 2025,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa",
+      "Mastercard",
+      "Kryptowaluty"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-gdf-casino",
+    "slug": "gdf-casino",
+    "name": "GDF Casino",
+    "logo": "/images/casinos/gdf-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/gdf-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao Gaming Control Board",
+    "foundedYear": 2020,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa",
+      "Mastercard"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-ggbet",
+    "slug": "ggbet",
+    "name": "GGBet",
+    "logo": "/images/casinos/ggbet.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/ggbet/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao Gaming Control Board",
+    "foundedYear": 2020,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Przelewy24",
+      "Visa",
+      "Mastercard"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-goldbet-casino",
+    "slug": "goldbet-casino",
+    "name": "Goldbet Casino",
+    "logo": "/images/casinos/goldbet-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/goldbet-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao",
+    "foundedYear": 2020,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Visa",
+      "Mastercard",
+      "Kryptowaluty"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-gorilla-casino",
+    "slug": "gorilla-casino",
+    "name": "Gorilla Casino",
+    "logo": "/images/casinos/gorilla-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/gorilla-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao (weryfikuj u operatora)",
+    "foundedYear": 2020,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Przelewy24",
+      "Visa",
+      "Mastercard"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-hellspin",
+    "slug": "hellspin",
+    "name": "HellSpin",
+    "logo": "/images/casinos/hellspin.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/hellspin/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny do 10600 PLN",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao",
+    "foundedYear": 2022,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Visa",
+      "Mastercard",
+      "Kryptowaluty"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-ice-casino",
+    "slug": "ice-casino",
+    "name": "Ice Casino",
+    "logo": "/images/casinos/ice-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/ice-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao",
+    "foundedYear": 2013,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Visa",
+      "Mastercard"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-irwin-casino",
+    "slug": "irwin-casino",
+    "name": "Irwin Casino",
+    "logo": "/images/casinos/irwin-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/irwin-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny do 1500 PLN",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao eGaming",
+    "foundedYear": 2020,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Przelewy24",
+      "Visa",
+      "Mastercard",
+      "Kryptowaluty"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-ivibet",
+    "slug": "ivibet",
+    "name": "Ivibet",
+    "logo": "/images/casinos/ivibet.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/ivibet/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao Gaming Control Board",
+    "foundedYear": 2022,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Przelewy24",
+      "Visa",
+      "Mastercard"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-legiano-casino",
+    "slug": "legiano-casino",
+    "name": "Legiano Casino",
+    "logo": "/images/casinos/legiano-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/legiano-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao",
+    "foundedYear": 2020,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Neteller",
+      "Paysafecard",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-malina-casino",
+    "slug": "malina-casino",
+    "name": "Malina Casino",
+    "logo": "/images/casinos/malina-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/malina-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Malta Gaming Authority",
+    "foundedYear": 2020,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Przelewy24",
+      "Skrill",
+      "Neteller",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-marvel-casino",
+    "slug": "marvel-casino",
+    "name": "Marvel Casino",
+    "logo": "/images/casinos/marvel-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/marvel-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao",
+    "foundedYear": 2019,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Przelewy24",
+      "Skrill",
+      "Neteller",
+      "Visa"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-mostbet",
+    "slug": "mostbet",
+    "name": "Mostbet",
+    "logo": "/images/casinos/mostbet.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/mostbet/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao eGaming",
+    "foundedYear": 2020,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Visa",
+      "Mastercard"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-mr-bet-casino",
+    "slug": "mr-bet-casino",
+    "name": "Mr Bet Casino",
+    "logo": "/images/casinos/mr-bet-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/mr-bet-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao (weryfikuj u operatora)",
+    "foundedYear": 2017,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Przelewy24",
+      "Skrill",
+      "Visa",
+      "Mastercard"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-national-casino",
+    "slug": "national-casino",
+    "name": "National Casino",
+    "logo": "/images/casinos/national-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/national-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny do 400 PLN",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao",
+    "foundedYear": 2021,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Visa",
+      "Mastercard",
+      "Kryptowaluty"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-nine-casino",
+    "slug": "nine-casino",
+    "name": "Nine Casino",
+    "logo": "/images/casinos/nine-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/nine-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao eGaming",
+    "foundedYear": 2020,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Visa",
+      "Mastercard"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-one-casino",
+    "slug": "one-casino",
+    "name": "One Casino",
+    "logo": "/images/casinos/one-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/one-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao",
+    "foundedYear": 2020,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Paysafecard",
+      "Visa",
+      "Mastercard"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-pelican-casino",
+    "slug": "pelican-casino",
+    "name": "Pelican Casino",
+    "logo": "/images/casinos/pelican-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/pelican-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao (weryfikuj u operatora)",
+    "foundedYear": 2020,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Przelewy24",
+      "MuchBetter"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-pistolo-casino",
+    "slug": "pistolo-casino",
+    "name": "Pistolo Casino",
+    "logo": "/images/casinos/pistolo-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/pistolo-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao (weryfikuj u operatora)",
+    "foundedYear": 2020,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Przelewy24",
+      "Visa",
+      "Mastercard"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-slotsvader-casino",
+    "slug": "slotsvader-casino",
+    "name": "SlotsVader Casino",
+    "logo": "/images/casinos/slotsvader-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/slotsvader-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao (weryfikuj u operatora)",
+    "foundedYear": 2024,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Przelewy24",
+      "Revolut",
+      "Visa",
+      "Mastercard"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-slottica",
+    "slug": "slottica",
+    "name": "Slottica",
+    "logo": "/images/casinos/slottica.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/slottica/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny do 700 PLN",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao (weryfikuj u operatora)",
+    "foundedYear": 2020,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Visa",
+      "Mastercard"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-smokace-casino",
+    "slug": "smokace-casino",
+    "name": "Smokace Casino",
+    "logo": "/images/casinos/smokace-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/smokace-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny do 2400 zł",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao (weryfikuj u operatora)",
+    "foundedYear": 2023,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Visa",
+      "Mastercard",
+      "Kryptowaluty"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-spinamba",
+    "slug": "spinamba",
+    "name": "Spinamba",
+    "logo": "/images/casinos/spinamba.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/spinamba/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao",
+    "foundedYear": 2020,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Visa",
+      "Mastercard"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-stake",
+    "slug": "stake",
+    "name": "Stake",
+    "logo": "/images/casinos/stake.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/stake/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao",
+    "foundedYear": 2017,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Przelewy24",
+      "Visa",
+      "Mastercard",
+      "Kryptowaluty"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-starda-casino",
+    "slug": "starda-casino",
+    "name": "Starda Casino",
+    "logo": "/images/casinos/starda-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/starda-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao",
+    "foundedYear": 2022,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Przelewy24",
+      "Skrill",
+      "Visa",
+      "Mastercard"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-total-casino",
+    "slug": "total-casino",
+    "name": "Total Casino",
+    "logo": "/images/casinos/total-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/total-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny do 2500 zł",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Ministerstwo Finansów",
+    "foundedYear": 2020,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Przelewy24",
+      "Visa",
+      "Mastercard"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-vavada",
+    "slug": "vavada",
+    "name": "Vavada",
+    "logo": "/images/casinos/vavada.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/vavada/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao",
+    "foundedYear": 2020,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Neteller",
+      "Visa",
+      "Mastercard"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
+  },
+  {
+    "id": "c-winshark-casino",
+    "slug": "winshark-casino",
+    "name": "Winshark Casino",
+    "logo": "/images/casinos/winshark-casino.svg",
+    "affiliateUrl": "#",
+    "reviewUrl": "/winshark-casino/",
+    "ratingOverall": 4.0,
+    "ratingUsers": 4.0,
+    "votesCount": 150,
+    "trustIndex": 70,
+    "welcomeBonus": "Pakiet powitalny — szczegóły w recenzji",
+    "promoCode": "",
+    "bonusTypes": [
+      "Powitalny"
+    ],
+    "wager": "x35",
+    "minDeposit": "20 zł",
+    "withdrawalTime": "24–72 h",
+    "license": "Curaçao (weryfikuj u operatora)",
+    "foundedYear": 2024,
+    "gameCount": 2000,
+    "paymentMethods": [
+      "BLIK",
+      "Skrill",
+      "Neteller",
+      "Visa",
+      "Mastercard"
+    ],
+    "features": [
+      "Live",
+      "Mobile"
+    ],
+    "addedDate": "2026-06-13",
+    "pros": [
+      "Licencjonowana platforma",
+      "Szeroki wybór gier"
+    ],
+    "cons": [
+      "Weryfikacja przy pierwszej wypłacie"
+    ],
+    "isNew": true,
+    "isPopular": false,
+    "isTopRated": false
   }
 ]

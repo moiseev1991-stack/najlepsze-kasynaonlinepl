@@ -3,7 +3,10 @@
 export type NavLink = { href: string; label: string };
 
 export type MegaMenuSection = {
+  /** Krótka etykieta w pasku menu */
   label: string;
+  /** Pełna nazwa działu w nagłówku rozwijanego („Przegląd: …”); fallback = label */
+  overviewLabel?: string;
   href: string;
   children: NavLink[];
 };
@@ -36,12 +39,14 @@ const reviewChildren: NavLink[] = [
 
 export const megaMenuSections: MegaMenuSection[] = [
   {
-    label: "Recenzje kasyn",
+    label: "Kasyno",
+    overviewLabel: "Recenzje kasyn",
     href: "/#przewodnik-recenzji",
     children: reviewChildren,
   },
   {
-    label: "Najlepsze kasyna",
+    label: "Ranking",
+    overviewLabel: "Najlepsze kasyna",
     href: "/najlepsze-kasyna-online/",
     children: [
       { href: "/wyplacalne-kasyna/", label: "Wypłacalne kasyna" },
@@ -61,7 +66,8 @@ export const megaMenuSections: MegaMenuSection[] = [
     ],
   },
   {
-    label: "Gry Hazardowe Online",
+    label: "Gry",
+    overviewLabel: "Gry hazardowe online",
     href: "/automaty-za-darmo/",
     children: [
       { href: "/automaty-online/", label: "Automaty online" },
@@ -91,7 +97,8 @@ export const megaMenuSections: MegaMenuSection[] = [
     ],
   },
   {
-    label: "Darmowe spiny",
+    label: "Spiny",
+    overviewLabel: "Darmowe spiny",
     href: "/darmowe-spiny/",
     children: [
       { href: "/darmowe-spiny/", label: "Przegląd darmowych spinów" },
@@ -103,7 +110,8 @@ export const megaMenuSections: MegaMenuSection[] = [
     ],
   },
   {
-    label: "Darmowa kasa",
+    label: "Kasa",
+    overviewLabel: "Darmowa kasa",
     href: "/darmowa-kasa-bez-depozytu/",
     children: [
       { href: "/darmowa-kasa-bez-depozytu/", label: "Darmowa kasa bez depozytu" },

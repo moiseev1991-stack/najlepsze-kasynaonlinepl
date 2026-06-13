@@ -70,7 +70,7 @@ export function MegaMenu() {
                 onClick={() => setOpen(null)}
                 aria-current={isActivePath(pathname, section.href) ? "page" : undefined}
               >
-                Przegląd: {section.label}
+                Przegląd: {section.overviewLabel ?? section.label}
               </Link>
               <div className="mx-3 my-1 border-t border-nk-border/80" />
               <ul className="max-h-[min(70vh,24rem)] overflow-y-auto">

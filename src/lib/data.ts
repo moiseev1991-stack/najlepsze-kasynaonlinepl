@@ -1,4 +1,5 @@
 import type {
+  Article,
   Author,
   BlogPost,
   BonusPage,
@@ -19,6 +20,7 @@ import gamesData from "@/content/games.json";
 import minDepositData from "@/content/min-deposit.json";
 import categoriesData from "@/content/categories.json";
 import trustData from "@/content/trust.json";
+import articlesData from "@/content/articles.json";
 import reviewExtras from "@/content/review-extras.json";
 
 function withResolvedAffiliateUrls(c: Casino): Casino {
@@ -39,6 +41,7 @@ export const games = gamesData as GamePageContent[];
 export const minDeposits = minDepositData as MinDepositPage[];
 export const categories = categoriesData as CategoryPageContent[];
 export const trustPages = trustData as TrustPageContent[];
+export const articles = articlesData as Article[];
 
 export type ReviewExtras = {
   ratingCriteria: { name: string; score: number; comment: string }[];
@@ -83,6 +86,10 @@ export function getCategoryBySlug(slug: string): CategoryPageContent | undefined
 
 export function getTrustBySlug(slug: string): TrustPageContent | undefined {
   return trustPages.find((t) => t.slug === slug);
+}
+
+export function getArticleBySlug(slug: string): Article | undefined {
+  return articles.find((a) => a.slug === slug);
 }
 
 export function getReviewExtras(slug: string): ReviewExtras | undefined {

@@ -27,7 +27,7 @@ export function Footer() {
             </p>
             <ul className="mt-5 flex flex-wrap gap-2">
               {siteConfig.socialLinks.map((s) => (
-                <li key={s.href}>
+                <li key={s.label}>
                   <a
                     href={s.href}
                     className="inline-flex rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-xs font-medium text-slate-200 transition hover:border-brand-400/50 hover:bg-white/10 hover:text-white"

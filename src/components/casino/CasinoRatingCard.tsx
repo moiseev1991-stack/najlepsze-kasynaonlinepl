@@ -6,6 +6,7 @@ import { RatingBadge } from "@/components/ui/RatingBadge";
 import { CasinoQuickFacts } from "@/components/casino/CasinoQuickFacts";
 import { CasinoOpinionRow } from "@/components/casino/CasinoOpinionRow";
 import { CasinoCardExpandSection } from "@/components/casino/CasinoCardExpandSection";
+import { featureHref } from "@/lib/badge-links";
 
 type Props = {
   casino: Casino;
@@ -76,14 +77,24 @@ export function CasinoRatingCard({ casino, rank }: Props) {
           </div>
           {casino.features.length ? (
             <div className="mt-3 flex flex-wrap gap-1.5">
-              {casino.features.map((f) => (
-                <span
-                  key={f}
-                  className="rounded-lg border border-nk-warning/25 bg-nk-warning/10 px-2 py-0.5 text-xs font-medium text-amber-950"
-                >
-                  {f}
-                </span>
-              ))}
+              {casino.features.map((f) => {
+                const href = featureHref(f);
+                const cls =
+                  "rounded-lg border border-nk-warning/25 bg-nk-warning/10 px-2 py-0.5 text-xs font-medium text-amber-950";
+                return href ? (
+                  <Link
+                    key={f}
+                    href={href}
+                    className={`${cls} transition hover:bg-nk-warning/20`}
+                  >
+                    {f}
+                  </Link>
+                ) : (
+                  <span key={f} className={cls}>
+                    {f}
+                  </span>
+                );
+              })}
             </div>
           ) : null}
           <div className="mt-3 space-y-1.5">
