@@ -23,7 +23,11 @@ export function CasinoRatingCard({ casino, rank }: Props) {
             {rank}
           </span>
         ) : null}
-        <div className="relative h-32 w-32 shrink-0 overflow-hidden rounded-2xl border border-nk-border/70 bg-gradient-to-br from-nk-bg-alt to-white shadow-inner ring-1 ring-white/80 sm:h-36 sm:w-36">
+        <Link
+          href={casino.reviewUrl}
+          aria-label={`Recenzja ${casino.name}`}
+          className="relative block h-32 w-32 shrink-0 overflow-hidden rounded-2xl border border-nk-border/70 bg-gradient-to-br from-nk-bg-alt to-white shadow-inner ring-1 ring-white/80 transition hover:border-brand-300 hover:shadow-md sm:h-36 sm:w-36"
+        >
           <Image
             src={casino.logo}
             alt={casino.name}
@@ -32,10 +36,17 @@ export function CasinoRatingCard({ casino, rank }: Props) {
             className="h-full w-full object-contain p-2"
             unoptimized
           />
-        </div>
+        </Link>
         <div className="mt-4 min-w-0 flex-1 md:mt-0">
           <div className="flex flex-wrap items-center gap-2">
-            <h3 className="text-xl font-bold text-nk-text">{casino.name}</h3>
+            <h3 className="text-xl font-bold text-nk-text">
+              <Link
+                href={casino.reviewUrl}
+                className="transition hover:text-brand-700 hover:underline"
+              >
+                {casino.name}
+              </Link>
+            </h3>
             {casino.isTopRated ? (
               <span className="rounded-full bg-nk-warning/20 px-2.5 py-0.5 text-xs font-semibold text-amber-950">
                 Top
