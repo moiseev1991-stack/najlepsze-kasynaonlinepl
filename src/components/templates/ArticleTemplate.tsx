@@ -2,6 +2,8 @@ import type { Article } from "@/lib/types";
 import { Breadcrumbs, type Crumb } from "@/components/ui/Breadcrumbs";
 import { ReviewEditorialBody } from "@/components/review/ReviewEditorialBody";
 import { stripLeadingMarkdownH1 } from "@/lib/review-editorial-data";
+import { AuthorBox } from "@/components/ui/AuthorBox";
+import { getAuthorBySlug } from "@/lib/data";
 
 type Props = {
   article: Article;
@@ -9,6 +11,7 @@ type Props = {
 };
 
 export function ArticleTemplate({ article, breadcrumbs }: Props) {
+  const author = getAuthorBySlug("marta-kowalczyk");
   return (
     <article className="space-y-8">
       <Breadcrumbs items={breadcrumbs} />
@@ -21,6 +24,14 @@ export function ArticleTemplate({ article, breadcrumbs }: Props) {
       <section className="rounded-2xl border border-slate-200 bg-white p-6 md:p-8">
         <ReviewEditorialBody markdown={stripLeadingMarkdownH1(article.body)} />
       </section>
+      {author ? (
+        <section>
+          <h2 className="text-xl font-bold text-slate-900">Autorzy</h2>
+          <div className="mt-4">
+            <AuthorBox author={author} />
+          </div>
+        </section>
+      ) : null}
     </article>
   );
 }

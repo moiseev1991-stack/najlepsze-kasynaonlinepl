@@ -22,6 +22,7 @@ import categoriesData from "@/content/categories.json";
 import trustData from "@/content/trust.json";
 import articlesData from "@/content/articles.json";
 import reviewExtras from "@/content/review-extras.json";
+import textBlocksData from "@/content/text-blocks.json";
 
 function withResolvedAffiliateUrls(c: Casino): Casino {
   const affiliateUrl = affiliateGoUrl(c.slug, c.affiliateUrl);
@@ -41,7 +42,56 @@ export const games = gamesData as GamePageContent[];
 export const minDeposits = minDepositData as MinDepositPage[];
 export const categories = categoriesData as CategoryPageContent[];
 export const trustPages = trustData as TrustPageContent[];
-export const articles = articlesData as Article[];
+
+const textBlocks = textBlocksData as Record<
+  string,
+  { metaTitle: string; metaDescription: string; body: string }
+>;
+
+/** Slugi zajęte przez inne kolekcje — text-block nie generuje wtedy osobnej strony-artykułu. */
+function occupiedSlugsForArticles(): Set<string> {
+  const occupied = new Set<string>();
+  categories.forEach((c) => occupied.add(c.slug));
+  bonuses.forEach((b) => occupied.add(b.slug));
+  games.forEach((g) => occupied.add(g.slug));
+  trustPages.forEach((t) => occupied.add(t.slug));
+  casinos.forEach((c) => occupied.add(c.slug));
+  blogPosts.forEach((p) => occupied.add(p.slug));
+  // payments/minDeposits mają swoje prefiksy (/platnosci/, /minimalny-depozyt/), więc nie kolidują z /slug/
+  return occupied;
+}
+
+function firstMarkdownH1(md: string): string | null {
+  const m = md.match(/^#\s+([^\n]+)/);
+  return m ? m[1].trim() : null;
+}
+
+function stripLeadingH1(md: string): string {
+  return md.replace(/^#\s[^\n]+\n+/, "").trim();
+}
+
+/** Pseudo-artykuły zbudowane z text-blocks dla slugów, które nie mają jeszcze własnej strony. */
+const pseudoArticles: Article[] = (() => {
+  const occupied = occupiedSlugsForArticles();
+  const explicitSlugs = new Set((articlesData as Article[]).map((a) => a.slug));
+  const out: Article[] = [];
+  for (const [slug, block] of Object.entries(textBlocks)) {
+    if (occupied.has(slug) || explicitSlugs.has(slug)) continue;
+    if (!block.body) continue;
+    const h1 = firstMarkdownH1(block.body) ?? block.metaTitle ?? slug;
+    out.push({
+      slug,
+      title: h1,
+      h1,
+      metaTitle: block.metaTitle || undefined,
+      metaDescription: block.metaDescription || h1,
+      body: stripLeadingH1(block.body),
+    });
+  }
+  return out;
+})();
+
+export const articles: Article[] = [...(articlesData as Article[]), ...pseudoArticles];
 
 export type ReviewExtras = {
   ratingCriteria: { name: string; score: number; comment: string }[];
@@ -50,6 +100,8 @@ export type ReviewExtras = {
   bonusesText: string;
   paymentsText: string;
   trustNote: string;
+  /** Rozbudowany blok „Czy X jest bezpieczne / legit — opinie graczy” pod kątem intentu recenzji brandowej */
+  safetyBlock?: { heading: string; body: string }[];
 };
 
 export function getCasinoBySlug(slug: string): Casino | undefined {

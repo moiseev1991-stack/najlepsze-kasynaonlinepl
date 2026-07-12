@@ -14,6 +14,7 @@ import {
   getTrustBySlug,
 } from "@/lib/data";
 import { getReviewEditorial } from "@/lib/review-editorial-data";
+import { getTextBlock } from "@/lib/text-blocks-data";
 
 export function metadataForSegments(segments: string[]): Metadata | null {
   const page = resolvePage(segments);
@@ -35,16 +36,29 @@ export function metadataForSegments(segments: string[]): Metadata | null {
     case "payment": {
       const p = getPaymentBySlug(page.slug);
       if (!p) return null;
+      const tb = getTextBlock(page.slug);
       return buildMetadata({
-        title: `${p.methodName} w kasynach online`,
-        description: p.intro.slice(0, 155),
+        title:
+          tb?.metaTitle?.trim() ||
+          p.metaTitle?.trim() ||
+          `${p.methodName} w kasynach online`,
+        description: (
+          tb?.metaDescription?.trim() ||
+          p.metaDescription?.trim() ||
+          p.intro
+        ).slice(0, 160),
         path,
       });
     }
     case "bonus": {
       const b = getBonusBySlug(page.slug);
       if (!b) return null;
-      return buildMetadata({ title: b.title, description: b.intro.slice(0, 155), path });
+      const tb = getTextBlock(page.slug);
+      return buildMetadata({
+        title: tb?.metaTitle?.trim() || b.title,
+        description: (tb?.metaDescription?.trim() || b.intro).slice(0, 160),
+        path,
+      });
     }
     case "game": {
       const g = getGameBySlug(page.slug);
@@ -102,7 +116,11 @@ export function metadataForSegments(segments: string[]): Metadata | null {
     case "article": {
       const a = getArticleBySlug(page.slug);
       if (!a) return null;
-      return buildMetadata({ title: a.title, description: a.metaDescription, path });
+      return buildMetadata({
+        title: (a.metaTitle?.trim() || a.title).slice(0, 70),
+        description: a.metaDescription.slice(0, 160),
+        path,
+      });
     }
     default:
       return null;

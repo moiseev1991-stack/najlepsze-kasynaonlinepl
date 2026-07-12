@@ -1,3 +1,4 @@
+import type { ReactElement } from "react";
 import Link from "next/link";
 import type { Casino } from "@/lib/types";
 
@@ -7,7 +8,7 @@ type Row = {
   label: string;
   value: string;
   href?: string;
-  icon: JSX.Element;
+  icon: ReactElement;
   tone: "indigo" | "emerald" | "violet" | "amber" | "sky" | "rose";
 };
 

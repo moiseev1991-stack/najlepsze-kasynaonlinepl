@@ -16,8 +16,9 @@ import { casinos } from "@/lib/data";
 
 export const metadata: Metadata = {
   ...buildMetadata({
-    title: "Kasyno Online 2026 — Ranking Legalnych Kasyn w Polsce",
-    description: homeContent.hero.subtitle,
+    title: "Ranking kasyn online 2026 — opinie i recenzje kasyn internetowych",
+    description:
+      "Ranking kasyn online 2026: redakcyjne recenzje, opinie o kasynach internetowych, bonusy, płatności i realne czasy wypłat. Legalne i międzynarodowe kasyno online w jednym rankingu.",
     path: "/",
   }),
   verification: {

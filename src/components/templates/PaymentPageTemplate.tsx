@@ -3,7 +3,9 @@ import { Breadcrumbs, type Crumb } from "@/components/ui/Breadcrumbs";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { CasinoRatingCard } from "@/components/casino/CasinoRatingCard";
 import { SEOContentSection } from "@/components/ui/SEOContentSection";
+import { ReviewEditorialBody } from "@/components/review/ReviewEditorialBody";
 import { getCasinoBySlug } from "@/lib/data";
+import { getTextBlock, stripLeadingH1 } from "@/lib/text-blocks-data";
 import type { PaymentMethodPage } from "@/lib/types";
 
 type Props = {
@@ -22,9 +24,12 @@ export function PaymentPageTemplate({ page, breadcrumbs }: Props) {
       <Breadcrumbs items={breadcrumbs} />
       <header className="space-y-4">
         <h1 className="text-balance text-3xl font-bold text-slate-900 md:text-4xl">
-          Kasyno online — {page.methodName}
+          {page.h1 ?? `Kasyno online — ${page.methodName}`}
         </h1>
         <p className="max-w-3xl text-lg text-slate-600">{page.intro}</p>
+        {page.introSecondary ? (
+          <p className="max-w-3xl text-base text-slate-500">{page.introSecondary}</p>
+        ) : null}
       </header>
 
       <section aria-labelledby="rank-pay">
@@ -114,15 +119,28 @@ export function PaymentPageTemplate({ page, breadcrumbs }: Props) {
 
       <FAQAccordion
         title="FAQ — płatności"
-        items={[
-          {
-            question: "Czy metoda jest dostępna dla wypłat?",
-            answer:
-              "Zależy od operatora i kraju — część kanałów służy tylko do depozytów. Szczegóły w kasie i regulaminie.",
-          },
-          { question: "Jakie są typowe opłaty?", answer: page.fees },
-        ]}
+        items={
+          page.faq?.length
+            ? page.faq
+            : [
+                {
+                  question: "Czy metoda jest dostępna dla wypłat?",
+                  answer:
+                    "Zależy od operatora i kraju — część kanałów służy tylko do depozytów. Szczegóły w kasie i regulaminie.",
+                },
+                { question: "Jakie są typowe opłaty?", answer: page.fees },
+              ]
+        }
       />
+
+      {(() => {
+        const tb = getTextBlock(page.slug);
+        return tb?.body ? (
+          <section className="rounded-2xl border border-slate-200 bg-white p-6 md:p-8">
+            <ReviewEditorialBody markdown={stripLeadingH1(tb.body)} />
+          </section>
+        ) : null;
+      })()}
 
       <p className="text-sm text-slate-500">
         Więcej metod:{" "}

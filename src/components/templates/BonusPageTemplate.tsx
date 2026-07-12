@@ -19,6 +19,8 @@ import { CTASection } from "@/components/sections/CTASection";
 import { RelatedLinks } from "@/components/ui/RelatedLinks";
 import { QuickNavigation } from "@/components/ui/QuickNavigation";
 import { SpinsSectionOverview, SPINS_SECTION_BONUS_SLUGS } from "@/components/ui/SpinsSectionOverview";
+import { ReviewEditorialBody } from "@/components/review/ReviewEditorialBody";
+import { getTextBlock, stripLeadingH1 } from "@/lib/text-blocks-data";
 import type { BonusPage } from "@/lib/types";
 
 type Props = {
@@ -69,6 +71,11 @@ export function BonusPageTemplate({ page, breadcrumbs }: Props) {
             {page.title}
           </h1>
           <p className="max-w-3xl text-lg text-slate-600">{page.intro}</p>
+          {page.introSecondary ? (
+            <p className="max-w-3xl text-base leading-relaxed text-slate-500">
+              {page.introSecondary}
+            </p>
+          ) : null}
         </div>
       </header>
 
@@ -206,6 +213,15 @@ export function BonusPageTemplate({ page, breadcrumbs }: Props) {
           <FAQAccordion items={page.faq} />
         </section>
       ) : null}
+
+      {(() => {
+        const tb = getTextBlock(page.slug);
+        return tb?.body ? (
+          <section className="rounded-2xl border border-slate-200 bg-white p-6 md:p-8">
+            <ReviewEditorialBody markdown={stripLeadingH1(tb.body)} />
+          </section>
+        ) : null;
+      })()}
 
       <CTASection
         title="Zobacz aktualny ranking kasyn"

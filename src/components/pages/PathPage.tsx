@@ -94,14 +94,16 @@ export function PathPage({ segments }: Props) {
       const p = getPaymentBySlug(page.slug);
       if (!p) notFound();
       const bc = buildBreadcrumbSchema(segments, ["Płatności", p.methodName]);
-      const faqPayment = [
-        {
-          question: "Czy metoda jest dostępna dla wypłat?",
-          answer:
-            "Zależy od operatora i rynku — szczegóły znajdziesz w kasie kasyna i regulaminie płatności.",
-        },
-        { question: "Jakie są typowe opłaty?", answer: p.fees },
-      ];
+      const faqPayment = p.faq?.length
+        ? p.faq
+        : [
+            {
+              question: "Czy metoda jest dostępna dla wypłat?",
+              answer:
+                "Zależy od operatora i rynku — szczegóły znajdziesz w kasie kasyna i regulaminie płatności.",
+            },
+            { question: "Jakie są typowe opłaty?", answer: p.fees },
+          ];
       return (
         <>
           <JsonLd data={breadcrumbListSchema(bc)} />

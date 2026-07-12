@@ -106,6 +106,8 @@ export type Author = {
 
   email?: string;
 
+  linkedin?: string;
+
 };
 
 
@@ -142,7 +144,19 @@ export type PaymentMethodPage = {
 
   slug: string;
 
+  /** Opcjonalny nadpis meta title / H1; jeśli brak — fallback do „${methodName} w kasynach online” */
+
+  metaTitle?: string;
+
+  metaDescription?: string;
+
+  h1?: string;
+
   intro: string;
+
+  /** Opcjonalny drugi akapit hero — więcej kontekstu SEO */
+
+  introSecondary?: string;
 
   pros: string[];
 
@@ -168,6 +182,14 @@ export type PaymentMethodPage = {
 
   seoSections?: { heading: string; body: string }[];
 
+  /** Rozbudowane FAQ dla strony (nadpisuje domyślne w PathPage) */
+
+  faq?: FAQItem[];
+
+  /** Pełny markdown redakcyjny (z text/text2 lub bezpośrednio) — renderowany pod strukturą pól */
+
+  fullBody?: string;
+
 };
 
 
@@ -179,6 +201,10 @@ export type BonusPage = {
   slug: string;
 
   intro: string;
+
+  /** Opcjonalny drugi akapit hero — więcej kontekstu SEO / synonimów zapytań */
+
+  introSecondary?: string;
 
   conditions: string;
 
@@ -203,6 +229,10 @@ export type BonusPage = {
   summary?: string;
 
   expertTip?: string;
+
+  /** Pełny markdown redakcyjny (z text/text2 lub bezpośrednio) — renderowany pod strukturą pól */
+
+  fullBody?: string;
 
 };
 
@@ -365,6 +395,10 @@ export type Article = {
   metaDescription: string;
 
   body: string;
+
+  /** Opcjonalny nadpis meta title (jeśli różny od `title`) */
+
+  metaTitle?: string;
 
 };
 

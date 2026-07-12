@@ -12,6 +12,7 @@ import type { ReviewExtras } from "@/lib/data";
 import type { ReviewEditorialEntry } from "@/lib/review-editorial-data";
 import { stripLeadingMarkdownH1 } from "@/lib/review-editorial-data";
 import { ReviewEditorialBody } from "@/components/review/ReviewEditorialBody";
+import { getTextBlock, stripLeadingH1 } from "@/lib/text-blocks-data";
 
 type Props = {
   casino: Casino;
@@ -77,6 +78,35 @@ export function CasinoReviewTemplate({ casino, extras, editorial, author, breadc
           <ReviewEditorialBody markdown={stripLeadingMarkdownH1(editorial.body)} />
         </section>
       ) : null}
+
+      {extras?.safetyBlock?.length ? (
+        <section
+          className="rounded-2xl border border-slate-200 bg-white p-6 md:p-8"
+          aria-label="Bezpieczeństwo i opinie graczy"
+        >
+          <h2 className="text-xl font-bold text-slate-900">
+            {casino.name} — bezpieczeństwo i opinie graczy
+          </h2>
+          <div className="mt-4 space-y-6">
+            {extras.safetyBlock.map((s) => (
+              <div key={s.heading}>
+                <h3 className="text-base font-semibold text-slate-900">{s.heading}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-700">{s.body}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
+      {(() => {
+        const tb = getTextBlock(casino.slug);
+        // pokazujemy text-block tylko, gdy nie ma review-editorial (żeby uniknąć duplikacji)
+        return tb?.body && !editorial?.body ? (
+          <section className="rounded-2xl border border-slate-200 bg-white p-6 md:p-8">
+            <ReviewEditorialBody markdown={stripLeadingH1(tb.body)} />
+          </section>
+        ) : null;
+      })()}
 
       <section className="rounded-2xl border border-amber-200/80 bg-amber-50/50 p-5 text-sm leading-relaxed text-slate-800 md:p-6">
         <h2 className="text-base font-bold text-slate-900">Ujawnienie i zaufanie</h2>

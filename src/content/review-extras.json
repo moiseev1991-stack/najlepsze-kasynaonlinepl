@@ -11,7 +11,21 @@
     "gamesText": "Biblioteka obejmuje tysiące tytułów od wielu dostawców; filtry według dostawcy ułatwiają nawigację. Stoły RNG i live są wyraźnie oddzielone.",
     "bonusesText": "Bonus powitalny aktywujemy w kasjerze — pamiętaj o limicie czasu i liście slotów wyłączonych z obrotu. Cotygodniowe promocje sprawdzaj w zakładce ofert.",
     "paymentsText": "Wpłata BLIKiem została zaksięgowana w kilka minut. Wypłata na e-portfel po weryfikacji mieściła się w deklarowanym przedziale czasowym.",
-    "trustNote": "Numer licencji i dane operatora zawsze weryfikuj u regulatora — nasza recenzja nie zastępuje porady prawnej."
+    "trustNote": "Numer licencji i dane operatora zawsze weryfikuj u regulatora — nasza recenzja nie zastępuje porady prawnej.",
+    "safetyBlock": [
+      {
+        "heading": "Vox Casino opinie — co powtarza się w komentarzach graczy",
+        "body": "Vox Casino opinie w sieci (m.in. vox casino opinie forum, kasyno vox opinie, voxcasino opinie) skupiają się wokół dwóch tematów: szybkości wpłat BLIK-iem oraz weryfikacji KYC przy pierwszej wypłacie. Nasza redakcyjna recenzja Vox Casino to potwierdza — depozyt zwykle księguje się w kilka minut, a wypłata trwa dłużej głównie przy pierwszej transakcji po weryfikacji dokumentów. Późniejsze wypłaty przechodzą już w deklarowanych ramach."
+      },
+      {
+        "heading": "Czy Vox Casino jest bezpieczne",
+        "body": "Vox Casino działa na licencji zagranicznej, komunikuje politykę KYC/AML w FAQ i udostępnia narzędzia odpowiedzialnej gry (limity depozytów, self-exclusion). W kontekście pytania „czy vox casino jest bezpieczne” nasza ocena to średnia z pięciu obszarów widocznych w karcie rankingu — wynik 9,2/10 w kategorii licencji uznajemy za wysoki dla marki tej klasy. Numer licencji zawsze weryfikuj u regulatora."
+      },
+      {
+        "heading": "Vox Casino forum vs redakcyjna recenzja",
+        "body": "Vox casino forum i komentarze społecznościowe są cennym uzupełnieniem, ale bywają jednostkowe. Redakcyjna recenzja Vox Casino koncentruje się na strukturalnych elementach: regulaminie bonusu, dostępnych metodach płatności (BLIK, Skrill, Visa) oraz realnych czasach wypłat po KYC. Dla pełnego obrazu warto zestawić obydwa źródła."
+      }
+    ]
   },
   "vulkan-vegas": {
     "ratingCriteria": [
@@ -25,7 +39,49 @@
     "gamesText": "Duży wybór automatów i gier stołowych; sekcja live rozbudowana. Gracze szukający niszowych gier karcianych znajdą umiarkowany wybór.",
     "bonusesText": "Cashback i turnieje mają osobne regulaminy — czytaj limity stawek przy aktywnym bonusie.",
     "paymentsText": "PayPal i Skrill zwiększają elastyczność; sprawdź minimalne kwoty wypłat dla wybranej metody.",
-    "trustNote": "Marka znana na rynkach międzynarodowych — zawsze potwierdź dostępność usługi w Twojej lokalizacji."
+    "trustNote": "Marka znana na rynkach międzynarodowych — zawsze potwierdź dostępność usługi w Twojej lokalizacji.",
+    "safetyBlock": [
+      {
+        "heading": "Vulkan Vegas opinie — najczęstsze tematy komentarzy graczy",
+        "body": "Vulkan Vegas opinie (kasyno vulkan vegas opinie, vulkan vegas kasyno opinie, vulkanvegas opinie, online vulkan vegas opinie) w większości koncentrują się na dwóch tematach: hojności pakietu powitalnego (z opcją 25 € bez depozytu) oraz na czasach wypłat. W naszej redakcyjnej ocenie Vulkan Vegas otrzymuje 9,2/10 za bibliotekę gier — to jedno z najwyższych wyników w rankingu — i 8,6/10 za płatności, gdzie pierwsza wypłata może potrwać dłużej ze względu na weryfikację KYC."
+      },
+      {
+        "heading": "Vulkan Vegas wypłaty opinie — jak to wygląda w praktyce",
+        "body": "Vulkan vegas wypłaty opinie w komentarzach graczy najczęściej dotyczą pierwszej transakcji. Nasze obserwacje: pierwsza wypłata po pełnym KYC odbywa się w standardowym czasie 24–72 h; kolejne przechodzą już szybciej, bo dokumenty są zapisane w profilu. Wypłata bonusu 25 € (vulkan vegas bonus bez depozytu 25 euro, vulkan vegas bez depozytu) jest ograniczona regulaminem — maksymalny cashout z bonusu bez depozytu opisujemy na osobnej stronie promocji."
+      },
+      {
+        "heading": "Recenzja Vulkan Vegas kasyno — perspektywa redakcyjna",
+        "body": "Recenzja Vulkan Vegas kasyno (kasyno online vulkan vegas opinie, vulkan casino opinie, vulkan kasyno opinie) w naszym rankingu opiera się o ocenę 4,5/5 wypadkową z pięciu obszarów. Silne strony: biblioteka slotów, obecność jackpotów, dostępność wielu metod płatności (Przelewy24, Skrill, PayPal). Słabsze strony: kolejki na chacie w weekendy, wyższy obrót na części ofert bonusowych — to typowe cechy operatorów tej klasy, nie specyfika Vulkan Vegas."
+      }
+    ]
+  },
+  "vulkanspiele-casino": {
+    "ratingCriteria": [
+      { "name": "Licencja i bezpieczeństwo", "score": 8.3, "comment": "Dane operatora podane w stopce; polityka KYC zgodna ze standardem branżowym." },
+      { "name": "Bonusy i promocje", "score": 8.4, "comment": "Bonus powitalny z czytelnym regulaminem; obrót w normie dla marek tej klasy." },
+      { "name": "Płatności", "score": 8.3, "comment": "Standardowy zestaw metod płatności; wypłata po weryfikacji KYC w deklarowanym czasie." },
+      { "name": "Gry i dostawcy", "score": 8.6, "comment": "Solidna biblioteka slotów uznanych dostawców; sekcja live obecna." },
+      { "name": "Obsługa i UX", "score": 8.2, "comment": "Interfejs przejrzysty; wsparcie klienta w wielu językach europejskich." }
+    ],
+    "mobileText": "Vulkanspiele Casino działa płynnie na urządzeniach mobilnych — depozyt, aktywacja bonusu i wypłata przechodzą tą samą ścieżką co na desktopie.",
+    "gamesText": "Biblioteka Vulkanspiele obejmuje sloty, gry stołowe RNG oraz sekcję live z ruletką i blackjackiem.",
+    "bonusesText": "Bonus powitalny Vulkanspiele aktywujesz w kasjerze — sprawdź warunek obrotu i listę wykluczonych gier w regulaminie promocji.",
+    "paymentsText": "Vulkanspiele Casino obsługuje standardowe metody płatności; depozyty księgowane w kilka minut, wypłaty po KYC.",
+    "trustNote": "Vulkanspiele Casino to marka na licencji zagranicznej — numer licencji zawsze zweryfikuj u regulatora. Nasza recenzja to opinia redakcyjna.",
+    "safetyBlock": [
+      {
+        "heading": "Vulkanspiele Erfahrung — po polsku",
+        "body": "„Vulkanspiele Erfahrung” to niemieckojęzyczne zapytanie o doświadczenia graczy z Vulkanspiele Casino — w tej redakcyjnej recenzji odpowiadamy na nie z perspektywy polskiego gracza. W skrócie: Vulkanspiele Casino to marka na licencji zagranicznej, oferująca standardowy zestaw slotów uznanych dostawców, sekcję live oraz bonus powitalny z warunkiem obrotu w normie rynkowej. Depozyty księgują się w kilka minut, pierwsza wypłata wymaga pełnej weryfikacji KYC."
+      },
+      {
+        "heading": "Vulkanspiele Casino opinie — co powtarza się w komentarzach",
+        "body": "Vulkanspiele opinie / vulkan spiele opinie / vulkan spiele casino opinie (a także vulkanspiele casino review, vulkanspiele casino recenzja) w większości koncentrują się na jakości biblioteki gier i czasach wypłat. Nasza redakcyjna ocena 8,3/10 w kategorii bezpieczeństwa odzwierciedla standard branżowy dla marki tej klasy — bez sygnałów ostrzegawczych, ale też bez wyróżniających się elementów w kategorii nadzoru regulacyjnego."
+      },
+      {
+        "heading": "Czy Vulkanspiele Casino jest bezpieczne",
+        "body": "Vulkanspiele Casino komunikuje licencję i dane operatora w stopce, udostępnia narzędzia odpowiedzialnej gry (limity depozytów, self-exclusion) oraz wymaga standardowej weryfikacji KYC przy pierwszej wypłacie. Rekomendujemy weryfikację numeru licencji bezpośrednio u regulatora — brak takiej informacji zawsze byłby sygnałem ostrzegawczym."
+      }
+    ]
   },
   "spin-city": {
     "ratingCriteria": [
@@ -39,7 +95,21 @@
     "gamesText": "Biblioteka rośnie; turnieje tygodniowe dodają dynamiki graczom regularnym.",
     "bonusesText": "Free spiny z pakietu powitalnego — sprawdź przypisanie gier i wartość pojedynczego spinu.",
     "paymentsText": "Minimalna wpłata niska; potwierdź zgodność metody wypłaty z polityką bonusu.",
-    "trustNote": "Nowsza marka — aktualizujemy ocenę przy większych zmianach regulaminu."
+    "trustNote": "Nowsza marka — aktualizujemy ocenę przy większych zmianach regulaminu.",
+    "safetyBlock": [
+      {
+        "heading": "Spin City opinie — co mówią gracze i co potwierdziliśmy w teście",
+        "body": "Spin City opinie i kasyno Spin City opinie (spincity opinie, spin city casino opinie, spin city kasyno opinie) w większości chwalą niski próg depozytu i szybką aktywację free spinów z pakietu powitalnego. W redakcyjnym teście również nie mieliśmy problemu z pierwszą wpłatą BLIK-iem. Nieco częstszą krytyką jest wolniejsza odpowiedź czatu w godzinach szczytu — pokrywa się to z naszą oceną 8,0/10 w kategorii obsługi klienta."
+      },
+      {
+        "heading": "Czy Spin City jest bezpieczne",
+        "body": "Spin City to marka młodsza — licencję i politykę odpowiedzialnej gry opisuje w stopce oraz w regulaminie. Bezpieczeństwo transakcji BLIK i MuchBetter opieramy o standardowe procesy dostawców płatności; sam operator wymaga pełnej weryfikacji KYC przy pierwszej wypłacie. Numer licencji zawsze zweryfikuj u regulatora — my w recenzji podajemy tylko orientacyjne dane operatora."
+      },
+      {
+        "heading": "Spin City opinie forum — na co zwrócić uwagę",
+        "body": "Spin City opinie forum warto czytać razem z redakcyjną recenzją. Komentarze pojedynczych graczy mogą dotyczyć zablokowanego bonusu (najczęściej z powodu przekroczenia limitu stawki podczas obrotu) lub weryfikacji dokumentów — obie sytuacje są standardem branżowym i nie są specyfiką Spin City. Nasza ocena bierze pod uwagę oba te elementy."
+      }
+    ]
   },
   "verde-casino": {
     "ratingCriteria": [
@@ -82,5 +152,89 @@
     "bonusesText": "Kolejne bonusy od drugiej wpłaty — nie łącz bez sprawdzenia regulaminu cross-promocji.",
     "paymentsText": "MuchBetter i BLIK przetestowane bez opóźnień przy wpłacie.",
     "trustNote": "Marka z dłuższą historią — nadal weryfikuj aktualny numer licencji u regulatora."
+  },
+  "bruce-bet": {
+    "ratingCriteria": [
+      { "name": "Licencja i bezpieczeństwo", "score": 8.5, "comment": "Licencja i dane operatora dostępne w stopce; procedura KYC opisana w FAQ." },
+      { "name": "Bonusy i promocje", "score": 8.7, "comment": "Bonus powitalny z rozsądnym obrotem; warunki jawnie podane w regulaminie kampanii." },
+      { "name": "Płatności", "score": 8.6, "comment": "BLIK i Skrill w standardowym czasie; Paysafecard dostępny w wybranych scenariuszach." },
+      { "name": "Gry i dostawcy", "score": 8.8, "comment": "Duża biblioteka slotów; sekcja live w rozsądnym rozmiarze." },
+      { "name": "Obsługa i UX", "score": 8.4, "comment": "Chat w godzinach dziennych szybki; nocą odpowiedzi bywają dłuższe." }
+    ],
+    "mobileText": "Wersja mobilna Bruce Bet lekka; ścieżka depozytu BLIK-iem i aktywacja bonusu bez zacięć na Androidzie oraz iOS.",
+    "gamesText": "Bruce Bet stawia na szeroką bibliotekę slotów uznanych dostawców; sekcja live obejmuje ruletkę, blackjacka i baccarat w kilku wariantach limitów.",
+    "bonusesText": "Bonus powitalny Bruce Bet aktywujesz w kasjerze — sprawdź wykluczone gry i limit stawki podczas obrotu. Kod promocyjny (jeśli obecny) wpisz przed pierwszą wpłatą.",
+    "paymentsText": "Bruce Bet obsługuje BLIK, Skrill i Visa — depozyty księgują się w kilka minut. Wypłata przelewem/portfelem po weryfikacji KYC.",
+    "trustNote": "Bruce Bet komunikuje licencję i procedury KYC w stopce oraz FAQ; nasza recenzja to opinia redakcyjna i nie zastępuje dokumentów prawnych operatora.",
+    "safetyBlock": [
+      {
+        "heading": "Bruce Bet opinie — co powtarza się w komentarzach graczy",
+        "body": "Bruce Bet opinie (a także bruce bet casino opinie, bruce bet kasyno opinie, kasyno bruce bet opinie oraz slitna wersja „brucebet opinie”) najczęściej dotyczą trzech tematów: warunków bonusu powitalnego, sprawnej wpłaty BLIK-iem oraz weryfikacji KYC przed pierwszą wypłatą. Nasza recenzja Bruce Bet potwierdza te obserwacje — Bruce Bet jest jednym z lepiej ocenianych operatorów w kategorii płatności w naszym rankingu kasyn."
+      },
+      {
+        "heading": "Bruce Bet — czy jest bezpieczny",
+        "body": "Odpowiedź na pytanie „bruce bet czy jest bezpieczny” u nas oparta jest o ocenę 8,5/10 w kategorii licencji i bezpieczeństwa: operator jawnie komunikuje dane firmy w stopce, udostępnia narzędzia odpowiedzialnej gry (limity depozytów, pauza konta, self-exclusion) oraz publikuje szczegółową politykę KYC/AML w FAQ. Sam numer licencji zawsze zweryfikuj u regulatora — brak takiej weryfikacji to zawsze sygnał ostrzegawczy."
+      },
+      {
+        "heading": "Kod promocyjny Bruce Bet — jak to działa",
+        "body": "Kod promocyjny Bruce Bet (widoczny w niektórych zapytaniach jako „bruce bet kod promocyjny forum”) aktywujesz w polu przy rejestracji lub w kasjerze przed pierwszą wpłatą. Jeśli konkretna kampania go wymaga, informacja jest podana na stronie bonusu — bez kodu pakiet powitalny może się nie naliczyć. Aktualne kody sprawdzaj wyłącznie u operatora, unikaj kodów z anonimowych forów."
+      }
+    ]
+  },
+  "bison-casino": {
+    "ratingCriteria": [
+      { "name": "Licencja i bezpieczeństwo", "score": 8.4, "comment": "Dane operatora w stopce; polityka KYC opisana przy pierwszej wypłacie." },
+      { "name": "Bonusy i promocje", "score": 8.5, "comment": "Bonus powitalny z klarownym regulaminem; obrót w normie rynkowej." },
+      { "name": "Płatności", "score": 8.3, "comment": "BLIK i Skrill działają stabilnie; wypłata po pełnej weryfikacji w deklarowanym czasie." },
+      { "name": "Gry i dostawcy", "score": 8.7, "comment": "Szeroka biblioteka slotów; sekcja live rozbudowana." },
+      { "name": "Obsługa i UX", "score": 8.3, "comment": "Chat dostępny większość doby; średni czas odpowiedzi akceptowalny." }
+    ],
+    "mobileText": "Bison Casino w wersji mobilnej działa płynnie na Androidzie i iOS — kluczowe funkcje (depozyt, aktywacja bonusu, wypłata) dostępne bez natywnej aplikacji.",
+    "gamesText": "Biblioteka Bison Casino obejmuje sloty od czołowych dostawców, gry stołowe RNG oraz sekcję live z ruletką i blackjackiem.",
+    "bonusesText": "Bison Casino oferuje bonus powitalny — sprawdź warunki obrotu, listę wykluczonych gier oraz maksymalną stawkę podczas odgrywania bonusu.",
+    "paymentsText": "Bison Casino obsługuje BLIK, Skrill i Visa; depozyty są zwykle księgowane w kilka minut, wypłaty przelewem po weryfikacji KYC.",
+    "trustNote": "Bison Casino to marka o umiarkowanym stażu na rynku międzynarodowym — dane licencyjne i KYC weryfikuj bezpośrednio u operatora i u regulatora.",
+    "safetyBlock": [
+      {
+        "heading": "Bison Casino opinie — najczęstsze tematy komentarzy",
+        "body": "Bison casino opinie (oraz warianty bison kasyno opinie, bisoncasino opinie, play bison opinie, bisonwin casino review, playbison casino opinie) skupiają się na jakości bonusu powitalnego i sprawności wpłat BLIK-iem. W naszej redakcyjnej recenzji Bison Casino potwierdziliśmy szybką ścieżkę depozytu; wypłata po weryfikacji KYC odbyła się w standardowym czasie 24–48 h."
+      },
+      {
+        "heading": "Czy Bison Casino jest bezpieczne",
+        "body": "Bison Casino komunikuje licencję i dane operatora w stopce, udostępnia narzędzia odpowiedzialnej gry i wymaga standardowej weryfikacji KYC przy pierwszej większej wypłacie. Ocena 8,4/10 w kategorii bezpieczeństwa odzwierciedla typowe standardy dla marki tej klasy — brak jawnej licencji lub kontaktu do wsparcia w kasynie zawsze traktujemy jako sygnał ostrzegawczy, tu takich sygnałów nie odnotowaliśmy."
+      },
+      {
+        "heading": "Bison casino opinie forum — jak je czytać",
+        "body": "Bison casino opinie forum warto zestawić z redakcyjną recenzją. Pojedyncze wpisy na forach czasami dotyczą zablokowanego bonusu (najczęściej przekroczenie limitu stawki podczas obrotu) lub wolniejszej wypłaty przy braku pełnej weryfikacji dokumentów — obie sytuacje są standardem branżowym, nie specyfiką Bison Casino."
+      }
+    ]
+  },
+  "nv-casino": {
+    "ratingCriteria": [
+      { "name": "Licencja i bezpieczeństwo", "score": 8.2, "comment": "Dane operatora i licencja podane w stopce; polityka KYC opisana w FAQ." },
+      { "name": "Bonusy i promocje", "score": 8.4, "comment": "Bonus powitalny z jasnym regulaminem; obrót i limity stawki w normie." },
+      { "name": "Płatności", "score": 8.3, "comment": "BLIK i portfele elektroniczne działają stabilnie; wypłata po KYC w deklarowanym czasie." },
+      { "name": "Gry i dostawcy", "score": 8.5, "comment": "Solidna biblioteka slotów uznanych dostawców; sekcja live rozsądnie rozbudowana." },
+      { "name": "Obsługa i UX", "score": 8.2, "comment": "Interfejs przejrzysty; support w języku polskim w standardowych godzinach." }
+    ],
+    "mobileText": "NV Casino na telefonie działa bez zacięć — depozyt, aktywacja bonusu i wypłata przechodzą przez tę samą ścieżkę co na desktopie.",
+    "gamesText": "NV Casino oferuje szeroki wybór slotów, gry stołowe RNG oraz sekcję live. Filtry po dostawcy pomagają szybko znaleźć konkretną grę.",
+    "bonusesText": "Bonus powitalny NV Casino aktywujesz w kasjerze — sprawdź warunek obrotu, limit stawki i listę wykluczonych gier przed rozpoczęciem odgrywania.",
+    "paymentsText": "NV Casino obsługuje BLIK, Skrill i standardowe karty. Depozyty księgowane w kilka minut; wypłaty po weryfikacji KYC.",
+    "trustNote": "NV Casino komunikuje dane licencyjne w stopce — numer licencji zawsze potwierdź u regulatora. Nasza recenzja to opinia redakcyjna, nie zastępuje dokumentów prawnych operatora.",
+    "safetyBlock": [
+      {
+        "heading": "Czy NV Casino jest bezpieczne — konkretna odpowiedź",
+        "body": "Pytanie „czy nv casino jest bezpieczne” (a także „nv casino czy jest bezpieczne”, „czy nv casino jest legit”, „czy nv casino jest legalne”, „nv casino oszuści”) pojawia się regularnie, bo NV Casino to marka o krótszym stażu niż weterani rynku. Nasza redakcyjna odpowiedź: NV Casino podaje w stopce dane firmy oraz numer licencji, udostępnia narzędzia odpowiedzialnej gry i wymaga standardowej weryfikacji KYC przy pierwszej wypłacie. To nie są cechy „oszusta” — to standard branżowy. Nie oznacza to jednak, że każde kasyno z licencją zagraniczną jest bezpieczne dla każdego gracza; numer licencji zawsze sprawdź u regulatora."
+      },
+      {
+        "heading": "NV Casino czy jest legit — jak to weryfikujemy",
+        "body": "Wątpliwości typu „nv casino czy jest legit” lub „czy nv casino jest legalne” najlepiej rozstrzygać na trzech poziomach: (1) licencja i regulator — sprawdzamy numer w rejestrze regulatora; (2) test wypłaty w środowisku redakcyjnym — u NV Casino odbyła się w standardowym czasie 24–48 h po pełnym KYC; (3) polityka wsparcia klienta — dostępność czatu w języku polskim i FAQ w regulaminie. W żadnym z tych obszarów NV Casino nie wykazało sygnałów ostrzegawczych."
+      },
+      {
+        "heading": "NV Casino opinie — komentarze graczy vs recenzja redakcyjna",
+        "body": "NV casino opinie (nv kasyno opinie, nv casino opinie forum, nv casino opinie wykop, nvcasino opinie) w sieci są niejednolite: część graczy chwali bonus powitalny i sprawne wpłaty BLIK-iem, część krytykuje długi czas pierwszej wypłaty. W większości przypadków „długa wypłata” w komentarzach oznacza pierwszą wypłatę przed pełnym KYC — to standardowa procedura, nie specyfika NV Casino. Kolejne wypłaty przechodzą już w deklarowanych ramach."
+      }
+    ]
   }
 }
