@@ -12,12 +12,30 @@ function pathKey(path: string) {
 }
 
 function isActivePath(pathname: string, href: string) {
+  // Href z fragmentem (np. „/#przewodnik-recenzji") to link do sekcji tej samej strony —
+  // Next.js `usePathname()` nie zwraca fragmentu, więc taki wpis nie może być „aktywny"
+  // wg pathname. Traktujemy fragment-only linki jako nieaktywne, żeby uniknąć podwójnego
+  // podświetlenia (np. „Kasyno" + „Ranking" na stronie głównej).
+  if (href.includes("#")) return false;
   return pathKey(pathname) === pathKey(href);
 }
 
-function sectionHasActive(pathname: string, section: (typeof megaMenuSections)[number]) {
-  if (isActivePath(pathname, section.href)) return true;
-  return section.children.some((c) => isActivePath(pathname, c.href));
+/**
+ * Wybiera JEDNĄ aktywną sekcję menu, żeby uniknąć wielokrotnego podświetlenia.
+ * Priorytet: (1) sekcja z dokładnym overview-hrefem = pathname,
+ * (2) pierwsza sekcja, której którekolwiek dziecko match'uje pathname.
+ */
+function findActiveSectionIndex(
+  pathname: string,
+  sections: typeof megaMenuSections,
+): number {
+  for (let i = 0; i < sections.length; i++) {
+    if (isActivePath(pathname, sections[i].href)) return i;
+  }
+  for (let i = 0; i < sections.length; i++) {
+    if (sections[i].children.some((c) => isActivePath(pathname, c.href))) return i;
+  }
+  return -1;
 }
 
 const linkBase =
@@ -31,6 +49,7 @@ const overviewActive = "bg-brand-100 text-brand-800";
 
 export function MegaMenu() {
   const pathname = usePathname() ?? "/";
+  const activeIndex = findActiveSectionIndex(pathname, megaMenuSections);
   const [open, setOpen] = useState<number | null>(null);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -49,7 +68,7 @@ export function MegaMenu() {
           <button
             type="button"
             className={`flex h-full items-center gap-1 rounded-xl px-3 py-2 text-sm font-medium transition hover:bg-nk-bg-alt hover:text-nk-text ${
-              sectionHasActive(pathname, section) ? "bg-brand-50 text-brand-800" : "text-nk-muted"
+              activeIndex === i ? "bg-brand-50 text-brand-800" : "text-nk-muted"
             }`}
             aria-expanded={open === i}
             onClick={(e) => {
@@ -101,6 +120,7 @@ const mobileLinkActive = "bg-brand-50 font-medium text-brand-800";
 
 export function MegaMenuMobile({ onNavigate }: { onNavigate?: () => void }) {
   const pathname = usePathname() ?? "/";
+  const activeIndex = findActiveSectionIndex(pathname, megaMenuSections);
   const [expanded, setExpanded] = useState<number | null>(null);
 
   return (
@@ -110,7 +130,7 @@ export function MegaMenuMobile({ onNavigate }: { onNavigate?: () => void }) {
           <button
             type="button"
             className={`flex w-full items-center justify-between rounded-lg px-2 py-2 text-left text-sm font-semibold transition hover:bg-nk-bg-alt ${
-              sectionHasActive(pathname, section) ? "bg-brand-50 text-brand-800" : "text-nk-text"
+              activeIndex === i ? "bg-brand-50 text-brand-800" : "text-nk-text"
             }`}
             onClick={() => setExpanded(expanded === i ? null : i)}
           >
