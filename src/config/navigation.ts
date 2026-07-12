@@ -110,6 +110,18 @@ export const megaMenuSections: MegaMenuSection[] = [
     ],
   },
   {
+    label: "Kalkulatory",
+    overviewLabel: "Kalkulatory bukmacherskie",
+    href: "/kalkulator-bukmacherski/",
+    children: [
+      { href: "/kalkulator-bukmacherski/", label: "Kalkulator bukmacherski" },
+      { href: "/kalkulator-zakladow-systemowych/", label: "Kalkulator systemowy" },
+      { href: "/konwerter-kursow/", label: "Konwerter kursów" },
+      { href: "/kalkulator-marzy-bukmachera/", label: "Kalkulator marży bukmachera" },
+      { href: "/kalkulator-kontrowania/", label: "Kalkulator kontrowania" },
+    ],
+  },
+  {
     label: "Kasa",
     overviewLabel: "Darmowa kasa",
     href: "/darmowa-kasa-bez-depozytu/",

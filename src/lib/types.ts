@@ -412,6 +412,48 @@ export type Article = {
 
 
 
+export type CalculatorKind =
+
+  | "basic"
+
+  | "system"
+
+  | "converter"
+
+  | "margin"
+
+  | "hedge";
+
+
+
+export type CalculatorPage = {
+
+  slug: string;
+
+  kind: CalculatorKind;
+
+  title: string;
+
+  metaTitle?: string;
+
+  metaDescription: string;
+
+  h1: string;
+
+  intro: string;
+
+  howItWorks: string;
+
+  formula: string;
+
+  example: string;
+
+  faq: FAQItem[];
+
+};
+
+
+
 export type PageKind =
 
   | { type: "category"; slug: string }
@@ -438,6 +480,8 @@ export type PageKind =
 
   | { type: "trust"; slug: string }
 
-  | { type: "article"; slug: string };
+  | { type: "article"; slug: string }
+
+  | { type: "calculator"; slug: string };
 
 

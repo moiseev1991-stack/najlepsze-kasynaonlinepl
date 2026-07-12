@@ -10,6 +10,7 @@ import {
   getAuthorBySlug,
   getBlogBySlug,
   getBonusBySlug,
+  getCalculatorBySlug,
   getCasinoBySlug,
   getCategoryBySlug,
   getCasinosForCategory,
@@ -22,7 +23,8 @@ import {
   getTrustBySlug,
 } from "@/lib/data";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { articleSchema, breadcrumbListSchema, faqPageSchema, reviewSchema, type SchemaAuthor } from "@/lib/seo";
+import { articleSchema, breadcrumbListSchema, faqPageSchema, reviewSchema, softwareApplicationSchema, type SchemaAuthor } from "@/lib/seo";
+import { CalculatorPageTemplate } from "@/components/templates/CalculatorPageTemplate";
 import { CategoryPageTemplate } from "@/components/templates/CategoryPageTemplate";
 import { CasinoReviewTemplate } from "@/components/templates/CasinoReviewTemplate";
 import { GamePageTemplate } from "@/components/templates/GamePageTemplate";
@@ -299,6 +301,32 @@ export function PathPage({ segments }: Props) {
             breadcrumbs={crumbsLocal([
               { label: "Strona główna", href: "/" },
               { label: a.h1 || a.title },
+            ])}
+          />
+        </>
+      );
+    }
+    case "calculator": {
+      const c = getCalculatorBySlug(page.slug);
+      if (!c) notFound();
+      const bc = buildBreadcrumbSchema(segments, ["Kalkulatory", c.title]);
+      return (
+        <>
+          <JsonLd data={breadcrumbListSchema(bc)} />
+          <JsonLd data={faqPageSchema(c.faq)} />
+          <JsonLd
+            data={softwareApplicationSchema({
+              name: c.title,
+              description: c.metaDescription,
+              url: toAbsoluteUrl(`/${c.slug}/`),
+            })}
+          />
+          <CalculatorPageTemplate
+            page={c}
+            breadcrumbs={crumbsLocal([
+              { label: "Strona główna", href: "/" },
+              { label: "Kalkulatory bukmacherskie", href: "/kalkulator-bukmacherski/" },
+              { label: c.title },
             ])}
           />
         </>

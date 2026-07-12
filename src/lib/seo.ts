@@ -201,6 +201,25 @@ function personRef(a: SchemaAuthor) {
   return out;
 }
 
+export function softwareApplicationSchema(input: {
+  name: string;
+  description: string;
+  url: string;
+  category?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: input.name,
+    description: input.description,
+    url: input.url,
+    applicationCategory: input.category ?? "FinanceApplication",
+    operatingSystem: "Any",
+    offers: { "@type": "Offer", price: 0, priceCurrency: "PLN" },
+    inLanguage: "pl-PL",
+  };
+}
+
 export function articleSchema(input: {
   headline: string;
   description: string;

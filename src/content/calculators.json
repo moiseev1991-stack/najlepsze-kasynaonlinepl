@@ -1,0 +1,132 @@
+[
+  {
+    "slug": "kalkulator-bukmacherski",
+    "kind": "basic",
+    "title": "Kalkulator bukmacherski",
+    "metaTitle": "Kalkulator bukmacherski 2026 — oblicz wygraną z podatkiem 12%",
+    "metaDescription": "Kalkulator bukmacherski online: oblicz zwrot ze stawki, wygraną netto po podatku 12% oraz zysk. Wsparcie dla zakładów pojedynczych i AKO.",
+    "h1": "Kalkulator bukmacherski — oblicz wygraną z podatkiem 12%",
+    "intro": "Podstawowy kalkulator bukmacherski w rozliczeniu polskim (podatek 12% od wygranych powyżej 2280 zł). Wprowadź stawkę i kurs — otrzymasz zwrot brutto, wygraną netto oraz zysk. Obsługuje zakłady pojedyncze i akumulatory (AKO) do 12 zdarzeń.",
+    "howItWorks": "Zwrot brutto = stawka × kurs. W Polsce od 2017 r. podatek wynosi 12% i pobierany jest od kwoty wygranej po odjęciu stawki (od nadwyżki), ale wyłącznie gdy jednorazowa wygrana przekracza próg podatku (kwota wolna 2280 zł na jedno zdarzenie/zakład). Kalkulator liczy dwa warianty: bez podatku (jeśli kwota poniżej progu lub bukmacher opłaca podatek za gracza) oraz z podatkiem 12%.",
+    "formula": "zwrot = stawka × kurs\nwygrana_brutto = zwrot − stawka\npodatek = 0.12 × wygrana_brutto (gdy zwrot > 2280 zł)\nzysk_netto = wygrana_brutto − podatek",
+    "example": "Stawka 100 zł, kurs 3.50 → zwrot 350 zł, wygrana brutto 250 zł, podatek 12% × 250 = 30 zł, zysk netto 220 zł. Przy AKO 3 zdarzeń o kursach 1.8 × 2.1 × 2.4 = 9.072, stawka 50 zł → zwrot 453.60 zł, zysk brutto 403.60 zł, podatek 48.43 zł, zysk netto 355.17 zł.",
+    "faq": [
+      {
+        "question": "Czy podatek 12% liczony jest od stawki czy od wygranej?",
+        "answer": "Od nadwyżki nad stawką, czyli od kwoty wygranej brutto (zwrot minus stawka). Podatek dotyczy zwrotu powyżej progu 2280 zł — poniżej tej kwoty wygrana jest wolna od podatku."
+      },
+      {
+        "question": "Czy bukmacher automatycznie odlicza podatek?",
+        "answer": "Legalny bukmacher w Polsce (SuperBet, STS, Fortuna, Betclic, Betfan itd.) pobiera podatek automatycznie i wypłaca gracza kwotę netto. U operatorów międzynarodowych obowiązek rozliczenia leży po stronie gracza."
+      },
+      {
+        "question": "Jak działa AKO w tym kalkulatorze?",
+        "answer": "Wprowadź kolejne kursy oddzielając je przecinkami lub w osobnych polach. Kalkulator mnoży kursy przez siebie i traktuje to jako jeden zwrot brutto. Wystarczy jedno przegrane zdarzenie, żeby cały AKO przegrał."
+      }
+    ]
+  },
+  {
+    "slug": "kalkulator-zakladow-systemowych",
+    "kind": "system",
+    "title": "Kalkulator zakładów systemowych",
+    "metaTitle": "Kalkulator zakładów systemowych — systemy 2/3, 3/4, 4/5 online",
+    "metaDescription": "Kalkulator zakładów systemowych online: wybierz N zdarzeń i K trafień (system K/N), wprowadź kursy — kalkulator policzy wszystkie kombinacje, zwrot i zysk.",
+    "h1": "Kalkulator zakładów systemowych — systemy K z N",
+    "intro": "Zakład systemowy to zestaw wszystkich kombinacji K trafień spośród N zdarzeń. Wybierz liczbę zdarzeń (2–8), liczbę trafień, wprowadź kursy — kalkulator sam wyliczy stawkę na jedną kombinację, całkowitą stawkę, zwrot z każdego scenariusza i minimalną liczbę trafień pod dodatnim zyskiem.",
+    "howItWorks": "System K z N zawiera C(N,K) = N! / (K! × (N−K)!) kombinacji K zdarzeń. Twoja stawka całkowita to (stawka za kombinację) × C(N,K). Zwrot: dla każdej udanej kombinacji (wszystkie K zdarzeń trafione) otrzymujesz stawkę za kombinację × iloczyn K kursów.",
+    "formula": "liczba_kombinacji = C(N, K)\nstawka_calkowita = stawka_za_kombinacje × liczba_kombinacji\ndla_kazdej_wygranej_kombinacji: zwrot += stawka_za_kombinacje × k1 × k2 × ... × kK\nzysk = zwrot − stawka_calkowita",
+    "example": "System 2 z 3 (kursy 1.8 / 2.0 / 2.5), stawka 10 zł za kombinację = 30 zł łącznie. Kombinacji jest C(3,2)=3. Jeśli trafisz wszystkie 3: zwrot = 10×(1.8×2.0 + 1.8×2.5 + 2.0×2.5) = 10×(3.6+4.5+5.0) = 131 zł, zysk 101 zł. Jeśli trafisz tylko 2: zwrot = 10 × iloczyn tych 2 kursów.",
+    "faq": [
+      {
+        "question": "Czym różni się system od AKO?",
+        "answer": "W AKO wszystkie zdarzenia muszą trafić — jedno przegrane oznacza przegrany cały kupon. W systemie K/N wygrywasz nawet gdy przegrasz część zdarzeń (o ile trafisz co najmniej K)."
+      },
+      {
+        "question": "Jaki system jest najbardziej opłacalny?",
+        "answer": "Nie ma uniwersalnej odpowiedzi. System K/N przy K blisko N (np. 4/5) daje wyższe wygrane, ale mniejszą szansę na zwrot. K znacznie mniejsze od N (np. 2/5) daje częste zwroty, ale niski zysk. Optymalny wybór zależy od Twojej estymacji prawdopodobieństw."
+      },
+      {
+        "question": "Ile kosztuje system 3 z 5?",
+        "answer": "C(5,3) = 10 kombinacji. Przy stawce 5 zł za kombinację łączny koszt to 50 zł. Kalkulator liczy to automatycznie."
+      }
+    ]
+  },
+  {
+    "slug": "konwerter-kursow",
+    "kind": "converter",
+    "title": "Konwerter kursów bukmacherskich",
+    "metaTitle": "Konwerter kursów bukmacherskich — dziesiętne, ułamkowe, amerykańskie",
+    "metaDescription": "Przelicz kursy bukmacherskie między formatami dziesiętnym, ułamkowym (UK), amerykańskim (moneyline) oraz na prawdopodobieństwo implikowane. Kalkulator online.",
+    "h1": "Konwerter kursów bukmacherskich — decimal, ułamkowe, amerykańskie",
+    "intro": "Przelicz kurs pomiędzy trzema najpopularniejszymi formatami zapisu: dziesiętnym (europejskim), ułamkowym (brytyjskim) oraz amerykańskim (moneyline). Bonusowo: prawdopodobieństwo implikowane w procentach — ile bukmacher szacuje szans na dane zdarzenie.",
+    "howItWorks": "Format dziesiętny to bezpośredni mnożnik stawki (np. 2.50 oznacza zwrot 2.50 × stawka). Ułamkowy to zysk_netto / stawka (np. 3/2 = 1.5 zysku netto na jednostkę = 2.50 dziesiętnie). Amerykański: dodatni (+150) oznacza zysk 150 przy stawce 100; ujemny (−200) oznacza stawkę 200 potrzebną do wygrania 100.",
+    "formula": "dziesiętny → prawdopodobieństwo: p = 1 / dziesiętny (w %)\ndziesiętny → ułamkowy: (dziesiętny − 1) jako ułamek zredukowany\ndziesiętny → amerykański: jeśli dziesiętny ≥ 2.0 → (dziesiętny − 1) × 100; inaczej → −100 / (dziesiętny − 1)",
+    "example": "Kurs 2.50 (dziesiętny) = 3/2 (ułamkowy) = +150 (amerykański) = 40% prawdopodobieństwo. Kurs 1.50 = 1/2 = −200 = 66.67% prawdopodobieństwo. Kurs 4.00 = 3/1 = +300 = 25% prawdopodobieństwo.",
+    "faq": [
+      {
+        "question": "Który format kursów jest najlepszy?",
+        "answer": "Dziesiętny — używany domyślnie w Polsce i Europie. Ułamkowy jest standardem w UK, amerykański w USA. Sam wybór formatu nie zmienia matematyki, tylko sposób zapisu."
+      },
+      {
+        "question": "Co to prawdopodobieństwo implikowane?",
+        "answer": "To prawdopodobieństwo zdarzenia „ukryte” w kursie bukmachera po dodaniu marży. Suma prawdopodobieństw dla wszystkich wyników zawsze przekracza 100% — nadwyżka to właśnie marża bukmachera (overround)."
+      },
+      {
+        "question": "Jak sprawdzić czy kurs jest wartościowy?",
+        "answer": "Porównaj prawdopodobieństwo implikowane z Twoją własną estymacją szansy. Jeśli uważasz że szansa jest wyższa niż implikowana — kurs jest „value” (dodatnia wartość oczekiwana). Nie jest to gwarancja zysku."
+      }
+    ]
+  },
+  {
+    "slug": "kalkulator-marzy-bukmachera",
+    "kind": "margin",
+    "title": "Kalkulator marży bukmachera",
+    "metaTitle": "Kalkulator marży bukmacherskiej — overround i prowizja operatora",
+    "metaDescription": "Oblicz marżę bukmachera (overround) na podstawie kursów dwóch lub trzech wyników. Wyższa marża = niższe kursy dla gracza. Kalkulator online 2026.",
+    "h1": "Kalkulator marży bukmachera — overround na zdarzeniu",
+    "intro": "Marża bukmachera (overround) to prowizja operatora „ukryta” w kursach. Wprowadź kursy dla 2 lub 3 wyników jednego zdarzenia (np. 1 / X / 2 w piłce nożnej) — kalkulator obliczy sumę prawdopodobieństw implikowanych i pokaże procentową nadwyżkę nad 100%. Im niższa marża, tym lepsze kursy dla gracza.",
+    "howItWorks": "Bez marży suma odwrotności kursów wszystkich możliwych wyników powinna wynosić 1 (100%). Bukmacher „dorzuca” nadwyżkę — zwykle 5–12% w piłce nożnej, 2–5% w tenisie u dobrych operatorów. Wzór: suma (1/k1 + 1/k2 + 1/k3) × 100, marża = wynik − 100%.",
+    "formula": "prawdopodobieństwo_implikowane_i = 1 / kurs_i\nsuma = Σ (1/kurs_i)\noverround (%) = suma × 100 − 100\nfair_odds_i = 1 / (prawdopodobieństwo_i / suma)",
+    "example": "Piłka nożna, kursy 1 / X / 2 = 2.10 / 3.40 / 3.60. Suma prawdopodobieństw: 1/2.10 + 1/3.40 + 1/3.60 = 0.476 + 0.294 + 0.278 = 1.048 = 104.8%. Marża bukmachera = 4.8%. Fair odds (bez marży): 2.20 / 3.56 / 3.77.",
+    "faq": [
+      {
+        "question": "Jaka marża jest niska?",
+        "answer": "W piłce nożnej: 3–5% (bardzo dobry), 5–7% (dobry), 7–10% (średni), powyżej 10% (wysoki). W tenisie: 2–3% (top), 3–5% (dobry). Na niszowych rynkach (esport, gry karciane) marże często sięgają 15–20%."
+      },
+      {
+        "question": "Który bukmacher ma najniższe marże?",
+        "answer": "W Polsce najniższe marże na piłce nożnej mają zwykle Betclic, LV BET i STS w topowych meczach. Na Ekstraklasie i międzynarodowych ligach różnice sięgają 2–4 punktów procentowych."
+      },
+      {
+        "question": "Czy niższa marża oznacza pewny zysk?",
+        "answer": "Nie. Niska marża oznacza jedynie lepsze kursy przy tym samym prawdopodobieństwie. Nadal potrzebujesz trafnej estymacji szansy zdarzenia, żeby wyjść na plus w długim okresie."
+      }
+    ]
+  },
+  {
+    "slug": "kalkulator-kontrowania",
+    "kind": "hedge",
+    "title": "Kalkulator kontrowania (hedging)",
+    "metaTitle": "Kalkulator kontrowania — hedge betting i zabezpieczenie kuponu",
+    "metaDescription": "Kalkulator kontrowania zakładu bukmacherskiego (hedging): oblicz stawkę na przeciwny wynik, żeby zablokować zysk lub zminimalizować stratę. Online 2026.",
+    "h1": "Kalkulator kontrowania — hedge betting w praktyce",
+    "intro": "Kontrowanie (hedging) to obstawienie przeciwnego wyniku, żeby zabezpieczyć zysk lub zmniejszyć potencjalną stratę na oryginalnym kuponie. Wprowadź swój pierwszy zakład (stawka + kurs) oraz obecny kurs na przeciwny wynik — kalkulator policzy stawkę na kontrę i pokaże zysk niezależnie od wyniku.",
+    "howItWorks": "Cel: taka stawka na kontrę, żeby zysk był taki sam bez względu na wynik. Wzór wychodzi z założenia: (stawka_1 × kurs_1) − stawka_1 − stawka_2 = (stawka_2 × kurs_2) − stawka_1 − stawka_2. Po uproszczeniu: stawka_2 = (stawka_1 × kurs_1) / kurs_2.",
+    "formula": "stawka_kontry = (stawka_org × kurs_org) / kurs_kontry\ncalkowita_stawka = stawka_org + stawka_kontry\ngwarantowany_zwrot = stawka_org × kurs_org (= stawka_kontry × kurs_kontry)\ngwarantowany_zysk = gwarantowany_zwrot − calkowita_stawka",
+    "example": "Postawiłeś 100 zł na Barcelonę @ 2.50 (potencjalny zwrot 250 zł). Przed meczem kurs na przeciwników wzrósł do 1.80. Kontra: stawka = (100 × 2.50) / 1.80 = 138.89 zł. Łączna inwestycja: 238.89 zł. Zwrot: 250 zł niezależnie od wyniku. Gwarantowany zysk: 11.11 zł (~4.7% na obu stawkach).",
+    "faq": [
+      {
+        "question": "Kiedy warto kontrować?",
+        "answer": "Gdy kurs oryginalnego zakładu spadł mocno (np. w live-betting po dobrym wejściu w mecz) i chcesz zablokować zysk. Lub gdy kupon jest bliski wygranej i wolisz podzielić się nagrodą z operatorem, niż ryzykować."
+      },
+      {
+        "question": "Czy kontra zawsze daje zysk?",
+        "answer": "Tylko wtedy, gdy suma iloczynów kursów daje przewagę: 1/kurs_1 + 1/kurs_2 < 1 (analogia do surebeta). Jeśli suma > 1, kontra tylko zminimalizuje stratę, ale nie da gwarantowanego zysku."
+      },
+      {
+        "question": "Czy bukmacher mnie zablokuje za kontrowanie?",
+        "answer": "Za pojedyncze kontrowanie — nie. Za systematyczny arbitraż między dwoma operatorami (surebety) — możliwe. Kontrowanie u tego samego bukmachera jest normalną strategią zarządzania ryzykiem."
+      }
+    ]
+  }
+]

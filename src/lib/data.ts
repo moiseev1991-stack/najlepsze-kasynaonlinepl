@@ -24,6 +24,8 @@ import articlesData from "@/content/articles.json";
 import reviewExtras from "@/content/review-extras.json";
 import textBlocksData from "@/content/text-blocks.json";
 import casinoScreenshotsData from "@/content/casino-screenshots.json";
+import calculatorsData from "@/content/calculators.json";
+import type { CalculatorPage } from "@/lib/types";
 
 function withResolvedAffiliateUrls(c: Casino): Casino {
   const affiliateUrl = affiliateGoUrl(c.slug, c.affiliateUrl);
@@ -100,6 +102,12 @@ const pseudoArticles: Article[] = (() => {
 })();
 
 export const articles: Article[] = [...(articlesData as Article[]), ...pseudoArticles];
+
+export const calculators = calculatorsData as CalculatorPage[];
+
+export function getCalculatorBySlug(slug: string): CalculatorPage | undefined {
+  return calculators.find((c) => c.slug === slug);
+}
 
 export type ReviewExtras = {
   ratingCriteria: { name: string; score: number; comment: string }[];

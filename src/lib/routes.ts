@@ -2,6 +2,7 @@ import {
   articles,
   blogPosts,
   bonuses,
+  calculators,
   casinos,
   categories,
   games,
@@ -21,6 +22,7 @@ const minDepSlugSet = new Set(minDeposits.map((m) => m.slug));
 const blogSlugSet = new Set(blogPosts.map((p) => p.slug));
 const casinoSlugSet = new Set(casinos.map((c) => c.slug));
 const articleSlugSet = new Set(articles.map((a) => a.slug));
+const calculatorSlugSet = new Set(calculators.map((c) => c.slug));
 
 function slugifyCategory(name: string): string {
   return name
@@ -51,6 +53,7 @@ export function resolvePage(segments: string[]): PageKind | null {
     if (gameSlugSet.has(a)) return { type: "game", slug: a };
     if (trustSlugSet.has(a)) return { type: "trust", slug: a };
     if (casinoSlugSet.has(a)) return { type: "review", slug: a };
+    if (calculatorSlugSet.has(a)) return { type: "calculator", slug: a };
     if (articleSlugSet.has(a)) return { type: "article", slug: a };
     return null;
   }
@@ -79,6 +82,7 @@ export function getAllSegmentPaths(): string[][] {
 
   casinos.forEach((c) => out.push([c.slug]));
   articles.forEach((a) => out.push([a.slug]));
+  calculators.forEach((c) => out.push([c.slug]));
 
   out.push(["platnosci"]);
   payments.forEach((p) => out.push(["platnosci", p.slug]));

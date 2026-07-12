@@ -6,6 +6,7 @@ import {
   getArticleBySlug,
   getBlogBySlug,
   getBonusBySlug,
+  getCalculatorBySlug,
   getCasinoBySlug,
   getCategoryBySlug,
   getGameBySlug,
@@ -119,6 +120,15 @@ export function metadataForSegments(segments: string[]): Metadata | null {
       return buildMetadata({
         title: (a.metaTitle?.trim() || a.title).slice(0, 70),
         description: a.metaDescription.slice(0, 160),
+        path,
+      });
+    }
+    case "calculator": {
+      const c = getCalculatorBySlug(page.slug);
+      if (!c) return null;
+      return buildMetadata({
+        title: (c.metaTitle?.trim() || c.title).slice(0, 70),
+        description: c.metaDescription.slice(0, 160),
         path,
       });
     }
