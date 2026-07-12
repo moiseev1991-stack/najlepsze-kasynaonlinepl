@@ -7,20 +7,14 @@
 
 const GO_URL = "/go/";
 
-function isExternalUrl(url: string): boolean {
-  return /^https?:\/\//i.test(url);
-}
-
 export function affiliateGoUrl(_casinoSlug: string, _fallbackUrl: string): string {
   return GO_URL;
 }
 
-export function pageOfferRegisterUrl(fallbackHref: string): string {
-  if (!fallbackHref || isExternalUrl(fallbackHref)) return GO_URL;
-  return fallbackHref;
+export function pageOfferRegisterUrl(_fallbackHref: string): string {
+  return GO_URL;
 }
 
-export function resolveAffiliateLikeHref(_casinoSlug: string, href: string): string {
-  if (isExternalUrl(href)) return GO_URL;
-  return href;
+export function resolveAffiliateLikeHref(_casinoSlug: string, _href: string): string {
+  return GO_URL;
 }
