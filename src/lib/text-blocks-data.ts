@@ -4,6 +4,8 @@ export type TextBlock = {
   metaTitle: string;
   metaDescription: string;
   body: string;
+  /** YYYY-MM-DD — data wygenerowana z timestampu w nazwie pliku text2/ */
+  sourceDate?: string | null;
 };
 
 const map = textBlocksJson as Record<string, TextBlock>;

@@ -6,6 +6,7 @@ import {
 import { buildBreadcrumbSchema, toAbsoluteUrl } from "@/lib/breadcrumbs";
 import {
   getArticleBySlug,
+  getArticlesForCasino,
   getAuthorBySlug,
   getBlogBySlug,
   getBonusBySlug,
@@ -21,7 +22,7 @@ import {
   getTrustBySlug,
 } from "@/lib/data";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { breadcrumbListSchema, faqPageSchema, reviewSchema } from "@/lib/seo";
+import { articleSchema, breadcrumbListSchema, faqPageSchema, reviewSchema, type SchemaAuthor } from "@/lib/seo";
 import { CategoryPageTemplate } from "@/components/templates/CategoryPageTemplate";
 import { CasinoReviewTemplate } from "@/components/templates/CasinoReviewTemplate";
 import { GamePageTemplate } from "@/components/templates/GamePageTemplate";
@@ -192,7 +193,9 @@ export function PathPage({ segments }: Props) {
       const extras = getReviewExtras(casino.slug);
       const editorial = getReviewEditorial(casino.slug);
       const author = getAuthorBySlug("marta-kowalczyk");
+      const coAuthor = getAuthorBySlug("anna-bielinska");
       const related = getRelatedCasinos(casino.slug);
+      const relatedArticles = getArticlesForCasino(casino.slug);
       const bc = [
         { name: "Strona główna", url: toAbsoluteUrl("/") },
         { name: casino.name, url: toAbsoluteUrl(`/${casino.slug}/`) },
@@ -205,16 +208,41 @@ export function PathPage({ segments }: Props) {
         worstRating: 1,
         ratingCount: casino.votesCount,
       });
+      const schemaAuthors: SchemaAuthor[] = [];
+      if (author) {
+        schemaAuthors.push({
+          name: author.name,
+          url: toAbsoluteUrl(`/o-nas/#${author.slug}`),
+        });
+      }
+      if (coAuthor) {
+        schemaAuthors.push({
+          name: coAuthor.name,
+          url: toAbsoluteUrl(`/o-nas/#${coAuthor.slug}`),
+          sameAs: coAuthor.linkedin ? [coAuthor.linkedin] : undefined,
+        });
+      }
+      const articleLd = articleSchema({
+        headline: (editorial?.metaTitle || `Recenzja: ${casino.name}`).slice(0, 110),
+        description: (editorial?.metaDescription || `Recenzja ${casino.name}`).slice(0, 160),
+        url: toAbsoluteUrl(`/${casino.slug}/`),
+        datePublished: casino.addedDate,
+        dateModified: new Date().toISOString().slice(0, 10),
+        authors: schemaAuthors,
+        articleSection: "Recenzje kasyn online",
+      });
       return (
         <>
           <JsonLd data={breadcrumbListSchema(bc)} />
           <JsonLd data={reviewLd} />
+          <JsonLd data={articleLd} />
           <CasinoReviewTemplate
             casino={casino}
             extras={extras}
             editorial={editorial}
             author={author}
             related={related}
+            relatedArticles={relatedArticles}
             breadcrumbs={crumbsLocal([
               { label: "Strona główna", href: "/" },
               { label: casino.name },

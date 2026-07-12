@@ -7,7 +7,7 @@ import { ProsCons } from "@/components/ui/ProsCons";
 import { RatingBreakdown } from "@/components/ui/RatingBreakdown";
 import { ReviewHero } from "@/components/review/ReviewHero";
 import { AuthorCard } from "@/components/ui/AuthorCard";
-import type { Author, Casino } from "@/lib/types";
+import type { Article, Author, Casino } from "@/lib/types";
 import type { ReviewExtras } from "@/lib/data";
 import type { ReviewEditorialEntry } from "@/lib/review-editorial-data";
 import { stripLeadingMarkdownH1 } from "@/lib/review-editorial-data";
@@ -21,9 +21,18 @@ type Props = {
   author?: Author;
   breadcrumbs: Crumb[];
   related: Casino[];
+  relatedArticles?: Article[];
 };
 
-export function CasinoReviewTemplate({ casino, extras, editorial, author, breadcrumbs, related }: Props) {
+export function CasinoReviewTemplate({
+  casino,
+  extras,
+  editorial,
+  author,
+  breadcrumbs,
+  related,
+  relatedArticles,
+}: Props) {
   return (
     <div className="mx-auto max-w-6xl space-y-10 px-4 py-10">
       <Breadcrumbs items={breadcrumbs} />
@@ -169,6 +178,33 @@ export function CasinoReviewTemplate({ casino, extras, editorial, author, breadc
           },
         ]}
       />
+
+      {relatedArticles?.length ? (
+        <section aria-label="Powiązane treści redakcyjne">
+          <h2 className="text-xl font-bold text-slate-900">
+            Więcej o {casino.name} — powiązane analizy
+          </h2>
+          <ul className="mt-4 grid gap-3 md:grid-cols-2">
+            {relatedArticles.map((a) => (
+              <li key={a.slug}>
+                <Link
+                  href={`/${a.slug}/`}
+                  className="block rounded-2xl border border-slate-200 bg-white p-4 transition hover:border-brand-300 hover:shadow-sm"
+                >
+                  <span className="block text-sm font-semibold text-slate-900">
+                    {a.h1 || a.title}
+                  </span>
+                  {a.metaDescription ? (
+                    <span className="mt-1 block text-sm text-slate-600">
+                      {a.metaDescription.slice(0, 140)}
+                    </span>
+                  ) : null}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
 
       <section>
         <h2 className="text-xl font-bold text-slate-900">Podobne kasyna</h2>

@@ -45,7 +45,7 @@ export const trustPages = trustData as TrustPageContent[];
 
 const textBlocks = textBlocksData as Record<
   string,
-  { metaTitle: string; metaDescription: string; body: string }
+  { metaTitle: string; metaDescription: string; body: string; sourceDate?: string | null }
 >;
 
 /** Slugi zajęte przez inne kolekcje — text-block nie generuje wtedy osobnej strony-artykułu. */
@@ -57,7 +57,11 @@ function occupiedSlugsForArticles(): Set<string> {
   trustPages.forEach((t) => occupied.add(t.slug));
   casinos.forEach((c) => occupied.add(c.slug));
   blogPosts.forEach((p) => occupied.add(p.slug));
-  // payments/minDeposits mają swoje prefiksy (/platnosci/, /minimalny-depozyt/), więc nie kolidują z /slug/
+  // payments/minDeposits też blokują utworzenie /<slug>/ jako pseudo-artykułu —
+  // treść text-block renderuje się bezpośrednio pod /platnosci/<slug>/ lub /minimalny-depozyt/<slug>/,
+  // dzięki czemu unikamy duplikatu URL o tym samym contentcie
+  payments.forEach((p) => occupied.add(p.slug));
+  minDeposits.forEach((m) => occupied.add(m.slug));
   return occupied;
 }
 
@@ -74,6 +78,7 @@ function stripLeadingH1(md: string): string {
 const pseudoArticles: Article[] = (() => {
   const occupied = occupiedSlugsForArticles();
   const explicitSlugs = new Set((articlesData as Article[]).map((a) => a.slug));
+  const today = new Date().toISOString().slice(0, 10);
   const out: Article[] = [];
   for (const [slug, block] of Object.entries(textBlocks)) {
     if (occupied.has(slug) || explicitSlugs.has(slug)) continue;
@@ -86,6 +91,8 @@ const pseudoArticles: Article[] = (() => {
       metaTitle: block.metaTitle || undefined,
       metaDescription: block.metaDescription || h1,
       body: stripLeadingH1(block.body),
+      publishedAt: block.sourceDate || today,
+      updatedAt: today,
     });
   }
   return out;
@@ -195,4 +202,13 @@ export function getAllBlogCategories(): string[] {
 
 export function getRelatedCasinos(excludeSlug: string, limit = 3): Casino[] {
   return casinos.filter((c) => c.slug !== excludeSlug).slice(0, limit);
+}
+
+/**
+ * Zwraca artykuły powiązane z brandem po prefixie slug — np. dla „bruce-bet”
+ * matchuje „bruce-bet-czy-jest-bezpieczny”, „bruce-bet-bonus”. Wyklucza sam slug bramdu.
+ */
+export function getArticlesForCasino(casinoSlug: string): Article[] {
+  const prefix = `${casinoSlug}-`;
+  return articles.filter((a) => a.slug !== casinoSlug && a.slug.startsWith(prefix));
 }

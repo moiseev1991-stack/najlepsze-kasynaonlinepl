@@ -146,6 +146,12 @@ function parseText2NonReviewFilename(file) {
   return raw;
 }
 
+function extractSourceDate(file) {
+  // z „статья ..._pl_pl_warsaw_2026-07-12T11_45_02.784+03_00" wyciągamy YYYY-MM-DD
+  const m = file.match(/_pl_pl_warsaw_(\d{4}-\d{2}-\d{2})T/u);
+  return m ? m[1] : null;
+}
+
 function buildTextBlocks() {
   if (!fs.existsSync(text2Dir)) return { count: 0, skipped: 0 };
   const blocks = {};
@@ -160,7 +166,9 @@ function buildTextBlocks() {
       continue;
     }
     const raw = fs.readFileSync(full, "utf8");
-    blocks[slug] = parseRecenzjaFile(raw);
+    const parsed = parseRecenzjaFile(raw);
+    const sourceDate = extractSourceDate(file);
+    blocks[slug] = { ...parsed, sourceDate };
     count++;
   }
   fs.mkdirSync(path.dirname(textBlocksFile), { recursive: true });

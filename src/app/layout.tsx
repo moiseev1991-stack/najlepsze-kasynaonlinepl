@@ -5,9 +5,10 @@ import { Footer } from "@/components/layout/Footer";
 import { PageOfferBar } from "@/components/layout/PageOfferBar";
 import { Disclaimer18 } from "@/components/ui/Disclaimer18";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { organizationSchema } from "@/lib/seo";
+import { organizationSchema, personSchema } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
-import { getAppMetadataBase, getPublicSiteOrigin } from "@/lib/site-origin";
+import { getAppMetadataBase, getPublicSiteOrigin, toAbsoluteSiteUrl } from "@/lib/site-origin";
+import { authors } from "@/lib/data";
 import "./globals.css";
 
 const inter = Inter({
@@ -48,6 +49,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`min-h-screen antialiased text-nk-text ${inter.className}`}>
         <div className="nk-site-bg" aria-hidden />
         <JsonLd data={organizationSchema()} />
+        {authors.map((a) =>
+          a.linkedin ? (
+            <JsonLd
+              key={a.slug}
+              data={personSchema({
+                name: a.name,
+                url: toAbsoluteSiteUrl(`/o-nas/#${a.slug}`),
+                sameAs: [a.linkedin],
+              })}
+            />
+          ) : null,
+        )}
         <Header />
         <PageOfferBar />
         <main className="relative mx-auto max-w-6xl px-4 pb-16 pt-6 md:pt-10">{children}</main>

@@ -146,3 +146,58 @@ export function itemListSchema(
     })),
   };
 }
+
+export type SchemaAuthor = {
+  name: string;
+  url?: string;
+  sameAs?: string[];
+};
+
+export function personSchema(a: SchemaAuthor) {
+  const out: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: a.name,
+  };
+  if (a.url) out.url = a.url;
+  if (a.sameAs?.length) out.sameAs = a.sameAs;
+  return out;
+}
+
+function personRef(a: SchemaAuthor) {
+  const out: Record<string, unknown> = { "@type": "Person", name: a.name };
+  if (a.url) out.url = a.url;
+  if (a.sameAs?.length) out.sameAs = a.sameAs;
+  return out;
+}
+
+export function articleSchema(input: {
+  headline: string;
+  description: string;
+  url: string;
+  datePublished?: string;
+  dateModified?: string;
+  authors?: SchemaAuthor[];
+  articleSection?: string;
+}) {
+  const authorRefs = (input.authors ?? []).map(personRef);
+  const out: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: input.headline,
+    description: input.description,
+    mainEntityOfPage: { "@type": "WebPage", "@id": input.url },
+    url: input.url,
+    inLanguage: "pl-PL",
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.organization.name,
+      logo: { "@type": "ImageObject", url: siteConfig.organization.logo },
+    },
+  };
+  if (input.datePublished) out.datePublished = input.datePublished;
+  if (input.dateModified) out.dateModified = input.dateModified;
+  if (authorRefs.length) out.author = authorRefs;
+  if (input.articleSection) out.articleSection = input.articleSection;
+  return out;
+}

@@ -400,6 +400,14 @@ export type Article = {
 
   metaTitle?: string;
 
+  /** Data pierwszej publikacji (YYYY-MM-DD) */
+
+  publishedAt?: string;
+
+  /** Data ostatniej aktualizacji (YYYY-MM-DD) */
+
+  updatedAt?: string;
+
 };
 
 
