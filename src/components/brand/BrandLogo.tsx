@@ -34,6 +34,7 @@ export function BrandLogo({
   return (
     <Link
       href="/"
+      aria-label={`${siteConfig.name} — strona główna`}
       className={`group inline-flex items-center gap-2.5 font-semibold outline-none ring-brand-500/40 focus-visible:ring-2 ${className}`}
     >
       <span
