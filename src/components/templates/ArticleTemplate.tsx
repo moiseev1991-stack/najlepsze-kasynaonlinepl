@@ -4,7 +4,7 @@ import { Breadcrumbs, type Crumb } from "@/components/ui/Breadcrumbs";
 import { ReviewEditorialBody } from "@/components/review/ReviewEditorialBody";
 import { stripLeadingMarkdownH1 } from "@/lib/review-editorial-data";
 import { AuthorBox } from "@/components/ui/AuthorBox";
-import { findCasinoForArticleSlug, getAuthorBySlug } from "@/lib/data";
+import { findCasinoForArticleSlug, getAuthorBySlug, getCasinoScreenshot } from "@/lib/data";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { articleSchema, type SchemaAuthor } from "@/lib/seo";
 import { toAbsoluteSiteUrl } from "@/lib/site-origin";
@@ -63,6 +63,7 @@ export function ArticleTemplate({ article, breadcrumbs }: Props) {
   if (author) schemaAuthors.push(authorToSchema(author));
   if (coAuthor) schemaAuthors.push(authorToSchema(coAuthor));
 
+  const brandScreenshot = brandCasino ? getCasinoScreenshot(brandCasino.slug) : undefined;
   const heroImageUrl = brandCasino?.logo ?? "/og-default.png";
 
   return (
@@ -128,7 +129,30 @@ export function ArticleTemplate({ article, breadcrumbs }: Props) {
             ) : null}
           </div>
           <div className="shrink-0">
-            {brandCasino ? (
+            {brandScreenshot ? (
+              <div className="relative h-36 w-56 overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200 md:h-44 md:w-64">
+                <Image
+                  src={brandScreenshot}
+                  alt={`Screenshot serwisu ${brandCasino?.name ?? "kasyna"}`}
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 768px) 256px, 224px"
+                  unoptimized
+                />
+                {brandCasino ? (
+                  <div className="absolute bottom-2 left-2 rounded-lg bg-white/90 p-1.5 shadow-sm ring-1 ring-slate-200 backdrop-blur">
+                    <Image
+                      src={brandCasino.logo}
+                      alt={`Logo ${brandCasino.name}`}
+                      width={72}
+                      height={32}
+                      className="h-6 w-auto object-contain"
+                      unoptimized
+                    />
+                  </div>
+                ) : null}
+              </div>
+            ) : brandCasino ? (
               <div className="relative flex h-32 w-48 items-center justify-center rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200 md:h-40 md:w-56">
                 <Image
                   src={brandCasino.logo}

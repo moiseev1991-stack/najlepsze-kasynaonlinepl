@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Breadcrumbs, type Crumb } from "@/components/ui/Breadcrumbs";
 import { DetailsTable } from "@/components/casino/DetailsTable";
@@ -13,6 +14,7 @@ import type { ReviewEditorialEntry } from "@/lib/review-editorial-data";
 import { stripLeadingMarkdownH1 } from "@/lib/review-editorial-data";
 import { ReviewEditorialBody } from "@/components/review/ReviewEditorialBody";
 import { getTextBlock, stripLeadingH1 } from "@/lib/text-blocks-data";
+import { getCasinoScreenshot } from "@/lib/data";
 
 type Props = {
   casino: Casino;
@@ -33,11 +35,30 @@ export function CasinoReviewTemplate({
   related,
   relatedArticles,
 }: Props) {
+  const screenshot = getCasinoScreenshot(casino.slug);
   return (
     <div className="mx-auto max-w-6xl space-y-10 px-4 py-10">
       <Breadcrumbs items={breadcrumbs} />
 
       <ReviewHero casino={casino} author={author} />
+
+      {screenshot ? (
+        <figure className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+          <div className="relative aspect-[16/9] w-full bg-slate-100">
+            <Image
+              src={screenshot}
+              alt={`Podgląd serwisu ${casino.name}`}
+              fill
+              className="object-cover"
+              sizes="(min-width: 768px) 100vw, 100vw"
+              unoptimized
+            />
+          </div>
+          <figcaption className="border-t border-slate-100 bg-slate-50/60 px-5 py-3 text-xs text-slate-500">
+            Podgląd oficjalnej strony {casino.name} — źródło: og:image operatora
+          </figcaption>
+        </figure>
+      ) : null}
 
       <div className="space-y-10">
         <section>

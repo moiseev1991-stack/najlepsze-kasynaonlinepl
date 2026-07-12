@@ -23,6 +23,7 @@ import trustData from "@/content/trust.json";
 import articlesData from "@/content/articles.json";
 import reviewExtras from "@/content/review-extras.json";
 import textBlocksData from "@/content/text-blocks.json";
+import casinoScreenshotsData from "@/content/casino-screenshots.json";
 
 function withResolvedAffiliateUrls(c: Casino): Casino {
   const affiliateUrl = affiliateGoUrl(c.slug, c.affiliateUrl);
@@ -224,4 +225,14 @@ export function findCasinoForArticleSlug(articleSlug: string): Casino | undefine
   return sorted.find(
     (c) => articleSlug === c.slug || articleSlug.startsWith(`${c.slug}-`),
   );
+}
+
+/**
+ * Zwraca ścieżkę do screenshotu og:image operatora (jeśli został ściągnięty przez
+ * scripts/fetch-casino-screenshots.mjs). Manifest generowany jest ręcznie i
+ * commitowany razem z obrazkami.
+ */
+const casinoScreenshots = casinoScreenshotsData as Record<string, string>;
+export function getCasinoScreenshot(slug: string): string | undefined {
+  return casinoScreenshots[slug];
 }
