@@ -98,13 +98,27 @@ function stripCyrillicMarkers(s) {
     .trim();
 }
 
+/**
+ * Wstawia pustą linię po tabelach GFM, żeby remark-gfm nie „wciągał" kolejnych
+ * paragrafów jako wiersze tabeli. W źródłach text2/ nagminnie brakuje tego separatora.
+ * Reguła: linia zaczynająca się od „|" i kończąca „|", po której idzie linia
+ * NIE-tabela (nie zaczyna się od „|"), dostaje dodatkowy „\n" pomiędzy.
+ */
+function normalizeMarkdownTables(md) {
+  return md.replace(
+    /^(\|[^\n]*\|)\s*\n(?=[^|\n#\-\s])/gmu,
+    "$1\n\n",
+  );
+}
+
 function parseRecenzjaFile(raw) {
   const titleMatch = raw.match(/\*\*Title:\*\*\s*(.+)/);
   const descMatch = raw.match(/\*\*Description:\*\*\s*(.+)/);
   const metaTitle = stripCyrillicMarkers((titleMatch?.[1] ?? "").trim());
   const metaDescription = stripCyrillicMarkers((descMatch?.[1] ?? "").trim());
   const idx = raw.search(/^#/m);
-  const body = idx >= 0 ? stripCyrillicMarkers(raw.slice(idx).trim()) : "";
+  const rawBody = idx >= 0 ? stripCyrillicMarkers(raw.slice(idx).trim()) : "";
+  const body = normalizeMarkdownTables(rawBody);
   return { metaTitle, metaDescription, body };
 }
 

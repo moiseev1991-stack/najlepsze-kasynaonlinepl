@@ -212,3 +212,16 @@ export function getArticlesForCasino(casinoSlug: string): Article[] {
   const prefix = `${casinoSlug}-`;
   return articles.filter((a) => a.slug !== casinoSlug && a.slug.startsWith(prefix));
 }
+
+/**
+ * Odwrotny lookup: dla slug artykułu znajduje kasyno, którego slug jest prefiksem
+ * (np. „nv-casino-czy-jest-bezpieczne" → casino „nv-casino"). Przydatne do
+ * dobrania logo brandu jako hero-visual na stronie artykułu.
+ */
+export function findCasinoForArticleSlug(articleSlug: string): Casino | undefined {
+  // sortujemy po długości slug'u malejąco, żeby „nv-casino" wygrał nad „nv"
+  const sorted = [...casinos].sort((a, b) => b.slug.length - a.slug.length);
+  return sorted.find(
+    (c) => articleSlug === c.slug || articleSlug.startsWith(`${c.slug}-`),
+  );
+}
