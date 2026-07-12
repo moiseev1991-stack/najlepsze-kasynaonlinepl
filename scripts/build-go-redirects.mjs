@@ -1,9 +1,15 @@
 /**
- * Generuje public/go/<slug>/index.html — minimalną stronę redirectora affiliate.
- * Loader trackera partnera osadzony inline (bez data:base64), bo Windows Defender
- * kasuje pliki z zakodowanym JS w data-URI (heurystyka na dropper).
- * Kod trackera pobierany z zewnętrznego pliku scripts/tracker-snippet.txt,
- * co pozwala trzymać sam .mjs czysty — AV nie skanuje go pod kątem dropperów.
+ * Generuje public/go/index.html — JEDNĄ stronę redirectora affiliate wspólną
+ * dla wszystkich kasyn. Loader trackera partnera osadzony inline z osobnego
+ * pliku scripts/tracker-snippet.txt (bez data:base64 — Windows Defender
+ * kasuje pliki z zakodowanym JS w data-URI).
+ *
+ * Wszystkie CTA „Zarejestruj się" kierują do /go/ — tracker po landing_url
+ * = hostname/go i innych parametrach (referrer, title) obsługuje wybór
+ * finalnego URL po stronie partnera.
+ *
+ * Uruchamiane w prebuild:static, żeby /go/index.html trafił do public/,
+ * out/ i site/ po deployu.
  */
 import fs from "fs";
 import path from "path";
@@ -11,27 +17,17 @@ import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
-const casinosFile = path.join(root, "src", "content", "casinos.json");
 const snippetFile = path.join(root, "scripts", "tracker-snippet.txt");
 const goDir = path.join(root, "public", "go");
 
-function escapeHtml(s) {
-  return s
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
-}
-
-function pageHtml(brandName, trackerJs) {
-  const brand = escapeHtml(brandName);
+function pageHtml(trackerJs) {
   return `<!doctype html>
 <html lang="pl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <title>Przekierowanie — ${brand}</title>
+  <title>Przekierowanie</title>
   <style>
     :root { color-scheme: light; }
     body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Inter, Arial, sans-serif;
@@ -49,7 +45,7 @@ function pageHtml(brandName, trackerJs) {
 <body>
   <div class="card">
     <div class="spinner" aria-hidden="true"></div>
-    <h1>Przekierowujemy do serwisu ${brand}…</h1>
+    <h1>Przekierowujemy…</h1>
     <p>Jeśli strona nie ładuje się automatycznie, sprawdź czy JavaScript jest włączony.</p>
   </div>
   <script>
@@ -61,7 +57,6 @@ ${trackerJs}
 }
 
 function main() {
-  const casinos = JSON.parse(fs.readFileSync(casinosFile, "utf8"));
   if (!fs.existsSync(snippetFile)) {
     console.error(`Brak pliku ${snippetFile} — utwórz go z kodem trackera partnera.`);
     process.exit(1);
@@ -71,12 +66,8 @@ function main() {
     fs.rmSync(goDir, { recursive: true, force: true });
   }
   fs.mkdirSync(goDir, { recursive: true });
-  for (const c of casinos) {
-    const dir = path.join(goDir, c.slug);
-    fs.mkdirSync(dir, { recursive: true });
-    fs.writeFileSync(path.join(dir, "index.html"), pageHtml(c.name, trackerJs), "utf8");
-  }
-  console.log(`Wygenerowano ${casinos.length} redirectorów w public/go/`);
+  fs.writeFileSync(path.join(goDir, "index.html"), pageHtml(trackerJs), "utf8");
+  console.log(`Wygenerowano public/go/index.html`);
 }
 
 main();
