@@ -2,12 +2,13 @@ import Link from "next/link";
 import { Breadcrumbs, type Crumb } from "@/components/ui/Breadcrumbs";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { AuthorBox } from "@/components/ui/AuthorBox";
+import { CasinoCard } from "@/components/casino/CasinoCard";
 import { BettingCalculator } from "@/components/tools/BettingCalculator";
 import { SystemBetCalculator } from "@/components/tools/SystemBetCalculator";
 import { OddsConverter } from "@/components/tools/OddsConverter";
 import { MarginCalculator } from "@/components/tools/MarginCalculator";
 import { HedgeCalculator } from "@/components/tools/HedgeCalculator";
-import { calculators, getAuthorBySlug } from "@/lib/data";
+import { calculators, casinos, getAuthorBySlug } from "@/lib/data";
 import type { CalculatorPage } from "@/lib/types";
 
 type Props = {
@@ -24,9 +25,29 @@ function CalculatorWidget({ kind }: { kind: CalculatorPage["kind"] }) {
   return null;
 }
 
+/**
+ * Deterministyczna rotacja 3 kasyn na kalkulator — każda strona pokazuje
+ * inny 3-osobowy zestaw z top 15 ocenionych operatorów. Dzięki temu
+ * użytkownik przechodzący między kalkulatorami widzi różne oferty affiliate.
+ */
+function rotatingCasinos(slug: string, count = 3) {
+  const pool = [...casinos]
+    .sort((a, b) => b.ratingOverall - a.ratingOverall)
+    .slice(0, 15);
+  // stabilny offset z długości slug'a — powtarzalny między renderami, ale unikalny per URL
+  const slugIndex = calculators.findIndex((c) => c.slug === slug);
+  const offset = slugIndex >= 0 ? slugIndex * count : 0;
+  const out = [];
+  for (let i = 0; i < count; i++) {
+    out.push(pool[(offset + i) % pool.length]);
+  }
+  return out;
+}
+
 export function CalculatorPageTemplate({ page, breadcrumbs }: Props) {
   const author = getAuthorBySlug("marta-kowalczyk");
   const others = calculators.filter((c) => c.slug !== page.slug);
+  const rotatedCasinos = rotatingCasinos(page.slug);
 
   return (
     <article className="mx-auto max-w-5xl space-y-10 px-4 py-10">
@@ -39,12 +60,6 @@ export function CalculatorPageTemplate({ page, breadcrumbs }: Props) {
         <h1 className="text-3xl font-bold text-slate-900 md:text-4xl">{page.h1}</h1>
         <p className="max-w-3xl text-lg leading-relaxed text-slate-600">{page.intro}</p>
       </header>
-
-      {author ? (
-        <section aria-label="Autor kalkulatora">
-          <AuthorBox author={author} />
-        </section>
-      ) : null}
 
       <CalculatorWidget kind={page.kind} />
 
@@ -72,6 +87,17 @@ export function CalculatorPageTemplate({ page, breadcrumbs }: Props) {
         </section>
       ) : null}
 
+      {rotatedCasinos.length ? (
+        <section aria-label="Polecane kasyna">
+          <h2 className="text-xl font-bold text-slate-900">Polecane kasyna</h2>
+          <div className="mt-4 grid gap-6 md:grid-cols-3">
+            {rotatedCasinos.map((c) => (
+              <CasinoCard key={c.id} casino={c} />
+            ))}
+          </div>
+        </section>
+      ) : null}
+
       {others.length ? (
         <section aria-label="Pozostałe kalkulatory">
           <h2 className="text-xl font-bold text-slate-900">Pozostałe kalkulatory bukmacherskie</h2>
@@ -90,6 +116,15 @@ export function CalculatorPageTemplate({ page, breadcrumbs }: Props) {
               </li>
             ))}
           </ul>
+        </section>
+      ) : null}
+
+      {author ? (
+        <section>
+          <h2 className="text-xl font-bold text-slate-900">Autor</h2>
+          <div className="mt-4">
+            <AuthorBox author={author} />
+          </div>
         </section>
       ) : null}
 
