@@ -31,7 +31,8 @@ const TEXT_BLOCK_ALIASES = {
   "ranking-kasyn-bez-depozytu": "ranking-kasyn-bez-depozytu",
   // text2/ mówi „25 € na casino bez depozytu" — więc kanoniczny slug 25-euro-bez-depozytu (istnieje w bonuses)
   "25-na-casino-bez-depozytu": "25-euro-bez-depozytu",
-  "7-bez-depozytu": "7-bez-depozytu",
+  // GSC: /7-euro-bez-depozytu/ 17 imp @ 30; nowy /7-bez-depozytu/ 0 imp — sklejamy w bonus
+  "7-bez-depozytu": "7-euro-bez-depozytu",
   "bukmacherzy-paysafecard": "bukmacherzy-paysafecard",
   "vulkanspiele-erfahrung": "vulkanspiele-casino",
   "jak-kasyno-zarabia-na-pokerze": "jak-kasyno-zarabia-na-pokerze",

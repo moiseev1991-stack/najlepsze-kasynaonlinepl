@@ -130,20 +130,50 @@ export function websiteSchema() {
   };
 }
 
-export function itemListSchema(
-  items: { name: string; url: string }[],
-  listName?: string,
-) {
+export type ItemListItem = {
+  name: string;
+  url: string;
+  /** Ocena redakcji 0–5 — jeśli jest, ListItem dostaje zagnieżdżony `item: Organization` z aggregateRating */
+  ratingValue?: number;
+  ratingCount?: number;
+  bestRating?: number;
+  worstRating?: number;
+};
+
+export function itemListSchema(items: ItemListItem[], listName?: string) {
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
     ...(listName ? { name: listName } : {}),
-    itemListElement: items.map((it, i) => ({
-      "@type": "ListItem",
-      position: i + 1,
-      name: it.name,
-      url: it.url,
-    })),
+    itemListElement: items.map((it, i) => {
+      const listItem: Record<string, unknown> = {
+        "@type": "ListItem",
+        position: i + 1,
+        url: it.url,
+      };
+      if (
+        typeof it.ratingValue === "number" &&
+        it.ratingValue > 0 &&
+        typeof it.ratingCount === "number" &&
+        it.ratingCount > 0
+      ) {
+        listItem.item = {
+          "@type": "Organization",
+          name: it.name,
+          url: it.url,
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: it.ratingValue,
+            bestRating: it.bestRating ?? 5,
+            worstRating: it.worstRating ?? 1,
+            ratingCount: it.ratingCount,
+          },
+        };
+      } else {
+        listItem.name = it.name;
+      }
+      return listItem;
+    }),
   };
 }
 

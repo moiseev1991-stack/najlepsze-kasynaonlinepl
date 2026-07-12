@@ -55,7 +55,14 @@ export default function HomePage() {
   const topRankingForLd = [...casinos]
     .sort((a, b) => b.ratingOverall - a.ratingOverall)
     .slice(0, 10)
-    .map((c) => ({ name: c.name, url: toAbsoluteUrl(`/${c.slug}/`) }));
+    .map((c) => ({
+      name: c.name,
+      url: toAbsoluteUrl(`/${c.slug}/`),
+      ratingValue: c.ratingOverall,
+      ratingCount: c.votesCount,
+      bestRating: 5,
+      worstRating: 1,
+    }));
 
   return (
     <div className="space-y-16 md:space-y-20">

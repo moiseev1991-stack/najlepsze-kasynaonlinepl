@@ -1,7 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Breadcrumbs, type Crumb } from "@/components/ui/Breadcrumbs";
 import { SEOContentSection } from "@/components/ui/SEOContentSection";
 import { CTASection } from "@/components/sections/CTASection";
+import { authors } from "@/lib/data";
 import type { TrustPageContent } from "@/lib/types";
 
 type Props = { page: TrustPageContent; breadcrumbs: Crumb[] };
@@ -22,16 +24,48 @@ export function AboutPageTemplate({ page, breadcrumbs }: Props) {
       </div>
 
       <section className="rounded-2xl border border-slate-200 bg-white p-6 md:p-8">
-        <h2 className="text-xl font-bold text-slate-900">Zespół</h2>
+        <h2 className="text-xl font-bold text-slate-900">Zespół redakcyjny</h2>
         <p className="mt-3 text-slate-600">
           Redakcję tworzą analitycy i edytorzy z doświadczeniem w branży iGaming oraz compliance. Nie świadczymy usług
           hazardowych — publikujemy treści porównawcze i edukacyjne.
         </p>
-        <ul className="mt-4 list-disc space-y-2 pl-5 text-slate-700">
-          <li>Redaktorzy merytoryczni — testy produktowe i aktualizacja artykułów</li>
-          <li>Analitycy — tabele, kryteria oceny i spójność danych</li>
-          <li>Kontakt z czytelnikami — zgłoszenia błędów i współpraca informacyjna</li>
-        </ul>
+        <div className="mt-6 space-y-6">
+          {authors.map((a) => (
+            <article
+              key={a.slug}
+              id={a.slug}
+              className="scroll-mt-28 rounded-2xl border border-slate-200 bg-slate-50/50 p-4 md:p-5"
+            >
+              <div className="flex gap-4">
+                <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full bg-slate-100">
+                  <Image src={a.avatar} alt={a.name} width={64} height={64} className="object-cover" unoptimized />
+                </div>
+                <div>
+                  <h3 className="text-base font-semibold text-slate-900">{a.name}</h3>
+                  <p className="text-xs text-brand-700">{a.role}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-700">{a.bio}</p>
+                  <div className="mt-2 flex flex-wrap gap-3 text-xs">
+                    {a.linkedin ? (
+                      <a
+                        href={a.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        className="font-medium text-brand-700 hover:underline"
+                      >
+                        LinkedIn ↗
+                      </a>
+                    ) : null}
+                    {a.email ? (
+                      <a href={`mailto:${a.email}`} className="font-medium text-brand-700 hover:underline">
+                        {a.email}
+                      </a>
+                    ) : null}
+                  </div>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
       </section>
 
       <CTASection
