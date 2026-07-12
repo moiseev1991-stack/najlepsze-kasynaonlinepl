@@ -38,21 +38,8 @@ function formatPlDate(iso?: string): string | null {
   return `${parseInt(d, 10)} ${month} ${y}`;
 }
 
-function authorToSchema(a: {
-  name: string;
-  slug: string;
-  linkedin?: string;
-}): SchemaAuthor {
-  return {
-    name: a.name,
-    url: toAbsoluteSiteUrl(`/o-nas/#${a.slug}`),
-    sameAs: a.linkedin ? [a.linkedin] : undefined,
-  };
-}
-
 export function ArticleTemplate({ article, breadcrumbs }: Props) {
   const author = getAuthorBySlug("marta-kowalczyk");
-  const coAuthor = getAuthorBySlug("anna-bielinska");
   const brandCasino = findCasinoForArticleSlug(article.slug);
   const publishedIso = article.publishedAt;
   const updatedIso = article.updatedAt || article.publishedAt;
@@ -60,8 +47,12 @@ export function ArticleTemplate({ article, breadcrumbs }: Props) {
 
   const url = toAbsoluteSiteUrl(`/${article.slug}/`);
   const schemaAuthors: SchemaAuthor[] = [];
-  if (author) schemaAuthors.push(authorToSchema(author));
-  if (coAuthor) schemaAuthors.push(authorToSchema(coAuthor));
+  if (author) {
+    schemaAuthors.push({
+      name: author.name,
+      url: toAbsoluteSiteUrl(`/o-nas/#${author.slug}`),
+    });
+  }
 
   const brandScreenshot = brandCasino ? getCasinoScreenshot(brandCasino.slug) : undefined;
   const heroImageUrl = brandCasino?.logo ?? "/og-default.png";
@@ -99,21 +90,6 @@ export function ArticleTemplate({ article, breadcrumbs }: Props) {
                       unoptimized
                     />
                     <span className="font-medium text-slate-700">{author.name}</span>
-                  </span>
-                ) : null}
-                {coAuthor ? (
-                  <span className="inline-flex items-center gap-2">
-                    <span className="hidden text-slate-300 md:inline">·</span>
-                    <Image
-                      src={coAuthor.avatar}
-                      alt={coAuthor.name}
-                      width={28}
-                      height={28}
-                      className="h-7 w-7 rounded-full border border-slate-200 bg-white"
-                      unoptimized
-                    />
-                    <span className="font-medium text-slate-700">{coAuthor.name}</span>
-                    <span className="text-xs text-slate-500">(współautorka)</span>
                   </span>
                 ) : null}
                 <span className="hidden text-slate-300 md:inline">·</span>
@@ -179,12 +155,19 @@ export function ArticleTemplate({ article, breadcrumbs }: Props) {
         </div>
       </header>
 
+      {author ? (
+        <section aria-label="Autor artykułu">
+          <AuthorBox author={author} />
+        </section>
+      ) : null}
+
       <section className="rounded-2xl border border-slate-200 bg-white p-6 md:p-8">
         <ReviewEditorialBody markdown={stripLeadingMarkdownH1(article.body)} />
       </section>
+
       {author ? (
         <section>
-          <h2 className="text-xl font-bold text-slate-900">Autorzy</h2>
+          <h2 className="text-xl font-bold text-slate-900">Autor</h2>
           <div className="mt-4">
             <AuthorBox author={author} />
           </div>

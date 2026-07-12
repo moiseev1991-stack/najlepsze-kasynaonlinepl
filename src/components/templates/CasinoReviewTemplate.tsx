@@ -42,6 +42,12 @@ export function CasinoReviewTemplate({
 
       <ReviewHero casino={casino} author={author} />
 
+      {author ? (
+        <section aria-label="Autor recenzji">
+          <AuthorCard author={author} />
+        </section>
+      ) : null}
+
       {screenshot ? (
         <figure className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
           <div className="relative aspect-[16/9] w-full bg-slate-100">

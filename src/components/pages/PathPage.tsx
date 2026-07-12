@@ -193,7 +193,6 @@ export function PathPage({ segments }: Props) {
       const extras = getReviewExtras(casino.slug);
       const editorial = getReviewEditorial(casino.slug);
       const author = getAuthorBySlug("marta-kowalczyk");
-      const coAuthor = getAuthorBySlug("anna-bielinska");
       const related = getRelatedCasinos(casino.slug);
       const relatedArticles = getArticlesForCasino(casino.slug);
       const bc = [
@@ -213,13 +212,6 @@ export function PathPage({ segments }: Props) {
         schemaAuthors.push({
           name: author.name,
           url: toAbsoluteUrl(`/o-nas/#${author.slug}`),
-        });
-      }
-      if (coAuthor) {
-        schemaAuthors.push({
-          name: coAuthor.name,
-          url: toAbsoluteUrl(`/o-nas/#${coAuthor.slug}`),
-          sameAs: coAuthor.linkedin ? [coAuthor.linkedin] : undefined,
         });
       }
       const articleLd = articleSchema({

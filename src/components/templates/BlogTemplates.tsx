@@ -54,6 +54,13 @@ export function BlogPostTemplate({ post, breadcrumbs }: PostProps) {
           <h1 className="text-balance text-3xl font-bold text-slate-900 md:text-4xl">{post.title}</h1>
           <p className="text-lg text-slate-600">{post.excerpt}</p>
         </header>
+
+        {author ? (
+          <div className="mt-6">
+            <AuthorBox author={author} />
+          </div>
+        ) : null}
+
         <div className="prose prose-slate mt-10 max-w-none">
           <MarkdownLite content={post.content} />
         </div>
