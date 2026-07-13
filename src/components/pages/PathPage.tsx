@@ -194,7 +194,7 @@ export function PathPage({ segments }: Props) {
       if (!casino) notFound();
       const extras = getReviewExtras(casino.slug);
       const editorial = getReviewEditorial(casino.slug);
-      const author = getAuthorBySlug("marta-kowalczyk");
+      const author = getAuthorBySlug("anna-bielinska");
       const related = getRelatedCasinos(casino.slug);
       const relatedArticles = getArticlesForCasino(casino.slug);
       const bc = [

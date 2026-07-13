@@ -45,7 +45,7 @@ function rotatingCasinos(slug: string, count = 3) {
 }
 
 export function CalculatorPageTemplate({ page, breadcrumbs }: Props) {
-  const author = getAuthorBySlug("marta-kowalczyk");
+  const author = getAuthorBySlug("anna-bielinska");
   const others = calculators.filter((c) => c.slug !== page.slug);
   const rotatedCasinos = rotatingCasinos(page.slug);
 

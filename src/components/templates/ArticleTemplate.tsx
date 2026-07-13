@@ -39,7 +39,7 @@ function formatPlDate(iso?: string): string | null {
 }
 
 export function ArticleTemplate({ article, breadcrumbs }: Props) {
-  const author = getAuthorBySlug("marta-kowalczyk");
+  const author = getAuthorBySlug("anna-bielinska");
   const brandCasino = findCasinoForArticleSlug(article.slug);
   const publishedIso = article.publishedAt;
   const updatedIso = article.updatedAt || article.publishedAt;
