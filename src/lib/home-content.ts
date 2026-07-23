@@ -4,6 +4,7 @@ export type BrandSpotlightToken = string | { anchor: string; href: string };
 export type HomeBrandSpotlight = {
   name: string;
   accent: string;
+  logo: string;
   body: BrandSpotlightToken[];
 };
 
@@ -55,6 +56,7 @@ export const homeContent = {
       {
         name: "888starz",
         accent: "Zakłady + sloty",
+        logo: "/images/casinos/888starz.svg",
         body: [
           "Międzynarodowy operator z rozbudowaną ofertą zakładów sportowych i slotów. Sprawdź aktualną ofertę na stronie ",
           { anchor: "888starz", href: "https://888starz-casino-pl.pl" },
@@ -66,6 +68,7 @@ export const homeContent = {
       {
         name: "Vox Casino",
         accent: "Nowa marka 2026",
+        logo: "/images/casinos/vox-casino.webp",
         body: [
           "Nowa marka z bonusem powitalnym i szybkimi wypłatami. Zobacz ",
           { anchor: "vox casino", href: "https://voxcasino-poland-pl.pl" },

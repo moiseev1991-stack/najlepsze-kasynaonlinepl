@@ -1,7 +1,8 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { Fragment, useMemo, useState } from "react";
 import { CasinoRatingCard } from "@/components/casino/CasinoRatingCard";
+import { HomeBrandSpotlight } from "@/components/home/HomeBrandSpotlight";
 import { FiltersBar } from "@/components/ui/FiltersBar";
 import type { Casino } from "@/lib/types";
 
@@ -53,7 +54,10 @@ export function HomeRankingSection({ casinos, filterTags }: Props) {
       <FiltersBar tags={filterTags} active={active} onChange={setActive} />
       <div className="flex flex-col gap-6">
         {filtered.map((c, idx) => (
-          <CasinoRatingCard key={c.id} casino={c} rank={idx + 1} />
+          <Fragment key={c.id}>
+            <CasinoRatingCard casino={c} rank={idx + 1} />
+            {idx === 9 ? <HomeBrandSpotlight /> : null}
+          </Fragment>
         ))}
       </div>
     </div>
