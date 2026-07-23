@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { HomeRankingSection } from "@/components/home/HomeRankingSection";
 import { HomeReviewsGuideSection } from "@/components/home/HomeReviewsGuideSection";
+import { HomeBrandSpotlight } from "@/components/home/HomeBrandSpotlight";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { CTASection } from "@/components/sections/CTASection";
 import { PaymentMethodsList } from "@/components/ui/PaymentMethodsList";
@@ -91,6 +92,8 @@ export default function HomePage() {
         <p className="leading-relaxed">{homeContent.intro}</p>
         <p className="leading-relaxed text-nk-muted">{homeContent.introSecondary}</p>
       </SurfaceCard>
+
+      <HomeBrandSpotlight />
 
       <HomeReviewsGuideSection />
 

@@ -1,3 +1,12 @@
+/** Token tekstu z opcjonalnym linkiem (anchor) — do wplecenia w notę marki */
+export type BrandSpotlightToken = string | { anchor: string; href: string };
+
+export type HomeBrandSpotlight = {
+  name: string;
+  accent: string;
+  body: BrandSpotlightToken[];
+};
+
 /** Teksty strony głównej — łatwa edycja pod skalowanie SEO */
 export const homeContent = {
   intro:
@@ -37,6 +46,35 @@ export const homeContent = {
       "Test ścieżki płatności oraz deklarowany czas wypłat.",
       "Jakość wsparcia i stabilność aplikacji mobilnej.",
     ],
+  },
+  brandSpotlight: {
+    heading: "Marki pod lupą",
+    intro:
+      "Krótkie redakcyjne noty o markach, które gracze z Polski sprawdzają najczęściej — z linkami do oficjalnych stron i wersji mobilnych.",
+    brands: [
+      {
+        name: "888starz",
+        accent: "Zakłady + sloty",
+        body: [
+          "Międzynarodowy operator z rozbudowaną ofertą zakładów sportowych i slotów. Sprawdź aktualną ofertę na stronie ",
+          { anchor: "888starz", href: "https://888starz-casino-pl.pl" },
+          " oraz dedykowaną ",
+          { anchor: "888starz apk", href: "https://888starzpoland.pl" },
+          " na telefon.",
+        ],
+      },
+      {
+        name: "Vox Casino",
+        accent: "Nowa marka 2026",
+        body: [
+          "Nowa marka z bonusem powitalnym i szybkimi wypłatami. Zobacz ",
+          { anchor: "vox casino", href: "https://voxcasino-poland-pl.pl" },
+          " oraz lokalną wersję ",
+          { anchor: "vox casino poland", href: "https://voxcasino-polska-pl.pl" },
+          ".",
+        ],
+      },
+    ] as HomeBrandSpotlight[],
   },
   seoBlocks: [
     {
