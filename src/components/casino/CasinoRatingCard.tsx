@@ -17,26 +17,28 @@ type Props = {
 export function CasinoRatingCard({ casino, rank }: Props) {
   return (
     <article className="group flex flex-col overflow-hidden rounded-3xl border border-nk-border/90 bg-nk-surface/95 shadow-card transition duration-300 hover:-translate-y-0.5 hover:shadow-cardHover md:flex-row">
-      <div className="flex flex-1 flex-col p-6 md:flex-row md:gap-6 md:p-7">
-        {rank ? (
-          <span className="mb-4 flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-nk-navy to-brand-600 text-xl font-bold text-white shadow-md ring-1 ring-white/20 md:mb-0">
-            {rank}
-          </span>
-        ) : null}
-        <Link
-          href={casino.reviewUrl}
-          aria-label={`Recenzja ${casino.name}`}
-          className="relative block h-32 w-32 shrink-0 overflow-hidden rounded-2xl border border-nk-border/70 bg-gradient-to-br from-nk-bg-alt to-white shadow-inner ring-1 ring-white/80 transition hover:border-brand-300 hover:shadow-md sm:h-36 sm:w-36"
-        >
-          <Image
-            src={casino.logo}
-            alt={casino.name}
-            width={144}
-            height={144}
-            className="h-full w-full object-contain p-2"
-            unoptimized
-          />
-        </Link>
+      <div className="flex flex-1 flex-col p-4 sm:p-5 md:flex-row md:gap-6 md:p-7">
+        <div className="flex items-center gap-4 md:contents">
+          {rank ? (
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-nk-navy to-brand-600 text-lg font-bold text-white shadow-md ring-1 ring-white/20 sm:h-12 sm:w-12 sm:text-xl">
+              {rank}
+            </span>
+          ) : null}
+          <Link
+            href={casino.reviewUrl}
+            aria-label={`Recenzja ${casino.name}`}
+            className="relative block h-20 w-20 shrink-0 overflow-hidden rounded-2xl border border-nk-border/70 bg-gradient-to-br from-nk-bg-alt to-white shadow-inner ring-1 ring-white/80 transition hover:border-brand-300 hover:shadow-md sm:h-28 sm:w-28 md:h-36 md:w-36"
+          >
+            <Image
+              src={casino.logo}
+              alt={casino.name}
+              width={144}
+              height={144}
+              className="h-full w-full object-contain p-2"
+              unoptimized
+            />
+          </Link>
+        </div>
         <div className="mt-4 min-w-0 flex-1 md:mt-0">
           <div className="flex flex-wrap items-center gap-2">
             <h3 className="text-xl font-bold text-nk-text">
@@ -126,16 +128,16 @@ export function CasinoRatingCard({ casino, rank }: Props) {
           <CasinoCardExpandSection casino={casino} />
         </div>
       </div>
-      <div className="flex flex-col justify-center gap-2 border-t border-nk-border/80 bg-gradient-to-b from-nk-bg-alt/60 to-nk-surface p-6 md:w-56 md:border-l md:border-t-0 md:bg-nk-surface/95 md:shadow-[-8px_0_24px_-12px_rgba(23,50,77,0.12)]">
+      <div className="flex flex-row justify-center gap-2 border-t border-nk-border/80 bg-gradient-to-b from-nk-bg-alt/60 to-nk-surface p-4 sm:p-6 md:w-56 md:flex-col md:border-l md:border-t-0 md:bg-nk-surface/95 md:shadow-[-8px_0_24px_-12px_rgba(23,50,77,0.12)]">
         <Link
           href={casino.reviewUrl}
-          className="inline-flex items-center justify-center rounded-2xl border border-nk-border bg-nk-surface px-4 py-3 text-center text-sm font-semibold text-nk-text transition hover:border-brand-400 hover:text-brand-800"
+          className="inline-flex flex-1 items-center justify-center rounded-2xl border border-nk-border bg-nk-surface px-4 py-3 text-center text-sm font-semibold text-nk-text transition hover:border-brand-400 hover:text-brand-800 md:flex-none"
         >
           Recenzja
         </Link>
         <a
           href={casino.affiliateUrl}
-          className="inline-flex items-center justify-center rounded-2xl bg-brand-600 px-4 py-3 text-center text-sm font-semibold text-white shadow-md transition hover:bg-brand-700 hover:shadow-cardHover"
+          className="inline-flex flex-1 items-center justify-center rounded-2xl bg-brand-600 px-4 py-3 text-center text-sm font-semibold text-white shadow-md transition hover:bg-brand-700 hover:shadow-cardHover md:flex-none"
           rel="nofollow sponsored noopener noreferrer"
           target="_blank"
         >
