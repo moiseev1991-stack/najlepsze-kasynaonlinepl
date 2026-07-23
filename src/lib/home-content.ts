@@ -60,9 +60,9 @@ export const homeContent = {
         body: [
           "Międzynarodowy operator z rozbudowaną ofertą zakładów sportowych i slotów. Sprawdź aktualną ofertę na stronie ",
           { anchor: "888starz", href: "https://888starz-casino-pl.pl" },
-          " oraz dedykowaną ",
-          { anchor: "888starz apk", href: "https://888starzpoland.pl" },
-          " na telefon.",
+          " oraz pełną recenzję ",
+          { anchor: "888starz casino", href: "https://888starzpoland.pl" },
+          ".",
         ],
       },
       {
