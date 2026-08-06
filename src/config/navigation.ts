@@ -49,7 +49,7 @@ export const megaMenuSections: MegaMenuSection[] = [
     overviewLabel: "Najlepsze kasyna",
     href: "/",
     children: [
-      { href: "/wyplacalne-kasyna/", label: "Wypłacalne kasyna" },
+      { href: "/wyplacalne-kasyna-internetowe/", label: "Wypłacalne kasyna" },
       { href: "/nowe-kasyna/", label: "Nowe kasyna" },
       { href: "/legalne-kasyna/", label: "Legalne kasyna" },
       { href: "/kasyno-na-telefon/", label: "Kasyno na telefon" },
@@ -165,7 +165,7 @@ export const footerPopularLinks: NavLink[] = [
   { href: "/bison-casino/", label: "Bison Casino" },
   { href: "/vox-casino/", label: "Vox Casino" },
   { href: "/verde-casino/", label: "Verde Casino" },
-  { href: "/wyplacalne-kasyna/", label: "Wypłacalne kasyna" },
+  { href: "/wyplacalne-kasyna-internetowe/", label: "Wypłacalne kasyna" },
   { href: "/kasyno-blik/", label: "Kasyno BLIK" },
   { href: "/nowe-kasyna/", label: "Nowe kasyna" },
   { href: "/darmowe-spiny/", label: "Darmowe spiny" },

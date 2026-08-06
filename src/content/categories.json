@@ -553,34 +553,6 @@
     ]
   },
   {
-    "slug": "wyplacalne-kasyna",
-    "title": "Wypłacalne Kasyna Internetowe 2026 — Ranking i Opinie Graczy",
-    "h1": "Wypłacalne kasyna internetowe — ranking 2026",
-    "intro": "Sprawdzone wypłacalne kasyna online w Polsce. Realne czasy wypłat, opinie graczy i ranking wiarygodności 2026 — punkt wyjścia do własnej weryfikacji operatora.",
-    "metaDescription": "Sprawdzone wypłacalne kasyna online w Polsce. Realne czasy wypłat, opinie graczy i ranking wiarygodności 2026.",
-    "filterTags": [
-      "Wszystkie kasyna",
-      "Szybkie wypłaty",
-      "Najwyższa ocena",
-      "Popularny"
-    ],
-    "seoSections": [],
-    "relatedLinks": [
-      {
-        "href": "/wyplacalne-kasyna-internetowe/",
-        "label": "Szczegółowe kryteria wypłacalności"
-      },
-      {
-        "href": "/platnosci/",
-        "label": "Metody płatności"
-      },
-      {
-        "href": "/",
-        "label": "Główny ranking"
-      }
-    ]
-  },
-  {
     "slug": "kasyno-blik",
     "title": "Kasyno Online BLIK 2026 — Wpłaty i Wypłaty Blikiem",
     "h1": "Kasyno online z płatnością BLIK",
@@ -709,7 +681,7 @@
         "label": "Kasyna z BLIK"
       },
       {
-        "href": "/wyplacalne-kasyna/",
+        "href": "/wyplacalne-kasyna-internetowe/",
         "label": "Wypłacalne kasyna"
       }
     ]

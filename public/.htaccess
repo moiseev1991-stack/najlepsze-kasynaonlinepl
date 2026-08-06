@@ -25,6 +25,7 @@ ErrorDocument 404 /404.html
   RewriteRule ^kryteria-oceny-kasyn/?$ /kryteria-oceny/ [R=301,L]
   RewriteRule ^legalne-kasyna-online/?$ /legalne-kasyna/ [R=301,L]
   RewriteRule ^wyplacalne-kasyna-online/?$ /wyplacalne-kasyna-internetowe/ [R=301,L]
+  RewriteRule ^wyplacalne-kasyna/?$ /wyplacalne-kasyna-internetowe/ [R=301,L]
   RewriteRule ^platnosci/blik/?$ /platnosci/kasyno-online-blik/ [R=301,L]
   RewriteRule ^platnosci/skrill/?$ /platnosci/kasyno-online-skrill/ [R=301,L]
   RewriteRule ^platnosci/przelewy24/?$ /platnosci/kasyno-przelewy24/ [R=301,L]
