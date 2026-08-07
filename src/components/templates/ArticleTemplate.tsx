@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Gift } from "lucide-react";
 import type { Article } from "@/lib/types";
 import { Breadcrumbs, type Crumb } from "@/components/ui/Breadcrumbs";
 import { ReviewEditorialBody } from "@/components/review/ReviewEditorialBody";
@@ -38,6 +39,20 @@ function formatPlDate(iso?: string): string | null {
   return `${parseInt(d, 10)} ${month} ${y}`;
 }
 
+function BonusCtaButton({ href, className = "" }: { href: string; className?: string }) {
+  return (
+    <a
+      href={href}
+      className={`inline-flex min-h-[52px] items-center justify-center gap-2 rounded-2xl bg-brand-600 px-6 py-3 text-base font-bold text-white shadow-md transition hover:bg-brand-700 hover:shadow-cardHover ${className}`}
+      rel="nofollow sponsored noopener noreferrer"
+      target="_blank"
+    >
+      <Gift className="h-5 w-5" aria-hidden />
+      Odbierz bonus
+    </a>
+  );
+}
+
 export function ArticleTemplate({ article, breadcrumbs }: Props) {
   const author = getAuthorBySlug("anna-bielinska");
   const brandCasino = findCasinoForArticleSlug(article.slug);
@@ -56,6 +71,7 @@ export function ArticleTemplate({ article, breadcrumbs }: Props) {
 
   const brandScreenshot = brandCasino ? getCasinoScreenshot(brandCasino.slug) : undefined;
   const heroImageUrl = brandCasino?.logo ?? "/og-default.png";
+  const ctaHref = brandCasino?.affiliateUrl ?? "/go/";
 
   return (
     <article className="space-y-8">
@@ -103,6 +119,12 @@ export function ArticleTemplate({ article, breadcrumbs }: Props) {
                 {article.metaDescription}
               </p>
             ) : null}
+            <div className="pt-1">
+              <BonusCtaButton href={ctaHref} className="w-full sm:w-auto" />
+              <p className="mt-2 text-xs text-slate-400">
+                Materiał zawiera linki partnerskie. 18+ Graj odpowiedzialnie.
+              </p>
+            </div>
           </div>
           <div className="shrink-0">
             {brandScreenshot ? (
@@ -163,6 +185,19 @@ export function ArticleTemplate({ article, breadcrumbs }: Props) {
 
       <section className="rounded-2xl border border-slate-200 bg-white p-6 md:p-8">
         <ReviewEditorialBody markdown={stripLeadingMarkdownH1(article.body)} />
+      </section>
+
+      <section className="rounded-2xl border border-brand-200 bg-gradient-to-br from-brand-50 to-white p-6 text-center md:p-8">
+        <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
+          {brandCasino ? `Odbierz bonus w ${brandCasino.name}` : "Odbierz swój bonus"}
+        </h2>
+        <p className="mx-auto mt-2 max-w-xl text-sm leading-relaxed text-slate-600">
+          Zarejestruj się przez nasz link i aktywuj aktualną ofertę powitalną. 18+ Graj
+          odpowiedzialnie.
+        </p>
+        <div className="mt-5 flex justify-center">
+          <BonusCtaButton href={ctaHref} className="w-full sm:w-auto" />
+        </div>
       </section>
 
       {author ? (
