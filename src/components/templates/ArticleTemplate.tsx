@@ -39,19 +39,56 @@ function formatPlDate(iso?: string): string | null {
   return `${parseInt(d, 10)} ${month} ${y}`;
 }
 
-function BonusCtaButton({ href, className = "" }: { href: string; className?: string }) {
+function BonusCtaButton({
+  href,
+  label,
+  className = "",
+}: {
+  href: string;
+  label: string;
+  className?: string;
+}) {
   return (
     <a
       href={href}
-      className={`inline-flex min-h-[52px] items-center justify-center gap-2 rounded-2xl bg-brand-600 px-6 py-3 text-base font-bold text-white shadow-md transition hover:bg-brand-700 hover:shadow-cardHover ${className}`}
+      className={`inline-flex min-h-[52px] items-center justify-center gap-2 rounded-2xl bg-brand-600 px-6 py-3 text-center text-base font-bold leading-tight text-white shadow-md transition hover:bg-brand-700 hover:shadow-cardHover ${className}`}
       rel="nofollow sponsored noopener noreferrer"
       target="_blank"
     >
-      <Gift className="h-5 w-5" aria-hidden />
-      Odbierz bonus
+      <Gift className="h-5 w-5 shrink-0" aria-hidden />
+      {label}
     </a>
   );
 }
+
+/**
+ * Wyławia konkretną wartość bonusu z tekstów strony (H1 / meta), żeby CTA
+ * pokazywało „Odbierz bonus 70 zł" zamiast ogólnego „Odbierz bonus".
+ * Priorytet: procent → kwota → darmowe spiny. Fallback: null.
+ */
+const OFFER_PATTERNS: RegExp[] = [
+  /\d{2,3}\s?%(?:\s?(?:do|až|bis)\s?\d[\d .]*\s?(?:zł|pln|eur|usd|€|\$))?/i,
+  /\d{1,4}(?:[ .]\d{3})?\s?(?:zł|pln|eur|usd|€|\$)/i,
+  /\d{1,3}\s?(?:darmowych spinów|darmowe spiny|darmowych spinow|free spins|fs\b|spinów|spinow)/i,
+];
+
+function extractBonusOffer(...texts: (string | undefined)[]): string | null {
+  for (const t of texts) {
+    if (!t) continue;
+    for (const re of OFFER_PATTERNS) {
+      const m = t.match(re);
+      if (m) return m[0].replace(/\s+/g, " ").trim();
+    }
+  }
+  return null;
+}
+
+/**
+ * Konkretną kwotę pokazujemy TYLKO na stronach o intencji „bonus/oferta".
+ * Na stronach opinii, forum, logowania czy artykułach informacyjnych liczba
+ * w tekście (np. limit wypłaty, rake) nie jest bonusem — tam zostaje ogólne CTA.
+ */
+const BONUS_INTENT = /(bonus|bez-depozyt|za-rejestracj|promocyjn|darmowe-spin|darmowych-spin|free-?spins?|cashback)/i;
 
 export function ArticleTemplate({ article, breadcrumbs }: Props) {
   const author = getAuthorBySlug("anna-bielinska");
@@ -72,6 +109,15 @@ export function ArticleTemplate({ article, breadcrumbs }: Props) {
   const brandScreenshot = brandCasino ? getCasinoScreenshot(brandCasino.slug) : undefined;
   const heroImageUrl = brandCasino?.logo ?? "/og-default.png";
   const ctaHref = brandCasino?.affiliateUrl ?? "/go/";
+  const bonusOffer = BONUS_INTENT.test(article.slug)
+    ? extractBonusOffer(article.h1, article.title, article.metaTitle, article.metaDescription)
+    : null;
+  const ctaLabel = bonusOffer ? `Odbierz bonus ${bonusOffer}` : "Odbierz bonus";
+  const ctaHeading = bonusOffer
+    ? `Odbierz bonus ${bonusOffer}${brandCasino ? ` w ${brandCasino.name}` : ""}`
+    : brandCasino
+      ? `Odbierz bonus w ${brandCasino.name}`
+      : "Odbierz swój bonus";
 
   return (
     <article className="space-y-8">
@@ -120,7 +166,7 @@ export function ArticleTemplate({ article, breadcrumbs }: Props) {
               </p>
             ) : null}
             <div className="pt-1">
-              <BonusCtaButton href={ctaHref} className="w-full sm:w-auto" />
+              <BonusCtaButton href={ctaHref} label={ctaLabel} className="w-full sm:w-auto" />
               <p className="mt-2 text-xs text-slate-400">
                 Materiał zawiera linki partnerskie. 18+ Graj odpowiedzialnie.
               </p>
@@ -188,15 +234,13 @@ export function ArticleTemplate({ article, breadcrumbs }: Props) {
       </section>
 
       <section className="rounded-2xl border border-brand-200 bg-gradient-to-br from-brand-50 to-white p-6 text-center md:p-8">
-        <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
-          {brandCasino ? `Odbierz bonus w ${brandCasino.name}` : "Odbierz swój bonus"}
-        </h2>
+        <h2 className="text-xl font-bold text-slate-900 md:text-2xl">{ctaHeading}</h2>
         <p className="mx-auto mt-2 max-w-xl text-sm leading-relaxed text-slate-600">
           Zarejestruj się przez nasz link i aktywuj aktualną ofertę powitalną. 18+ Graj
           odpowiedzialnie.
         </p>
         <div className="mt-5 flex justify-center">
-          <BonusCtaButton href={ctaHref} className="w-full sm:w-auto" />
+          <BonusCtaButton href={ctaHref} label={ctaLabel} className="w-full sm:w-auto" />
         </div>
       </section>
 
