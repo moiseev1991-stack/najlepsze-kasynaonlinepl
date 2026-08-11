@@ -16,9 +16,9 @@ import { casinos } from "@/lib/data";
 
 export const metadata: Metadata = {
   ...buildMetadata({
-    title: "Ranking kasyn online 2026 — opinie i recenzje kasyn internetowych",
+    title: "Ranking kasyn online 2026 — najlepsze kasyno online, opinie i recenzje",
     description:
-      "Ranking kasyn online 2026: redakcyjne recenzje, opinie o kasynach internetowych, bonusy, płatności i realne czasy wypłat. Legalne i międzynarodowe kasyno online w jednym rankingu.",
+      "Ranking kasyn online 2026: redakcyjne recenzje i opinie o najlepszych kasynach internetowych, bonusy, płatności i realne czasy wypłat. Legalne i międzynarodowe kasyno online w jednym rankingu.",
     path: "/",
   }),
   verification: {
@@ -47,6 +47,14 @@ const categoryLinks = [
   { name: "Kasyna na żywo", href: "/kasyna-na-zywo/" },
   { name: "Niski depozyt", href: "/minimalny-depozyt/" },
   { name: "Wypłacalne kasyna", href: "/wyplacalne-kasyna-internetowe/" },
+];
+
+const guideLinks = [
+  { name: "Wypłacalne kasyno online", href: "/wyplacalne-kasyno-online/" },
+  { name: "Kasyno z natychmiastowymi wypłatami", href: "/kasyno-natychmiastowe-wyplaty/" },
+  { name: "Kasyna online Przelewy24", href: "/kasyna-online-przelewy24/" },
+  { name: "NV Casino — opinie", href: "/nv-casino-opinie/" },
+  { name: "Slotoro — opinie", href: "/slotoro-opinie/" },
 ];
 
 export default function HomePage() {
@@ -141,6 +149,21 @@ export default function HomePage() {
               className="rounded-full border border-nk-border/80 bg-nk-surface/90 px-4 py-2 text-sm font-medium text-nk-text shadow-sm transition hover:border-brand-300 hover:shadow-card"
             >
               {c.name}
+            </Link>
+          ))}
+        </div>
+      </SectionBackground>
+
+      <SectionBackground variant="surface" className="space-y-4">
+        <h2 className="text-xl font-semibold text-nk-text">Poradniki i recenzje</h2>
+        <div className="flex flex-wrap gap-2">
+          {guideLinks.map((g) => (
+            <Link
+              key={g.href}
+              href={g.href}
+              className="rounded-full border border-nk-border/80 bg-nk-surface/90 px-4 py-2 text-sm font-medium text-nk-text shadow-sm transition hover:border-brand-300 hover:shadow-card"
+            >
+              {g.name}
             </Link>
           ))}
         </div>
