@@ -4,6 +4,7 @@ import { Breadcrumbs, type Crumb } from "@/components/ui/Breadcrumbs";
 import { DetailsTable } from "@/components/casino/DetailsTable";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { CasinoCard } from "@/components/casino/CasinoCard";
+import { GallerySlider } from "@/components/casino/GallerySlider";
 import { ProsCons } from "@/components/ui/ProsCons";
 import { RatingBreakdown } from "@/components/ui/RatingBreakdown";
 import { ReviewHero } from "@/components/review/ReviewHero";
@@ -68,33 +69,7 @@ export function CasinoReviewTemplate({
       ) : null}
 
       {gallery.length ? (
-        <section aria-label={`Zrzuty ekranu ${casino.name}`}>
-          <h2 className="text-xl font-bold text-slate-900">
-            {casino.name} — zrzuty ekranu serwisu
-          </h2>
-          <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {gallery.map((shot) => (
-              <figure
-                key={shot.src}
-                className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
-              >
-                <div className="relative aspect-[16/10] w-full bg-slate-100">
-                  <Image
-                    src={shot.src}
-                    alt={`${casino.name} — ${shot.label}`}
-                    fill
-                    className="object-cover"
-                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                    unoptimized
-                  />
-                </div>
-                <figcaption className="border-t border-slate-100 bg-slate-50/60 px-4 py-2 text-xs font-medium text-slate-600">
-                  {shot.label}
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        </section>
+        <GallerySlider casinoName={casino.name} shots={gallery} />
       ) : null}
 
       <div className="space-y-10">
