@@ -24,6 +24,7 @@ import articlesData from "@/content/articles.json";
 import reviewExtras from "@/content/review-extras.json";
 import textBlocksData from "@/content/text-blocks.json";
 import casinoScreenshotsData from "@/content/casino-screenshots.json";
+import casinoGalleriesData from "@/content/casino-galleries.json";
 import calculatorsData from "@/content/calculators.json";
 import type { CalculatorPage } from "@/lib/types";
 
@@ -243,4 +244,10 @@ export function findCasinoForArticleSlug(articleSlug: string): Casino | undefine
 const casinoScreenshots = casinoScreenshotsData as Record<string, string>;
 export function getCasinoScreenshot(slug: string): string | undefined {
   return casinoScreenshots[slug];
+}
+
+export type CasinoGalleryShot = { src: string; label: string };
+const casinoGalleries = casinoGalleriesData as Record<string, CasinoGalleryShot[]>;
+export function getCasinoGallery(slug: string): CasinoGalleryShot[] {
+  return casinoGalleries[slug] ?? [];
 }

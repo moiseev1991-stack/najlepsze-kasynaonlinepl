@@ -1,0 +1,14 @@
+{
+  "vulkanspiele-casino": [
+    { "src": "/images/casinos/screenshots/vulkanspiele-casino/lobby.webp", "label": "Lobby kasyna" },
+    { "src": "/images/casinos/screenshots/vulkanspiele-casino/bonus.webp", "label": "Bonusy i promocje" },
+    { "src": "/images/casinos/screenshots/vulkanspiele-casino/providers.webp", "label": "Dostawcy gier" },
+    { "src": "/images/casinos/screenshots/vulkanspiele-casino/sport.webp", "label": "Zakłady sportowe" },
+    { "src": "/images/casinos/screenshots/vulkanspiele-casino/logowanie.webp", "label": "Logowanie i rejestracja" },
+    { "src": "/images/casinos/screenshots/vulkanspiele-casino/turnieje.webp", "label": "Turnieje" },
+    { "src": "/images/casinos/screenshots/vulkanspiele-casino/questy.webp", "label": "Questy i misje" },
+    { "src": "/images/casinos/screenshots/vulkanspiele-casino/loot-boxes.webp", "label": "Loot boxy" },
+    { "src": "/images/casinos/screenshots/vulkanspiele-casino/kolo-fortuny.webp", "label": "Koło fortuny" },
+    { "src": "/images/casinos/screenshots/vulkanspiele-casino/hall-of-fame.webp", "label": "Hall of Fame" }
+  ]
+}

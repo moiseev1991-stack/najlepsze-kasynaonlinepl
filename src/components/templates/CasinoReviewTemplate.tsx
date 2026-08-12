@@ -14,7 +14,7 @@ import type { ReviewEditorialEntry } from "@/lib/review-editorial-data";
 import { stripLeadingMarkdownH1 } from "@/lib/review-editorial-data";
 import { ReviewEditorialBody } from "@/components/review/ReviewEditorialBody";
 import { getTextBlock, stripLeadingH1 } from "@/lib/text-blocks-data";
-import { getCasinoScreenshot } from "@/lib/data";
+import { getCasinoScreenshot, getCasinoGallery } from "@/lib/data";
 
 type Props = {
   casino: Casino;
@@ -36,6 +36,7 @@ export function CasinoReviewTemplate({
   relatedArticles,
 }: Props) {
   const screenshot = getCasinoScreenshot(casino.slug);
+  const gallery = getCasinoGallery(casino.slug);
   return (
     <div className="mx-auto max-w-6xl space-y-10 px-4 py-10">
       <Breadcrumbs items={breadcrumbs} />
@@ -64,6 +65,36 @@ export function CasinoReviewTemplate({
             Podgląd oficjalnej strony {casino.name} — źródło: og:image operatora
           </figcaption>
         </figure>
+      ) : null}
+
+      {gallery.length ? (
+        <section aria-label={`Zrzuty ekranu ${casino.name}`}>
+          <h2 className="text-xl font-bold text-slate-900">
+            {casino.name} — zrzuty ekranu serwisu
+          </h2>
+          <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {gallery.map((shot) => (
+              <figure
+                key={shot.src}
+                className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
+              >
+                <div className="relative aspect-[16/10] w-full bg-slate-100">
+                  <Image
+                    src={shot.src}
+                    alt={`${casino.name} — ${shot.label}`}
+                    fill
+                    className="object-cover"
+                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                    unoptimized
+                  />
+                </div>
+                <figcaption className="border-t border-slate-100 bg-slate-50/60 px-4 py-2 text-xs font-medium text-slate-600">
+                  {shot.label}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </section>
       ) : null}
 
       <div className="space-y-10">
